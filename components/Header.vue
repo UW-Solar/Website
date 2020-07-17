@@ -1,7 +1,7 @@
 <template>
   <header class="fix-offset">
     <b-navbar id="fading-background" toggleable="md" fixed="top">
-      <nuxt-link class="navbar-brand" to="/">
+      <!--<nuxt-link class="navbar-brand" to="/">
         <img
           src="../static/logographic.png"
           alt="UW Solar stylized with Life Sciences building in the background"
@@ -9,25 +9,31 @@
           height="50"
           class="d-inline-block align-top"
         >
-      </nuxt-link>
+      </nuxt-link>-->
       <b-navbar-toggle target="nav-collapse" />
       <!-- Make collapsable for small screens. -->
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
           <nuxt-link class="nav-link" to="/">
-            About <span v-if="currentPage === 0" class="sr-only">(current)</span>
-          </nuxt-link>
-          <nuxt-link class="nav-link" to="/affiliated">
-            Affiliated Labs <span v-if="currentPage === 1" class="sr-only">(current)</span>
+            Home <span v-if="currentPage === 0" class="sr-only">(current)</span>
           </nuxt-link>
           <nuxt-link class="nav-link" to="/projects">
-            Projects <span v-if="currentPage === 2" class="sr-only">(current)</span>
+            Projects <span v-if="currentPage === 1" class="sr-only">(current)</span>
           </nuxt-link>
-          <nuxt-link class="nav-link" to="/reseach">
-            Research <span v-if="currentPage === 3" class="sr-only">(current)</span>
+          <nuxt-link class="nav-link" to="/map">
+            Map <span v-if="currentPage === 2" class="sr-only">(current)</span>
           </nuxt-link>
-          <nuxt-link class="nav-link" to="/members">
-            Lab Members <span v-if="currentPage === 4" class="sr-only">(current)</span>
+          <nuxt-link class="nav-link" to="/data">
+            Data <span v-if="currentPage === 3" class="sr-only">(current)</span>
+          </nuxt-link>
+          <nuxt-link class="nav-link" to="/news">
+            News <span v-if="currentPage === 4" class="sr-only">(current)</span>
+          </nuxt-link>
+          <nuxt-link class="nav-link" to="/people">
+            People <span v-if="currentPage === 5" class="sr-only">(current)</span>
+          </nuxt-link>
+          <nuxt-link class="nav-link" to="/partners">
+            Partners <span v-if="currentPage === 6" class="sr-only">(current)</span>
           </nuxt-link>
         </b-navbar-nav>
       </b-collapse>
@@ -68,8 +74,8 @@ export default {
   methods: {
     handleScroll (event) {
       const scrollTop = window.pageYOffset;
-      const opacity = scrollTop / this.winHeight;
-      document.getElementById("fading-background").style["background-color"] = "rgba(200, 200, 200, " + (opacity).toString() + ")";
+      const opacity = Math.min((scrollTop / this.winHeight * 10), 0.9);
+      document.getElementById("fading-background").style["background-color"] = "rgba(0, 0, 0, " + (opacity).toString() + ")";
     }
   }
 }
@@ -88,7 +94,13 @@ export default {
 //   color: black;
 // }
 
-
+.navbar {
+  padding-left: 2rem;
+  font-size: 1.35em;
+}
+.nav-link {
+  padding-left: 3rem;
+}
 .fix-offset {
   margin-bottom: 4.5rem;
 }
