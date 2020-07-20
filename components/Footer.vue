@@ -7,7 +7,7 @@
     <div id="footerDiv">
       <a href="https://www.facebook.com" class="footerImg"><img class="w-100 m-auto" src="fb.png"></a>
       <a href="https://www.instagram.com" class="footerImg"><img class="w-100 m-auto" src="ig.png"></a>
-      <a href="frank@gmail.com" class="footerImg"><img class="w-100 m-auto" src="email.png"></a>
+      <a href="mailto:frank@gmail.com" class="footerImg"><img class="w-100 m-auto" src="email.png"></a>
     </div>
     <br><br><br>
   </div>

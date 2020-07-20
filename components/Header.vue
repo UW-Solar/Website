@@ -1,44 +1,52 @@
 <template>
-  <header class="fix-offset">
-    <b-navbar id="fading-background" toggleable="md" fixed="top">
-      <!--<nuxt-link class="navbar-brand" to="/">
-        <img
-          src="../static/logographic.png"
-          alt="UW Solar stylized with Life Sciences building in the background"
-          width="50"
-          height="50"
-          class="d-inline-block align-top"
-        >
-      </nuxt-link>-->
-      <b-navbar-toggle target="nav-collapse" />
-      <!-- Make collapsable for small screens. -->
-      <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav>
-          <nuxt-link class="nav-link" to="/">
-            Home <span v-if="currentPage === 0" class="sr-only">(current)</span>
-          </nuxt-link>
-          <nuxt-link class="nav-link" to="/projects">
-            Projects <span v-if="currentPage === 1" class="sr-only">(current)</span>
-          </nuxt-link>
-          <nuxt-link class="nav-link" to="/map">
-            Map <span v-if="currentPage === 2" class="sr-only">(current)</span>
-          </nuxt-link>
-          <nuxt-link class="nav-link" to="/data">
-            Data <span v-if="currentPage === 3" class="sr-only">(current)</span>
-          </nuxt-link>
-          <nuxt-link class="nav-link" to="/news">
-            News <span v-if="currentPage === 4" class="sr-only">(current)</span>
-          </nuxt-link>
-          <nuxt-link class="nav-link" to="/people">
-            People <span v-if="currentPage === 5" class="sr-only">(current)</span>
-          </nuxt-link>
-          <nuxt-link class="nav-link" to="/partners">
-            Partners <span v-if="currentPage === 6" class="sr-only">(current)</span>
-          </nuxt-link>
-        </b-navbar-nav>
-      </b-collapse>
-    </b-navbar>
-  </header>
+  <nav id="fading-background" class="navbar navbar-expand-md" @mouseenter="this.handleHover" @mouseleave="this.handleScroll">
+
+  <!-- Toggler/collapsibe Button -->
+  <b-navbar-toggle target="nav-collapse" />
+
+  <!-- Navbar links -->
+  <b-collapse id="nav-collapse" is-nav>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <!-- <a class="nav-link" href="#">Link</a> -->
+        <nuxt-link class="nav-link" to="/">
+          Home <span v-if="currentPage === 0" class="sr-only">(current)</span>
+        </nuxt-link>
+      </li>
+      <li class="nav-item">
+        <!-- <a class="nav-link" href="#">Link</a> -->
+        <nuxt-link class="nav-link" to="/projects">
+          Projects <span v-if="currentPage === 1" class="sr-only">(current)</span>
+        </nuxt-link>
+      </li>
+      <li class="nav-item">
+        <nuxt-link class="nav-link" to="/map">
+          Map <span v-if="currentPage === 2" class="sr-only">(current)</span>
+        </nuxt-link>
+      </li>
+      <li class="nav-item">
+        <nuxt-link class="nav-link" to="/data">
+          Data <span v-if="currentPage === 3" class="sr-only">(current)</span>
+        </nuxt-link>
+      </li>
+      <li class="nav-item">
+        <nuxt-link class="nav-link" to="/news">
+          News <span v-if="currentPage === 4" class="sr-only">(current)</span>
+        </nuxt-link>
+      </li>
+      <li class="nav-item">
+        <nuxt-link class="nav-link" to="/people">
+          People <span v-if="currentPage === 5" class="sr-only">(current)</span>
+        </nuxt-link>
+      </li>
+      <li class="nav-item">
+        <nuxt-link class="nav-link" to="/partners">
+          Partners <span v-if="currentPage === 6" class="sr-only">(current)</span>
+        </nuxt-link>
+      </li>
+    </ul>
+  </b-collapse>
+</nav>
 </template>
 
 <script>
@@ -61,7 +69,9 @@ export default {
   },
   data () {
     return {
-      winHeight: 0
+      winHeight: 0,
+      svgStart: "url(\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30'%3E%3Cpath stroke='",
+      svgEnd: "' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E\")"
     }
   },
   mounted () {
@@ -75,7 +85,27 @@ export default {
     handleScroll (event) {
       const scrollTop = window.pageYOffset;
       const opacity = Math.min((scrollTop / this.winHeight * 10), 0.9);
+      const color = 255 * Math.min(1, scrollTop / this.winHeight * 10);
+      const colorString = color.toString()
       document.getElementById("fading-background").style["background-color"] = "rgba(0, 0, 0, " + (opacity).toString() + ")";
+      const links = document.getElementsByClassName("nav-link");
+      Array.from(links).forEach((el) => {
+        el.style["color"] = "rgb(" + colorString + ", " + colorString + ", " + colorString + ")";
+      });
+      try {
+        document.getElementsByClassName("navbar-toggler collapsed")[0].style["background-image"] = this.svgStart + "rgb(" + colorString + ", " + colorString + ", " + colorString + ")" + this.svgEnd;
+        document.getElementsByClassName("navbar-toggler collapsed")[0].style["border-color"] = "rgb(" + colorString + ", " + colorString + ", " + colorString + ")";
+      } catch (error) {
+        document.getElementsByClassName("navbar-toggler not-collapsed")[0].style["background-image"] = this.svgStart + "rgb(" + colorString + ", " + colorString + ", " + colorString + ")" + this.svgEnd;
+        document.getElementsByClassName("navbar-toggler not-collapsed")[0].style["border-color"] = "rgb(" + colorString + ", " + colorString + ", " + colorString + ")";
+      }
+    },
+    handleHover () {
+      document.getElementById("fading-background").style["background-color"] = "black";
+      const links = document.getElementsByClassName("nav-link");
+      Array.from(links).forEach((el) => {
+        el.style["color"] = "white";
+      });
     }
   }
 }
@@ -83,23 +113,38 @@ export default {
 
 <!-- This style accounts for bolding/white the current nav link -->
 <style lang="scss" scoped>
-// Bootstrap and its default variables
-// @import '../node_modules/bootstrap/scss/bootstrap';
-// // BootstrapVue and its default variables
-// @import '../node_modules/bootstrap-vue/src/index.scss';
-// // BoostrapVue navbar
-// @import '../node_modules/bootstrap/scss/_navbar.scss';
-// $navbar-light-color: black;
-// .navbar-light.navbar-nav.nav-link {
-//   color: black;
-// }
 
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+// nav:hover {
+//   background-color: black;
+//   color: white;
+// }
+// nav:hover a {
+//   color: white;
+// }
+.navbar-toggler.collapsed {
+  border-color: black;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30'%3E%3Cpath stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-size: 100% 100% ;
+}
+.navbar-toggler.not-collapsed {
+  border-color: black;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30'%3E%3Cpath stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-size: 100% 100% ;
+}
 .navbar {
   padding-left: 2rem;
   font-size: 1.35em;
 }
+.nav-item {
+  padding-left: 5rem;
+}
 .nav-link {
-  padding-left: 3rem;
+  color: black;
 }
 .fix-offset {
   margin-bottom: 4.5rem;

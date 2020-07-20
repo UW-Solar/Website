@@ -3,12 +3,14 @@
     "name": "map",
     "path": "/map",
     "component": "/Users/markusschiffer/Documents/UWSolar2.0/pages/map.vue",
-    "chunkName": "pages/map"
+    "chunkName": "pages/map",
+    "_name": "_b6553928"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/markusschiffer/Documents/UWSolar2.0/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_c518843c"
   }
 ]
