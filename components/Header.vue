@@ -8,13 +8,11 @@
   <b-collapse id="nav-collapse" is-nav>
     <ul class="navbar-nav">
       <li class="nav-item">
-        <!-- <a class="nav-link" href="#">Link</a> -->
         <nuxt-link class="nav-link" to="/">
           Home <span v-if="currentPage === 0" class="sr-only">(current)</span>
         </nuxt-link>
       </li>
       <li class="nav-item">
-        <!-- <a class="nav-link" href="#">Link</a> -->
         <nuxt-link class="nav-link" to="/projects">
           Projects <span v-if="currentPage === 1" class="sr-only">(current)</span>
         </nuxt-link>
@@ -46,6 +44,10 @@
       </li>
     </ul>
   </b-collapse>
+  <div id="UIL-logo">
+    <img src="~/static/skyline(black).png" />
+    <h5>UW Urban Infrastructure Lab</h5>
+  </div>
 </nav>
 </template>
 
@@ -118,6 +120,8 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
+  display: flex;
+  justify-content: space-between;
 }
 // nav:hover {
 //   background-color: black;
@@ -160,5 +164,16 @@ nav {
 }
 .container {
   flex-direction: column;
+}
+#UIL-logo {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+#UIL-logo img {
+  width: auto;
+  max-height: 5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 </style>
