@@ -1,4 +1,5 @@
 <template>
+    
   <nav id="fading-background" class="navbar navbar-expand-md" @mouseenter="this.handleHover" @mouseleave="this.handleScroll">
 
   <!-- Toggler/collapsibe Button -->
@@ -45,8 +46,12 @@
     </ul>
   </b-collapse>
   <div id="UIL-logo">
-    <img src="~/static/skyline(black).png" />
-    <h5>UW Urban Infrastructure Lab</h5>
+    <a href="http://uil.be.uw.edu/" target="_blank">
+        <img id="UILLogo" src="~/static/skyline.png" />
+    </a>
+    <a href="http://uil.be.uw.edu/" target="_blank">
+        <div class="nav-link">Urban Infrastructure Lab</div>
+    </a>
   </div>
 </nav>
 </template>
@@ -86,7 +91,7 @@ export default {
   methods: {
     handleScroll (event) {
       const scrollTop = window.pageYOffset;
-      const opacity = Math.min((scrollTop / this.winHeight * 10), 0.9);
+      const opacity = Math.min((scrollTop / this.winHeight * 15), 0.9);
       const color = 255 * Math.min(1, scrollTop / this.winHeight * 10);
       const colorString = color.toString()
       document.getElementById("fading-background").style["background-color"] = "rgba(0, 0, 0, " + (opacity).toString() + ")";
@@ -94,6 +99,7 @@ export default {
       Array.from(links).forEach((el) => {
         el.style["color"] = "rgb(" + colorString + ", " + colorString + ", " + colorString + ")";
       });
+      document.getElementById("UILLogo").style["filter"] = "invert(" + Math.min(scrollTop, 100) + "%)";
       try {
         document.getElementsByClassName("navbar-toggler collapsed")[0].style["background-image"] = this.svgStart + "rgb(" + colorString + ", " + colorString + ", " + colorString + ")" + this.svgEnd;
         document.getElementsByClassName("navbar-toggler collapsed")[0].style["border-color"] = "rgb(" + colorString + ", " + colorString + ", " + colorString + ")";
@@ -108,6 +114,7 @@ export default {
       Array.from(links).forEach((el) => {
         el.style["color"] = "white";
       });
+      document.getElementById("UILLogo").style["filter"] = "invert(100%)";
     }
   }
 }
@@ -115,7 +122,6 @@ export default {
 
 <!-- This style accounts for bolding/white the current nav link -->
 <style lang="scss" scoped>
-
 nav {
   position: fixed;
   width: 100%;
@@ -142,10 +148,10 @@ nav {
 }
 .navbar {
   padding-left: 2rem;
-  font-size: 1.35em;
+  font-size: 1.5em;
 }
 .nav-item {
-  padding-left: 5rem;
+  padding-left: 3rem;
 }
 .nav-link {
   color: black;
@@ -172,8 +178,9 @@ nav {
 }
 #UIL-logo img {
   width: auto;
-  max-height: 5rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
+  max-height: 3.5rem;
+  margin-left: 1rem;
+  margin-right: 2rem;
+  border-radius: 20%;
 }
 </style>
