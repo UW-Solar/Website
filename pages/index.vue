@@ -58,13 +58,9 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
 export default {
   name: "Home",
-  components: {
-    Logo
-  },
+  layout: 'default',
   mounted () {
     this.winHeight = window.innerHeight;
     window.addEventListener('scroll', this.handleScroll);
@@ -76,7 +72,7 @@ export default {
   methods: {
     handleScroll (event) {
       const scrollTop = window.pageYOffset;
-      const opacity = Math.min(scrollTop / this.winHeight * 2.5, 0.8);
+      const opacity = Math.min(scrollTop / this.winHeight * 2.5, 0.55);
       const blurPX = (Math.floor(5 * Math.min(1, scrollTop / this.winHeight))).toString();
       document.getElementById("background-white").style["background-color"] = "rgba(255, 255, 255, " + (opacity).toString() + ")";
       document.getElementById("background-blur").style["filter"] = "blur(" + blurPX + "px)";

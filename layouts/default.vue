@@ -43,7 +43,6 @@ a {
   height: 100%;
 }
 #background-blur {
-  background-image: url("../static/UWSolarBackground.png");
   background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.19) 0%, rgba(255, 255, 255, 0.21) 100%), url("../static/UWSolarBackground.png");
   background-repeat: no-repeat, repeat;
   background-size: cover; /* Resize the background image to cover the entire container */

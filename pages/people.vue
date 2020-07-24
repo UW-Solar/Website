@@ -1,5 +1,5 @@
 <template>
-  <div class="container" id="white-back">
+  <div class="container">
     <div class="people"></div>
     <div>
         <h1>People</h1>
@@ -17,12 +17,10 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 
 export default {
-  components: {
-    Logo
-  }
+  name: "People",
+  layout: "secondary",
 }
 </script>
 
@@ -38,14 +36,5 @@ p.meetings {
 }
 h3 {
     text-indent: 1%;
-}
-#header-img {
-  width: 80%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-body {
-    background-color: rgba(255, 255, 255, 0.8);
 }
 </style>

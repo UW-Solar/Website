@@ -3,8 +3,12 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
+const _586dd2ca = () => interopDefault(import('../pages/data.vue' /* webpackChunkName: "pages/data" */))
 const _b6553928 = () => interopDefault(import('../pages/map.vue' /* webpackChunkName: "pages/map" */))
+const _40eeb173 = () => interopDefault(import('../pages/news.vue' /* webpackChunkName: "pages/news" */))
+const _4c31996a = () => interopDefault(import('../pages/partners.vue' /* webpackChunkName: "pages/partners" */))
 const _339bd92f = () => interopDefault(import('../pages/people.vue' /* webpackChunkName: "pages/people" */))
+const _08410f9a = () => interopDefault(import('../pages/projects.vue' /* webpackChunkName: "pages/projects" */))
 const _c518843c = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
@@ -24,13 +28,29 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
+    path: "/data",
+    component: _586dd2ca,
+    name: "data"
+  }, {
     path: "/map",
     component: _b6553928,
     name: "map"
   }, {
+    path: "/news",
+    component: _40eeb173,
+    name: "news"
+  }, {
+    path: "/partners",
+    component: _4c31996a,
+    name: "partners"
+  }, {
     path: "/people",
     component: _339bd92f,
     name: "people"
+  }, {
+    path: "/projects",
+    component: _08410f9a,
+    name: "projects"
   }, {
     path: "/",
     component: _c518843c,

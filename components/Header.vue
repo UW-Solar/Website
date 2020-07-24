@@ -1,6 +1,6 @@
 <template>
     
-  <nav id="fading-background" class="navbar navbar-expand-md" @mouseenter="this.handleHover" @mouseleave="this.handleScroll">
+  <nav id="fading-background" class="navbar navbar-expand-lg" @mouseenter="this.handleHover" @mouseleave="this.handleScroll">
 
   <!-- Toggler/collapsibe Button -->
   <b-navbar-toggle target="nav-collapse" @click="this.handleExpand" />
@@ -161,12 +161,15 @@ a:hover {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30'%3E%3Cpath stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   background-size: 100% 100% ;
 }
+#nav-collapse {
+  display: flex;
+  justify-content: space-between;
+}
 .navbar {
-  padding-left: 2rem;
   font-size: 1.5em;
 }
 .nav-item {
-  padding-left: 3rem;
+  padding-left: 1.5rem;
 }
 .nav-link {
   color: black;
