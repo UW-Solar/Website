@@ -3,7 +3,7 @@
   <nav id="fading-background" class="navbar navbar-expand-md" @mouseenter="this.handleHover" @mouseleave="this.handleScroll">
 
   <!-- Toggler/collapsibe Button -->
-  <b-navbar-toggle target="nav-collapse" />
+  <b-navbar-toggle target="nav-collapse" @click="this.handleExpand" />
 
   <!-- Navbar links -->
   <b-collapse id="nav-collapse" is-nav>
@@ -44,15 +44,15 @@
         </nuxt-link>
       </li>
     </ul>
+    <div id="UIL-logo">
+      <a href="http://uil.be.uw.edu/" target="_blank">
+          <img id="UILLogo" src="~/static/skyline.png" />
+      </a>
+      <a href="http://uil.be.uw.edu/" target="_blank">
+          <div class="nav-link">Urban Infrastructure Lab</div>
+      </a>
+    </div>
   </b-collapse>
-  <div id="UIL-logo">
-    <a href="http://uil.be.uw.edu/" target="_blank">
-        <img id="UILLogo" src="~/static/skyline.png" />
-    </a>
-    <a href="http://uil.be.uw.edu/" target="_blank">
-        <div class="nav-link">Urban Infrastructure Lab</div>
-    </a>
-  </div>
 </nav>
 </template>
 
@@ -78,43 +78,59 @@ export default {
     return {
       winHeight: 0,
       svgStart: "url(\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30'%3E%3Cpath stroke='",
-      svgEnd: "' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E\")"
+      svgEnd: "' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E\")",
+      expanded: false
     }
   },
   mounted () {
     this.winHeight = window.innerHeight
     window.addEventListener('scroll', this.handleScroll);
+    this.handleScroll();  // Make sure the page displays correctly based on how much has already been scrolled.
   },
   destroyed () {
     window.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
-    handleScroll (event) {
-      const scrollTop = window.pageYOffset;
-      const opacity = Math.min((scrollTop / this.winHeight * 15), 0.9);
-      const color = 255 * Math.min(1, scrollTop / this.winHeight * 10);
-      const colorString = color.toString()
-      document.getElementById("fading-background").style["background-color"] = "rgba(0, 0, 0, " + (opacity).toString() + ")";
-      const links = document.getElementsByClassName("nav-link");
-      Array.from(links).forEach((el) => {
-        el.style["color"] = "rgb(" + colorString + ", " + colorString + ", " + colorString + ")";
-      });
-      document.getElementById("UILLogo").style["filter"] = "invert(" + Math.min(scrollTop, 100) + "%)";
-      try {
-        document.getElementsByClassName("navbar-toggler collapsed")[0].style["background-image"] = this.svgStart + "rgb(" + colorString + ", " + colorString + ", " + colorString + ")" + this.svgEnd;
-        document.getElementsByClassName("navbar-toggler collapsed")[0].style["border-color"] = "rgb(" + colorString + ", " + colorString + ", " + colorString + ")";
-      } catch (error) {
-        document.getElementsByClassName("navbar-toggler not-collapsed")[0].style["background-image"] = this.svgStart + "rgb(" + colorString + ", " + colorString + ", " + colorString + ")" + this.svgEnd;
-        document.getElementsByClassName("navbar-toggler not-collapsed")[0].style["border-color"] = "rgb(" + colorString + ", " + colorString + ", " + colorString + ")";
+    handleScroll () {
+      if (this.expanded) {
+        return;
       }
+      const scrollTop = window.pageYOffset;  // How much of the page has been scrolled.
+      const opacity = Math.min((scrollTop / this.winHeight * 15), 0.9);  // The opacity of the page, based on distance scrolled.
+      const color = (255 * Math.min(1, scrollTop / this.winHeight * 10)).toString(); // Grayscale single rgb value.
+      
+      document.getElementById("fading-background").style["background-color"] = "rgba(0, 0, 0, " + (opacity).toString() + ")";  // Background color (clear-dark)
+      const links = document.getElementsByClassName("nav-link");  // Link color (black-white)
+      Array.from(links).forEach((el) => {
+        el.style["color"] = "rgb(" + color + ", " + color + ", " + color + ")";
+      });
+      document.getElementById("UILLogo").style["filter"] = "invert(" + Math.min(scrollTop, 100) + "%)";  // Logo color (black-white)
+      document.getElementsByClassName("navbar-toggler collapsed")[0].style["background-image"] = this.svgStart + "rgb(" + color + ", " + color + ", " + color + ")" + this.svgEnd; // Button color (black-white)
+      document.getElementsByClassName("navbar-toggler collapsed")[0].style["border-color"] = "rgb(" + color + ", " + color + ", " + color + ")";  // Button border color (black-white)
     },
     handleHover () {
-      document.getElementById("fading-background").style["background-color"] = "black";
-      const links = document.getElementsByClassName("nav-link");
+      if (this.expanded) {  // Do nothing if expanded
+        return;
+      }
+      document.getElementById("fading-background").style["background-color"] = "black"; // Maybe put this line in focus???
+      this.focus();
+    },
+    handleExpand () {
+      this.expanded = !this.expanded;  // Toggle whether expanded or not.
+      if (!this.expanded) {
+        return;
+      }
+      document.getElementById("fading-background").style["background-color"] = "rgba(0, 0, 0, 0.9)";  // Dark navbar
+      this.focus();
+    },
+    focus () {
+      const links = document.getElementsByClassName("nav-link");  // White links
       Array.from(links).forEach((el) => {
         el.style["color"] = "white";
       });
       document.getElementById("UILLogo").style["filter"] = "invert(100%)";
+      document.getElementsByClassName("navbar-toggler collapsed")[0].style["background-image"] = this.svgStart + "white" + this.svgEnd; // White button
+      document.getElementsByClassName("navbar-toggler collapsed")[0].style["border-color"] = "rgb(255, 255, 255)";  // White button
     }
   }
 }
@@ -128,14 +144,14 @@ nav {
   top: 0;
   display: flex;
   justify-content: space-between;
+  z-index: 10;
 }
-// nav:hover {
-//   background-color: black;
-//   color: white;
-// }
-// nav:hover a {
-//   color: white;
-// }
+a {
+  font-weight: normal;
+}
+a:hover {
+  text-decoration: underline;
+}
 .navbar-toggler.collapsed {
   border-color: black;
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30'%3E%3Cpath stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");

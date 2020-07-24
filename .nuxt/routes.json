@@ -2,22 +2,22 @@
   {
     "name": "map",
     "path": "/map",
-    "component": "C:\\\\Users\\\\alex\\\\Documents\\\\UW-Solar-Website\\\\Solar2.0\\\\pages\\\\map.vue",
+    "component": "/Users/markusschiffer/Documents/UWSolar2.0/pages/map.vue",
     "chunkName": "pages/map",
-    "_name": "_91ce8c34"
+    "_name": "_b6553928"
   },
   {
     "name": "people",
     "path": "/people",
-    "component": "C:\\\\Users\\\\alex\\\\Documents\\\\UW-Solar-Website\\\\Solar2.0\\\\pages\\\\people.vue",
+    "component": "/Users/markusschiffer/Documents/UWSolar2.0/pages/people.vue",
     "chunkName": "pages/people",
-    "_name": "_7dc83875"
+    "_name": "_339bd92f"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\alex\\\\Documents\\\\UW-Solar-Website\\\\Solar2.0\\\\pages\\\\index.vue",
+    "component": "/Users/markusschiffer/Documents/UWSolar2.0/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_2c3b5ddc"
+    "_name": "_c518843c"
   }
 ]

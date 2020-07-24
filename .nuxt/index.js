@@ -11,10 +11,10 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_workbox_c1f51a10 from 'nuxt_plugin_workbox_c1f51a10' // Source: .\\workbox.js (mode: 'client')
-import nuxt_plugin_nuxticons_516d0dec from 'nuxt_plugin_nuxticons_516d0dec' // Source: .\\nuxt-icons.js (mode: 'all')
-import nuxt_plugin_bootstrapvue_e791f1ea from 'nuxt_plugin_bootstrapvue_e791f1ea' // Source: .\\bootstrap-vue.js (mode: 'all')
-import nuxt_plugin_axios_f25a7648 from 'nuxt_plugin_axios_f25a7648' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_workbox_49210798 from 'nuxt_plugin_workbox_49210798' // Source: ./workbox.js (mode: 'client')
+import nuxt_plugin_nuxticons_1dfc9568 from 'nuxt_plugin_nuxticons_1dfc9568' // Source: ./nuxt-icons.js (mode: 'all')
+import nuxt_plugin_bootstrapvue_2038a3ab from 'nuxt_plugin_bootstrapvue_2038a3ab' // Source: ./bootstrap-vue.js (mode: 'all')
+import nuxt_plugin_axios_1e0b017c from 'nuxt_plugin_axios_1e0b017c' // Source: ./axios.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -167,20 +167,20 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (process.client && typeof nuxt_plugin_workbox_c1f51a10 === 'function') {
-    await nuxt_plugin_workbox_c1f51a10(app.context, inject)
+  if (process.client && typeof nuxt_plugin_workbox_49210798 === 'function') {
+    await nuxt_plugin_workbox_49210798(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_nuxticons_516d0dec === 'function') {
-    await nuxt_plugin_nuxticons_516d0dec(app.context, inject)
+  if (typeof nuxt_plugin_nuxticons_1dfc9568 === 'function') {
+    await nuxt_plugin_nuxticons_1dfc9568(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_bootstrapvue_e791f1ea === 'function') {
-    await nuxt_plugin_bootstrapvue_e791f1ea(app.context, inject)
+  if (typeof nuxt_plugin_bootstrapvue_2038a3ab === 'function') {
+    await nuxt_plugin_bootstrapvue_2038a3ab(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_f25a7648 === 'function') {
-    await nuxt_plugin_axios_f25a7648(app.context, inject)
+  if (typeof nuxt_plugin_axios_1e0b017c === 'function') {
+    await nuxt_plugin_axios_1e0b017c(app.context, inject)
   }
 
   // Lock enablePreview in context

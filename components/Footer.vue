@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <footer>
     <hr id="hrFooter" />
     <br><br>
     <img id="UWFooter" src="../static/UWFooterBlack.png">
@@ -10,7 +10,7 @@
       <a href="mailto:frank@gmail.com" class="footerImg"><img class="w-100 m-auto" src="email.png"></a>
     </div>
     <br><br><br>
-  </div>
+  </footer>
 </template>
 
 <script>
@@ -20,6 +20,9 @@ export default {
 </script>
 
 <style scoped>
+footer {
+  margin-top: 10rem;
+}
 .footerImg {
   width: 15%;
   display: flex;

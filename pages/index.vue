@@ -1,7 +1,7 @@
 <template>
   <div class="container" id="white-back">
     <div class="occupy-solo">
-      <img id="header-img" class=".mx-auto" src="../static/uwsolar.png" alt="UW Solar logo and title" title="UW Solar log and title">
+      <img id="header-img" class="mx-auto animated fadeIn" src="../static/uwsolar.png" alt="UW Solar logo and title" title="UW Solar log and title">
     </div>
     <h1>About</h1>
     <br>
@@ -57,22 +57,9 @@
 import Logo from '~/components/Logo.vue'
 
 export default {
+  name: "Home",
   components: {
     Logo
-  },
-  mounted () {
-    this.winHeight = window.innerHeight
-    window.addEventListener('scroll', this.handleScroll);
-  },
-  destroyed () {
-    window.removeEventListener('scroll', this.handleScroll);
-  },
-  methods: {
-    handleScroll (event) {
-      const scrollTop = window.pageYOffset;
-      const opacity = Math.min(scrollTop / this.winHeight * 2.5, 0.8);
-      document.body.style["background-color"] = "rgba(255, 255, 255, " + (opacity).toString() + ")";
-    }
   }
 }
 </script>
@@ -95,7 +82,27 @@ h3 {
 #header-img {
   width: 80%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.animated {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
 }
 </style>
