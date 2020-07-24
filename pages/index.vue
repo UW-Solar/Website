@@ -1,5 +1,8 @@
 <template>
-  <div class="container" id="white-back">
+  <div>
+    <div id="background-blur"></div>
+    <div id="background-white"></div>
+    <div class="container">
     <div class="occupy-solo">
       <img id="header-img" class="mx-auto animated fadeIn" src="../static/uwsolar.png" alt="UW Solar logo and title" title="UW Solar log and title">
     </div>
@@ -51,6 +54,7 @@
         RSO Officer: Evan Mickelson: evan@uw.edu
     </p>
   </div>
+  </div>
 </template>
 
 <script>
@@ -60,6 +64,23 @@ export default {
   name: "Home",
   components: {
     Logo
+  },
+  mounted () {
+    this.winHeight = window.innerHeight;
+    window.addEventListener('scroll', this.handleScroll);
+    this.handleScroll();
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll (event) {
+      const scrollTop = window.pageYOffset;
+      const opacity = Math.min(scrollTop / this.winHeight * 2.5, 0.8);
+      const blurPX = (Math.floor(5 * Math.min(1, scrollTop / this.winHeight))).toString();
+      document.getElementById("background-white").style["background-color"] = "rgba(255, 255, 255, " + (opacity).toString() + ")";
+      document.getElementById("background-blur").style["filter"] = "blur(" + blurPX + "px)";
+    }
   }
 }
 </script>
@@ -85,8 +106,8 @@ h3 {
 }
 
 .animated {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 3.5s;
+  animation-duration: 3.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }

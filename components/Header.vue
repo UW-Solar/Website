@@ -112,7 +112,6 @@ export default {
       if (this.expanded) {  // Do nothing if expanded
         return;
       }
-      document.getElementById("fading-background").style["background-color"] = "black"; // Maybe put this line in focus???
       this.focus();
     },
     handleExpand () {
@@ -120,10 +119,10 @@ export default {
       if (!this.expanded) {
         return;
       }
-      document.getElementById("fading-background").style["background-color"] = "rgba(0, 0, 0, 0.9)";  // Dark navbar
       this.focus();
     },
     focus () {
+      document.getElementById("fading-background").style["background-color"] = "rgba(0, 0, 0, 0.9)";  // Dark navbar
       const links = document.getElementsByClassName("nav-link");  // White links
       Array.from(links).forEach((el) => {
         el.style["color"] = "white";

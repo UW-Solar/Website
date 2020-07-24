@@ -1,7 +1,5 @@
 <template>
   <div id="__main">
-    <div id="background-blur"></div>
-    <div id="background-white"></div>
     <u-w-s-header />
     <nuxt />
     <u-w-s-footer />
@@ -21,23 +19,6 @@ export default {
   data () {
     return {
       winHeight: 0
-    }
-  },
-  mounted () {
-    this.winHeight = window.innerHeight;
-    window.addEventListener('scroll', this.handleScroll);
-    this.handleScroll();
-  },
-  destroyed () {
-    window.removeEventListener('scroll', this.handleScroll);
-  },
-  methods: {
-    handleScroll (event) {
-      const scrollTop = window.pageYOffset;
-      const opacity = Math.min(scrollTop / this.winHeight * 2.5, 0.8);
-      const blurPX = (Math.floor(5 * Math.min(1, scrollTop / this.winHeight))).toString();
-      document.getElementById("background-white").style["background-color"] = "rgba(255, 255, 255, " + (opacity).toString() + ")";
-      document.getElementById("background-blur").style["filter"] = "blur(" + blurPX + "px)";
     }
   }
 }
