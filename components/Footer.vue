@@ -2,7 +2,9 @@
   <footer>
     <hr id="hrFooter" />
     <br><br>
-    <img id="UWFooter" src="../static/UWFooterBlack.png">
+    <a href="http://www.washington.edu/" target="_blank">
+        <img id="UWFooter" src="../static/UWFooterBlack.png">
+    </a>
     <br><br>
     <div id="footerDiv">
       <a href="https://www.facebook.com" class="footerImg"><img class="w-100 m-auto" src="fb.png"></a>

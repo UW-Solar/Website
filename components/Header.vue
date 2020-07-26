@@ -98,15 +98,15 @@ export default {
       const scrollTop = window.pageYOffset;  // How much of the page has been scrolled.
       const opacity = Math.min((scrollTop / this.winHeight * 15), 0.9);  // The opacity of the page, based on distance scrolled.
       const color = (255 * Math.min(1, scrollTop / this.winHeight * 10)).toString(); // Grayscale single rgb value.
-      
+      const rgb = "rgb(" + color + ", " + color + ", " + color + ")";
       document.getElementById("fading-background").style["background-color"] = "rgba(0, 0, 0, " + (opacity).toString() + ")";  // Background color (clear-dark)
       const links = document.getElementsByClassName("nav-link");  // Link color (black-white)
       Array.from(links).forEach((el) => {
-        el.style["color"] = "rgb(" + color + ", " + color + ", " + color + ")";
+        el.style["color"] = rgb;
       });
       document.getElementById("UILLogo").style["filter"] = "invert(" + Math.min(scrollTop, 100) + "%)";  // Logo color (black-white)
-      document.getElementsByClassName("navbar-toggler collapsed")[0].style["background-image"] = this.svgStart + "rgb(" + color + ", " + color + ", " + color + ")" + this.svgEnd; // Button color (black-white)
-      document.getElementsByClassName("navbar-toggler collapsed")[0].style["border-color"] = "rgb(" + color + ", " + color + ", " + color + ")";  // Button border color (black-white)
+      document.getElementsByClassName("navbar-toggler collapsed")[0].style["background-image"] = this.svgStart + rgb + this.svgEnd; // Button color (black-white)
+      document.getElementsByClassName("navbar-toggler collapsed")[0].style["border-color"] = rgb;  // Button border color (black-white)
     },
     handleHover () {
       if (this.expanded) {  // Do nothing if expanded

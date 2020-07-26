@@ -34,7 +34,7 @@
         from Freshman to PhD and there are always several projects to work on.
     </p>
     <br>
-    <h3>Taking UW Solar for Credit</h3>
+    <h1>Taking UW Solar for Credit</h1>
     <br>
     <p class="meetings">
         UW Solar can also be taken for 1-2 credits as
@@ -46,7 +46,7 @@
         consecutive quarters. Add codes are available at meetings.
     </p>
     <br>
-    <h3>Contact</h3>
+    <h1>Contact</h1>
     <br>
     <p class="meetings">
         Lab Founder: Stefanie Young: sy10@uw.edu
@@ -70,11 +70,18 @@ export default {
     window.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
-    handleScroll (event) {
+    handleScroll () {
       const scrollTop = window.pageYOffset;
-      const opacity = Math.min(scrollTop / this.winHeight * 2.5, 0.55);
-      const blurPX = (Math.floor(5 * Math.min(1, scrollTop / this.winHeight))).toString();
-      document.getElementById("background-white").style["background-color"] = "rgba(255, 255, 255, " + (opacity).toString() + ")";
+      const scrollWindow = scrollTop / this.winHeight;
+      const opacity = Math.min(scrollWindow * 2.5, 0.65);
+      var blurPX;
+      if (opacity == 0.65) {
+          blurPX = "5";
+      } else {
+          blurPX = (Math.floor(5 * Math.min(1, scrollWindow))).toString();
+      }
+
+      document.getElementById("background-white").style["background-color"] = "rgba(255, 255, 255, " + opacity.toString() + ")";
       document.getElementById("background-blur").style["filter"] = "blur(" + blurPX + "px)";
     }
   }

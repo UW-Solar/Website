@@ -26,6 +26,6 @@ export default {
   filter: blur(5px);
 }
 #background-white {
-  background-color: rgba(255, 255, 255, 0.55);
+  background-color: rgba(255, 255, 255, 0.65);
 }
 </style>
