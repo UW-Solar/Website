@@ -18,12 +18,6 @@
     "chunkName": "pages/news"
   },
   {
-    "name": "partners",
-    "path": "/partners",
-    "component": "C:\\\\Users\\\\alex\\\\Documents\\\\Solar2.0\\\\pages\\\\partners.vue",
-    "chunkName": "pages/partners"
-  },
-  {
     "name": "people",
     "path": "/people",
     "component": "C:\\\\Users\\\\alex\\\\Documents\\\\Solar2.0\\\\pages\\\\people.vue",

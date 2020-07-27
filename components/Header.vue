@@ -38,11 +38,6 @@
           People <span v-if="currentPage === 5" class="sr-only">(current)</span>
         </nuxt-link>
       </li>
-      <li class="nav-item">
-        <nuxt-link class="nav-link" to="/partners">
-          Partners <span v-if="currentPage === 6" class="sr-only">(current)</span>
-        </nuxt-link>
-      </li>
     </ul>
     <div id="UIL-logo">
       <a href="http://uil.be.uw.edu/" target="_blank">
