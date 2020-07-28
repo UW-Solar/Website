@@ -18,12 +18,6 @@
     "chunkName": "pages/news"
   },
   {
-    "name": "partners",
-    "path": "/partners",
-    "component": "/Users/markusschiffer/Documents/UWSolar2.0/pages/partners.vue",
-    "chunkName": "pages/partners"
-  },
-  {
     "name": "people",
     "path": "/people",
     "component": "/Users/markusschiffer/Documents/UWSolar2.0/pages/people.vue",
