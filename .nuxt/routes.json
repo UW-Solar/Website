@@ -2,43 +2,43 @@
   {
     "name": "data",
     "path": "/data",
-    "component": "C:\\\\Users\\\\alex\\\\Documents\\\\Solar2.0\\\\pages\\\\data.vue",
+    "component": "/Users/markusschiffer/Documents/UWSolar2.0/pages/data.vue",
     "chunkName": "pages/data"
   },
   {
     "name": "map",
     "path": "/map",
-    "component": "C:\\\\Users\\\\alex\\\\Documents\\\\Solar2.0\\\\pages\\\\map.vue",
+    "component": "/Users/markusschiffer/Documents/UWSolar2.0/pages/map.vue",
     "chunkName": "pages/map"
   },
   {
     "name": "news",
     "path": "/news",
-    "component": "C:\\\\Users\\\\alex\\\\Documents\\\\Solar2.0\\\\pages\\\\news.vue",
+    "component": "/Users/markusschiffer/Documents/UWSolar2.0/pages/news.vue",
     "chunkName": "pages/news"
   },
   {
     "name": "partners",
     "path": "/partners",
-    "component": "C:\\\\Users\\\\alex\\\\Documents\\\\Solar2.0\\\\pages\\\\partners.vue",
+    "component": "/Users/markusschiffer/Documents/UWSolar2.0/pages/partners.vue",
     "chunkName": "pages/partners"
   },
   {
     "name": "people",
     "path": "/people",
-    "component": "C:\\\\Users\\\\alex\\\\Documents\\\\Solar2.0\\\\pages\\\\people.vue",
+    "component": "/Users/markusschiffer/Documents/UWSolar2.0/pages/people.vue",
     "chunkName": "pages/people"
   },
   {
     "name": "projects",
     "path": "/projects",
-    "component": "C:\\\\Users\\\\alex\\\\Documents\\\\Solar2.0\\\\pages\\\\projects.vue",
+    "component": "/Users/markusschiffer/Documents/UWSolar2.0/pages/projects.vue",
     "chunkName": "pages/projects"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\alex\\\\Documents\\\\Solar2.0\\\\pages\\\\index.vue",
+    "component": "/Users/markusschiffer/Documents/UWSolar2.0/pages/index.vue",
     "chunkName": "pages/index"
   }
 ]
