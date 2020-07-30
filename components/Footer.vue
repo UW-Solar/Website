@@ -7,9 +7,9 @@
     </a>
     <br><br>
     <div id="footerDiv">
-      <a href="https://www.facebook.com" class="footerImg"><img class="w-100 m-auto" src="fb.png"></a>
-      <a href="https://www.instagram.com" class="footerImg"><img class="w-100 m-auto" src="ig.png"></a>
-      <a href="mailto:Solar_at_uw@uw.edu" class="footerImg"><img class="w-100 m-auto" src="email.png"></a>
+      <a href="https://www.facebook.com" class="footerImg"><img class="w-100 m-auto" src="~/static/facebook.png"></a>
+      <a href="https://www.instagram.com" class="footerImg"><img class="w-100 m-auto" src="~/static/instagram.png"></a>
+      <a href="mailto:Solar_at_uw@uw.edu" class="footerImg"><img class="w-100 m-auto" src="~/static/email.png"></a>
     </div>
     <br><br><br>
   </footer>

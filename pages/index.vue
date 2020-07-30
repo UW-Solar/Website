@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="my-my-container">
     <div id="background-blur"></div>
     <div id="background-white"></div>
-    <div class="container">
+    <div class="my-container">
     <div class="occupy-solo">
       <img id="header-img" class="mx-auto animated fadeIn" src="../static/uwsolar.png" alt="UW Solar logo and title" title="UW Solar log and title">
     </div>
@@ -24,7 +24,7 @@
     <br>
     <h1>Meeting Details</h1>
     <br>
-    <p class="meetings">
+    <div class="meetings">
         <b>Who: </b>Students of all majors and every class standing. No experience or application is necessary.<br>
         <b>Where: </b>We currently meet on <a href="https://washington.zoom.us/j/99108117155" target="_blank">Zoom Meetings</a>.
         Once UW reopens we will resume our normal meeting space at <a href="http://be.uw.edu/spaces/facilities/gould-hall/" target="_blank">Gould Hall</a> room <b>012C</b>.<br>        
@@ -49,7 +49,7 @@
         <br>
         If you decide to take UW Solar for credit, you must take any of the courses listed for two
         consecutive quarters. Add codes are available at meetings.
-    </p>
+    </div>
     <br>
     <h1>Contact</h1>
     <br>
@@ -125,5 +125,12 @@ p {
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
+}
+.my-container {
+  width: 90%;
+}
+.my-my-container {
+  display: flex;
+  justify-content: center;
 }
 </style>
