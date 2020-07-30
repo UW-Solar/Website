@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="data-container">
     <div class="projects"></div>
     <h1>Projects</h1>
     <br />
@@ -91,17 +91,18 @@ export default {
 
 <style scoped>
 h1 {
-  font-size: 4rem;
-  border-bottom: 0.15em solid black;
-  padding: 0.2em;
-  color: black;
-  width: fit-content;
-  border-bottom-right-radius: 0.7rem;
+    font-size: 3rem;
+    border-bottom: 0.15em solid black;
+    padding: 0.2em;
+    color: black;
+    width: fit-content;
+    border-bottom-right-radius: 0.7rem;
 }
 .projects {
   height: 15vh;
 }
-p {
-  font-size: 1.5rem;
+section {
+  font-size: 1.3rem;
+  color: black;
 }
 </style>

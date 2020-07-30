@@ -2,13 +2,13 @@
   <div class="my-my-container">
     <div id="background-blur"></div>
     <div id="background-white"></div>
-    <div class="my-container">
+    <div class="data-container">
     <div class="occupy-solo">
       <img id="header-img" class="mx-auto animated fadeIn" src="../static/uwsolar.png" alt="UW Solar logo and title" title="UW Solar log and title">
     </div>
-    <h1>About</h1>
+    <h2>About</h2>
     <br>
-    <p>
+    <section>
         UW Solar is a <a href="https://vip.uw.edu/about" target="_blank">Vertically Integrated Project</a>
         and Registered Student Organization that is part of the
         <a href="http://uil.be.uw.edu/" target="_blank">Urban Infrastructure Lab</a> at the University of
@@ -19,12 +19,14 @@
         management, public policy and administration, business and urban planning.
         <br><br>
         Our partners include the <a href="https://csf.uw.edu/" target="_blank">Campus Sustainability Fund</a>
-        and the <a href="https://www.cei.washington.edu/">Clean Energy Institute</a>.
-    </p>
+        and the <a href="https://www.cei.washington.edu/">Clean Energy Institute</a>. UW Solar is an 
+        active participant in the <a href="https://green.uw.edu/sustainability-plan" target="_blank">UW Sustainability Action Plan</a>,
+        and a proud recipient of the <a href="https://green.uw.edu/hga/husky-green-award-nomination" target="_blank">Husky Green Award</a>.
+    </section>
     <br>
-    <h1>Meeting Details</h1>
+    <h2>Meeting Details</h2>
     <br>
-    <div class="meetings">
+    <section>
         <b>Who: </b>Students of all majors and every class standing. No experience or application is necessary.<br>
         <b>Where: </b>We currently meet on <a href="https://washington.zoom.us/j/99108117155" target="_blank">Zoom Meetings</a>.
         Once UW reopens we will resume our normal meeting space at <a href="http://be.uw.edu/spaces/facilities/gould-hall/" target="_blank">Gould Hall</a> room <b>012C</b>.<br>        
@@ -49,13 +51,13 @@
         <br>
         If you decide to take UW Solar for credit, you must take any of the courses listed for two
         consecutive quarters. Add codes are available at meetings.
-    </div>
+    </section>
     <br>
-    <h1>Contact</h1>
+    <h2>Contact</h2>
     <br>
-    <p class="meetings">
+    <section>
         If you have any questions, feel free to contact us at <a href="mailto:Solar_at_uw@uw.edu">Solar_at_uw@uw.edu</a>
-    </p>
+    </section>
   </div>
   </div>
 </template>
@@ -97,31 +99,39 @@ export default {
   display: flex;
   align-items: center;
 }
-p {
-  font-size: 1.5rem;
+section {
+  font-size: 1.3rem;
+  color: black;
+}
+h2 {
+  font-size: 2.5rem;
+  color: black;
+}
+.data-container {
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 #header-img {
+  padding-top: 2rem;
   width: 80%;
   display: block;
 }
-
 .animated {
-  -webkit-animation-duration: 3.5s;
-  animation-duration: 3.5s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-
 @-webkit-keyframes fadeIn {
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
-
 @keyframes fadeIn {
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
-
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;

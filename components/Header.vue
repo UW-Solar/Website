@@ -205,7 +205,7 @@ a:hover {
   background-size: 100% 100%;
 }
 .navbar {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 .nav-item {
   padding-left: 1.5rem;
@@ -232,7 +232,7 @@ a:hover {
 }
 #UIL-logo img {
   width: auto;
-  max-height: 3.5rem;
+  max-height: 2.5rem;
   margin-left: 1rem;
   margin-right: 2rem;
   border-radius: 20%;
