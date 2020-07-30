@@ -1,20 +1,20 @@
 <template>
-  <div class="container">
+  <div class="data-container">
     <div class="people"></div>
     <div>
         <h1>People</h1>
         <br><br><br><br>
-        <h2>Founders</h2>
+        <h2>Faculty</h2>
         <br>
-        <p>
-            <b>Jan Whittington</b> | Faculty Advisor<br>
-            <b>Stefanie Young</b> | Lab Founder
-        </p>
+        <section>
+            Jan Whittington | Faculty Advisor<br>
+            Stefanie Young | Lab Founder
+        </section>
         <br><br>
         <h2>Current Members</h2>
         <br>
         <div class="column">
-            <p>
+            <section>
                 Christoph Strouse<br>
                 Whitney Thomas<br>
                 Elizabeth Perkins<br>
@@ -45,13 +45,13 @@
                 Alisa Huang<br>
                 Charlie Chung<br>
                 Lam Pham
-            </p>
+            </section>
         </div>
         <br><br>
         <h2>Past Members</h2>
         <br>
         <div class="column">
-            <p>
+            <section>
                 Lucas Reber<br>
                 Austin Miller<br>
                 Prerna Agarwal<br>
@@ -102,18 +102,18 @@
                 Kaiwen Sun<br>
                 Nicholas Steckler<br>
                 Allison McGrath
-            </p>
+            </section>
         </div>
         <br>
         <br>
         <br>
-        <p>
+        <section>
             UW-Solar would like to offer a special thanks to <b>DC Grant</b>
             (Masters Infrastructure Planning and Management and Center for 
             Information Assurance and Cybersecurity) and <b>Jonathan Olds</b> 
             (Evans School of Public Affairs and Master of Urban Planning) whose 
             initial work on this project helped get it off the ground.
-        </p>
+        </section>
     </div>
   </div>
 </template>
@@ -128,20 +128,24 @@ export default {
 
 <style scoped>
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     border-bottom: 0.15em solid black;
     padding: 0.2em;
     color: black;
     width: fit-content;
     border-bottom-right-radius: 0.7rem;
 }
+section {
+  font-size: 1.3rem;
+  color: black;
+}
+h2 {
+    color: black;
+}
 .people {
   height: 15vh;
 }
 div.column {
   column-count: 3;
-}
-p {
-  font-size: 1.5rem;
 }
 </style>
