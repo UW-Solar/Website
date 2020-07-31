@@ -28,10 +28,6 @@
         :interval="4000"
         controls
         indicators
-        background="#ababab"
-        img-width="1024"
-        img-height="480"
-        style="text-shadow: 1px 1px 2px #333;"
         @sliding-start="onSlideStart"
         @sliding-end="onSlideEnd"
       >
@@ -40,7 +36,6 @@
         <b-carousel-slide img-src="~/static/Manastash Ridge Observatory/MRO2.png"></b-carousel-slide>
         <b-carousel-slide img-src="~/static/Manastash Ridge Observatory/MRO3.png"></b-carousel-slide>
         <b-carousel-slide img-src="~/static/Manastash Ridge Observatory/MRO4.png"></b-carousel-slide>
-
       </b-carousel>
       <br>
     </b-collapse>
@@ -71,10 +66,6 @@
         :interval="4000"
         controls
         indicators
-        background="#ababab"
-        img-width="1024"
-        img-height="480"
-        style="text-shadow: 1px 1px 2px #333;"
         @sliding-start="onSlideStart"
         @sliding-end="onSlideEnd"
       >
@@ -126,10 +117,6 @@
         :interval="4000"
         controls
         indicators
-        background="#ababab"
-        img-width="1024"
-        img-height="480"
-        style="text-shadow: 1px 1px 2px #333;"
         @sliding-start="onSlideStart"
         @sliding-end="onSlideEnd"
       >
@@ -162,10 +149,6 @@
         :interval="4000"
         controls
         indicators
-        background="#ababab"
-        img-width="1024"
-        img-height="480"
-        style="text-shadow: 1px 1px 2px #333;"
         @sliding-start="onSlideStart"
         @sliding-end="onSlideEnd"
       >
@@ -208,10 +191,6 @@
         :interval="4000"
         controls
         indicators
-        background="#ababab"
-        img-width="1024"
-        img-height="480"
-        style="text-shadow: 1px 1px 2px #333;"
         @sliding-start="onSlideStart"
         @sliding-end="onSlideEnd"
       >
@@ -241,10 +220,6 @@
         :interval="4000"
         controls
         indicators
-        background="#ababab"
-        img-width="1024"
-        img-height="480"
-        style="text-shadow: 1px 1px 2px #333;"
         @sliding-start="onSlideStart"
         @sliding-end="onSlideEnd"
       >
@@ -275,9 +250,6 @@
         :interval="4000"
         controls
         indicators
-        img-width="1024"
-        img-height="480"
-        style="text-shadow: 1px 1px 2px #333;"
         @sliding-start="onSlideStart"
         @sliding-end="onSlideEnd"
       >
