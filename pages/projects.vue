@@ -275,7 +275,6 @@
         :interval="4000"
         controls
         indicators
-        background="#ababab"
         img-width="1024"
         img-height="480"
         style="text-shadow: 1px 1px 2px #333;"
@@ -330,11 +329,11 @@ h3 {
 h3:hover {
     text-decoration: underline;
 }
-.projects {
-  height: 15vh;
-}
 section {
   font-size: 1.3rem;
   color: black;
+}
+.projects {
+  height: 15vh;
 }
 </style>
