@@ -1,5 +1,5 @@
 <template>
-  <div class="my-my-container">
+  <div>
     <div id="background-blur"></div>
     <div id="background-white"></div>
     <div class="data-container">

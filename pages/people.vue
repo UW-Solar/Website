@@ -11,7 +11,7 @@
             Stefanie Young | Lab Founder
         </section>
         <br><br>
-        <h2>Current Members</h2>
+        <h2>Students</h2>
         <br>
         <div class="column">
             <section>
@@ -48,7 +48,7 @@
             </section>
         </div>
         <br><br>
-        <h2>Past Members</h2>
+        <h2>Alumni</h2>
         <br>
         <div class="column">
             <section>
