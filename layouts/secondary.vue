@@ -29,9 +29,9 @@ export default {
   background-color: rgba(255, 255, 255, 0.65);
 }
 .data-container {
-    width: 75%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>

@@ -2,7 +2,10 @@
   <div class="data-container">
     <div class="data"></div>
         <h1>Data</h1>
-        <br><br><br><br>
+        <br />
+        <br />
+        <br />
+        <br />
   </div>
 </template>
 
@@ -15,12 +18,12 @@ export default {
 
 <style scoped>
 h1 {
-    font-size: 3rem;
-    border-bottom: 0.15em solid black;
-    padding: 0.2em;
-    color: black;
-    width: fit-content;
-    border-bottom-right-radius: 0.7rem;
+  font-size: 3rem;
+  border-bottom: 0.15em solid black;
+  padding: 0.2em;
+  color: black;
+  width: fit-content;
+  border-bottom-right-radius: 0.7rem;
 }
 .data {
   height: 15vh;
