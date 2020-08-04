@@ -15,11 +15,6 @@ export default {
   components: {
     UWSHeader,
     UWSFooter
-  },
-  data () {
-    return {
-      winHeight: 0
-    }
   }
 }
 </script>
@@ -32,6 +27,13 @@ a {
   text-decoration: none;
   font-weight: bolder;
   color: inherit;
+}
+.project-icon {
+  width: 10%;
+  float: right;
+}
+.card-header {
+  overflow: hidden;
 }
 #__nuxt {
   height: 100%;

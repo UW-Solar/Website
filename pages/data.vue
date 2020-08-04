@@ -13,6 +13,11 @@
 export default {
   name: "Data",
   layout: "secondary",
+  head () {
+    return {
+      title: 'Data | UW Solar'
+    }
+  },
 }
 </script>
 

@@ -13,6 +13,11 @@
 export default {
   name: "Map",
   layout: "secondary",
+  head () {
+    return {
+      title: 'Map | UW Solar'
+    }
+  },
 }
 </script>
 

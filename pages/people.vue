@@ -128,6 +128,11 @@
 export default {
   name: "People",
   layout: "secondary",
+  head () {
+    return {
+      title: 'People | UW Solar'
+    }
+  },
 }
 </script>
 

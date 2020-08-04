@@ -13,6 +13,11 @@
 export default {
   name: "News",
   layout: "secondary",
+  head () {
+    return {
+      title: 'News | UW Solar'
+    }
+  },
 }
 </script>
 

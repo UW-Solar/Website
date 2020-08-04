@@ -10,7 +10,10 @@ export default {
   ** See https://nuxtjs.org/api/configuration-head
   */
   head: {
-    title: 'UW Solar | Urban Infrastructure Lab',
+    // title: 'UW Solar | Urban Infrastructure Lab',
+    titleTemplate(titleChunk) {
+      return titleChunk ? titleChunk : 'UW Solar | Urban Infrastructure Lab';
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

@@ -93,11 +93,7 @@ export default {
       winHeight: undefined,
       winWidth: undefined,
       currColor: 'black',
-      currFilter: 0,
-      svgStart:
-        "url(\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30'%3E%3Cpath stroke='",
-      svgEnd:
-        "' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E\")",
+      currFilter: 0
     };
   },
   mounted() {
@@ -131,16 +127,10 @@ export default {
       });
       this.currColor = "color: " + rgb;
       
-      const filter = "invert(" + Math.min(scrollTop, 100) + "%)";
+      const filter = "invert(" + (100 * Math.min((scrollTop / this.winHeight) * 10, 1)).toString() + "%)";
       document.getElementById("UILLogo").style["filter"] = filter;
       this.currFilter = "filter: " + filter;
-      
-      document.getElementsByClassName("navbar-toggler collapsed")[0].style[
-        "background-image"
-      ] = this.svgStart + rgb + this.svgEnd; // Button color (black-white)
-      document.getElementsByClassName("navbar-toggler collapsed")[0].style[
-        "border-color"
-      ] = rgb; // Button border color (black-white)
+      document.getElementsByClassName("navbar-toggler collapsed")[0].style["filter"] = filter;
     },
     handleFocus() {
       if (this.expanded()) {
@@ -155,24 +145,18 @@ export default {
       this.currColor = "color: white"
       document.getElementById("UILLogo").style["filter"] = "invert(100%)";
       this.currFilter = "filter: invert(100%)";
-      document.getElementsByClassName("navbar-toggler collapsed")[0].style[
-        "background-image"
-      ] = this.svgStart + "white" + this.svgEnd; // White button
-      document.getElementsByClassName("navbar-toggler collapsed")[0].style[
-        "border-color"
-      ] = "white"; // White button
+      document.getElementsByClassName("navbar-toggler collapsed")[0].style["filter"] = "invert(100%)"; // White button
     },
     handleResize() {
       const width = window.innerWidth;
       if (width > 991) {
         setTimeout(() => (this.handleScroll()), 20);
-        // this.handleScroll();
       }
       this.winWidth = width;
       this.winHeight = window.innerHeight;
     },
     expanded() {
-      return document.getElementsByClassName("collapsed").length === 0;
+      return document.getElementsByClassName("navbar-toggler collapsed").length === 0;
     },
   },
 };
@@ -222,7 +206,7 @@ a:hover {
   font-weight: bolder;
 }
 .navbar-brand {
-  font-size: 1.5rem;
+  font-size: inherit;
 }
 #UIL-logo {
   display: flex;
