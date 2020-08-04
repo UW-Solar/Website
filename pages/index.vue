@@ -4,7 +4,7 @@
     <div id="background-white"></div>
     <div class="data-container">
     <div class="occupy-solo">
-      <img id="header-img" class="mx-auto animated fadeIn" src="../static/uwsolar.png" alt="UW Solar logo and title" title="UW Solar log and title">
+      <img id="header-img" class="mx-auto animated fadeIn" src="../static/uwsolar.png" alt="UW Solar Logo" title="UW Solar Logo">
     </div>
     <h2>About</h2>
     <br />
@@ -29,7 +29,7 @@
       <br />
       <br />
       Our partners include the <a href="https://csf.uw.edu/" target="_blank">Campus Sustainability Fund</a>
-      and the <a href="https://www.cei.washington.edu/">Clean Energy Institute</a>. UW Solar is an 
+      and the <a href="https://www.cei.washington.edu/" target="_blank">Clean Energy Institute</a>. UW Solar is an 
       active participant in the <a href="https://green.uw.edu/sustainability-plan" target="_blank">UW Sustainability Action Plan</a>,
       and a proud recipient of the <a href="https://green.uw.edu/hga/husky-green-award-nomination" target="_blank">Husky Green Award</a>.
     </section>

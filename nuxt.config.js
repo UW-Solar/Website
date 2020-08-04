@@ -17,7 +17,7 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/png', href: '~/static/favicon.png' }
+      { rel: 'icon', type: 'image/png', href: '~/static/icon.png' }
     ]
   },
   /*

@@ -6,11 +6,15 @@
     <br />
     <br />
     <br />
-    <h2>Current</h2>
+    <div id="headers">
+      <h2 id="header-left">Current</h2>
+      <h2 id="header-right">System Type</h2>
+    </div>
     <br />
     <!-- The toggler for the dropdown. -->
-    <div v-b-toggle="'one'" class="card-header text-center">
+    <div v-b-toggle="'one'" class="card-header">
       <h3>Manastash Ridge Observatory</h3>
+      <img class="project-icon" alt="Ground Mounted Solar Array" src="~/static/groundPV(black).png">
     </div>
     <!-- The content inside of the b-collapse appear on click on a project. -->
     <b-collapse id="one">
@@ -41,8 +45,9 @@
       <br />
     </b-collapse>
 
-    <div v-b-toggle="'two'" class="card-header text-center">
+    <div v-b-toggle="'two'" class="card-header">
       <h3>UW Campus Plan</h3>
+      <img class="project-icon" alt="Roof Mounted Solar Array" src="~/static/roofPV(black).png">
     </div>
     <!-- The content inside of the b-collapse appear on click on a project. -->
     <b-collapse id="two">
@@ -79,8 +84,9 @@
       <br />
     </b-collapse>
 
-    <div v-b-toggle="'three'" class="card-header text-center">
+    <div v-b-toggle="'three'" class="card-header">
       <h3>UW Transportation</h3>
+      <img class="project-icon" alt="Pole Mounted Solar Array" src="~/static/polePV(black).png">
     </div>
     <!-- The content inside of the b-collapse appear on click on a project. -->
     <b-collapse id="three">
@@ -130,8 +136,9 @@
   <br />
   <h2>Completed</h2>
   <br />
-  <div v-b-toggle="'four'" class="card-header text-center">
+  <div v-b-toggle="'four'" class="card-header">
       <h3>UW Mercer A</h3>
+      <img class="project-icon" alt="Roof Mounted Solar Array" src="~/static/roofPV(black).png">
     </div>
     <!-- The content inside of the b-collapse appear on click on a project. -->
     <b-collapse id="four">
@@ -164,8 +171,9 @@
       <br />
     </b-collapse>
 
-    <div v-b-toggle="'five'" class="card-header text-center">
+    <div v-b-toggle="'five'" class="card-header">
       <h3>UW CEI/PNW Smart Grid Testbed</h3>
+      <img class="project-icon" alt="Roof Mounted Solar Array" src="~/static/roofPV(black).png">
     </div>
     <!-- The content inside of the b-collapse appear on click on a project. -->
     <b-collapse id="five">
@@ -201,8 +209,9 @@
       <br />
     </b-collapse>
 
-    <div v-b-toggle="'six'" class="card-header text-center">
+    <div v-b-toggle="'six'" class="card-header">
       <h3>UW Life Sciences Building Rooftop/BIPV</h3>
+      <img class="project-icon" alt="Ground Mounted Solar Array" src="~/static/groundPV(black).png">
     </div>
     <!-- The content inside of the b-collapse appear on click on a project. -->
     <b-collapse id="six">
@@ -235,8 +244,9 @@
       <br />
     </b-collapse>
 
-    <div v-b-toggle="'seven'" class="card-header text-center">
+    <div v-b-toggle="'seven'" class="card-header">
       <h3>Port of Seattle</h3>
+      <img class="project-icon" alt="Pole Mounted Solar Array" src="~/static/polePV(black).png">
     </div>
     <!-- The content inside of the b-collapse appear on click on a project. -->
     <b-collapse id="seven">
@@ -296,8 +306,18 @@ h1 {
 h2, h3 {
   color: black;
 }
+h2#header-right {
+  float: right;
+}
+h2#header-left {
+  float: left;
+}
+div#headers {
+  display: block;
+  overflow: hidden;
+}
 h3 {
-  text-align: right;
+  float: left;
 }
 h3:hover {
   text-decoration: underline;
@@ -308,5 +328,12 @@ section {
 }
 .projects {
   height: 15vh;
+}
+.project-icon {
+  width: 10%;
+  float: right;
+}
+.card-header {
+  overflow: hidden;
 }
 </style>
