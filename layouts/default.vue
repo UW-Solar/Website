@@ -22,18 +22,33 @@ export default {
 <style>
 html, body {
   height: 100vh;
+  color: black;
 }
 a {
   text-decoration: none;
   font-weight: bolder;
   color: inherit;
 }
+h1 {
+  font-size: 3rem;
+  border-bottom: 0.15em solid black;
+  padding: 0.2em;
+  width: fit-content;
+  border-bottom-right-radius: 0.7rem;
+}
 .project-icon {
-  width: 10%;
-  float: right;
+  width: 30%;
+  margin-top: 1rem;
 }
 .card-header {
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 20vh; */
+}
+.card-header:hover {
+  background-color: rgba(255, 255, 255, 0.4);
 }
 #__nuxt {
   height: 100%;
@@ -60,5 +75,15 @@ a {
   height: 100%;
   width: 100%;
   z-index: -9;
+}
+
+@media (min-width: 650px) {
+  .card-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .project-icon {
+    width: 10%;
+  }
 }
 </style>

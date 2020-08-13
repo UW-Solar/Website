@@ -6,9 +6,11 @@
     <br />
     <br />
     <br />
-    <div id="headers">
+    <div class="headers">
       <h2 id="header-left">Current</h2>
-      <h2 id="header-right">System Type</h2>
+    </div>
+    <div class="header-right">
+      <h2>System Type</h2>
     </div>
     <br />
     
@@ -25,7 +27,12 @@
     </div>
     
     <br />
-    <h2>Completed</h2>
+    <div class="headers">
+      <h2>Completed</h2>
+    </div>
+    <div class="header-right">
+      <h2>System Type</h2>
+    </div>
     <br />
 
     <div class="project-wrapper">
@@ -76,26 +83,11 @@ export default {
 </script>
 
 <style scoped>
-h1 {
-  font-size: 3rem;
-  border-bottom: 0.15em solid black;
-  padding: 0.2em;
-  color: black;
-  width: fit-content;
-  border-bottom-right-radius: 0.7rem;
-}
-h2, h3 {
-  color: black;
-}
-h2#header-right {
-  float: right;
-}
-h2#header-left {
-  float: left;
-}
-div#headers {
-  display: block;
-  overflow: hidden;
+div.headers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 h3 {
   float: left;
@@ -103,9 +95,11 @@ h3 {
 h3:hover {
   text-decoration: underline;
 }
+.project-wrapper {
+  border-bottom: 2px solid black;
+}
 .project-wrapper >>> section {
   font-size: 1.3rem;
-  color: black;
 }
 .project-wrapper >>> .carousel {
   width: 50%;
@@ -117,5 +111,23 @@ h3:hover {
 }
 .projects {
   height: 15vh;
+}
+.header-right {
+  display: none;
+}
+.header-right h2 {
+  font-size: 1.5rem;
+  border-bottom: 0.25em solid black;
+  padding: 0.2em;
+  width: fit-content;
+  border-bottom-right-radius: 0.7rem;
+}
+@media (min-width: 650px) {
+  .header-right {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
 }
 </style>

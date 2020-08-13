@@ -2,7 +2,7 @@
   <div>
     <div v-b-toggle="'two'" class="card-header">
       <h3>UW Campus Plan</h3>
-      <img class="project-icon" alt="Roof Mounted Solar Array" src="~/static/roofPV(black).png">
+      <img class="project-icon" alt="Roof Mounted Solar Array" src="~/static/roofPV.svg">
     </div>
     <!-- The content inside of the b-collapse appear on click on a project. -->
     <b-collapse id="two">

@@ -2,7 +2,7 @@
   <div>
     <div v-b-toggle="'three'" class="card-header">
       <h3>UW Transportation</h3>
-      <img class="project-icon" alt="Pole Mounted Solar Array" src="~/static/polePV(black).png">
+      <img class="project-icon" alt="Car Port Solar Array" src="~/static/carportPV.svg">
     </div>
     <!-- The content inside of the b-collapse appear on click on a project. -->
     <b-collapse id="three">

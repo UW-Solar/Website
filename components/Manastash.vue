@@ -3,7 +3,7 @@
     <!-- The toggler for the dropdown. -->
     <div v-b-toggle="'one'" class="card-header">
       <h3>Manastash Ridge Observatory</h3>
-      <img class="project-icon" alt="Ground Mounted Solar Array" src="~/static/groundPV(black).png">
+      <img class="project-icon" alt="Ground Mounted Solar Array" src="~/static/groundPV.svg">
     </div>
     <!-- The content inside of the b-collapse appear on click on a project. -->
     <b-collapse id="one">

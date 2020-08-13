@@ -3,7 +3,7 @@
     <hr id="hrFooter" />
     <br />
     <br />
-    <a id="UWFooterLink" href="http://www.washington.edu/" target="_blank">
+    <a href="http://www.washington.edu/" target="_blank">
       <img id="UWFooter" src="../static/UWFooterBlack.png">
     </a>
     <br />
@@ -31,7 +31,7 @@ footer {
   margin-top: 10rem;
 }
 .footerImg {
-  width: 10%;
+  width: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,18 +47,32 @@ footer {
   border: 1px solid black;
 }
 #UWFooter {
-  width: 30%;
+  width: 70%;
   filter: grayscale(100%);
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+#UWFooter:hover {
+  filter: invert(100%);
+}
 #footerDiv {
   text-align: center;
-  width: 30%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   justify-content: center;
+}
+@media (min-width: 768px) {
+  #footerDiv {
+    width: 30%;
+  }
+  #UWFooter {
+    width: 30%;
+  }
+  .footerImg {
+    width: 10%;
+  }
 }
 </style>

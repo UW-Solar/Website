@@ -156,6 +156,12 @@ h2 {
   height: 15vh;
 }
 div.column {
-  column-count: 3;
+  column-count: 1;
+}
+
+@media (min-width: 768px) {
+  div.column {
+    column-count: 3;
+  }
 }
 </style>
