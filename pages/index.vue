@@ -102,13 +102,8 @@ export default {
   display: flex;
   align-items: center;
 }
-section {
-  font-size: 1.3rem;
-  color: black;
-}
 h2 {
   font-size: 2.5rem;
-  color: black;
 }
 .data-container {
   width: 75%;
@@ -138,12 +133,5 @@ h2 {
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
-}
-.my-container {
-  width: 90%;
-}
-.my-my-container {
-  display: flex;
-  justify-content: center;
 }
 </style>

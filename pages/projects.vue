@@ -1,6 +1,6 @@
 <template>
   <div class="data-container">
-    <div class="projects"></div>
+    <div class="data"></div>
     <h1>Projects</h1>
     <br />
     <br />
@@ -26,6 +26,7 @@
       <u-w-transportation-proj />
     </div>
     
+    <br />
     <br />
     <div class="headers">
       <h2>Completed</h2>
@@ -89,12 +90,6 @@ div.headers {
   justify-content: center;
   align-items: flex-start;
 }
-h3 {
-  float: left;
-}
-h3:hover {
-  text-decoration: underline;
-}
 .project-wrapper {
   border-bottom: 2px solid black;
 }
@@ -109,9 +104,6 @@ h3:hover {
   flex-direction: column;
   align-items: center;
 }
-.projects {
-  height: 15vh;
-}
 .header-right {
   display: none;
 }
@@ -120,7 +112,7 @@ h3:hover {
   border-bottom: 0.25em solid black;
   padding: 0.2em;
   width: fit-content;
-  border-bottom-right-radius: 0.7rem;
+  border-bottom-right-radius: 0.3rem;
 }
 @media (min-width: 650px) {
   .header-right {

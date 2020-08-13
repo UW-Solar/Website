@@ -64,7 +64,7 @@ footer {
   display: flex;
   justify-content: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 550px) {
   #footerDiv {
     width: 30%;
   }

@@ -1,6 +1,6 @@
 <template>
   <div class="data-container">
-    <div class="people"></div>
+    <div class="data"></div>
     <div>
       <h1>People</h1>
       <br />
@@ -137,24 +137,6 @@ export default {
 </script>
 
 <style scoped>
-h1 {
-  font-size: 3rem;
-  border-bottom: 0.15em solid black;
-  padding: 0.2em;
-  color: black;
-  width: fit-content;
-  border-bottom-right-radius: 0.7rem;
-}
-section {
-  font-size: 1.3rem;
-  color: black;
-}
-h2 {
-  color: black;
-}
-.people {
-  height: 15vh;
-}
 div.column {
   column-count: 1;
 }

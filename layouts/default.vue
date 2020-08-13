@@ -34,7 +34,10 @@ h1 {
   border-bottom: 0.15em solid black;
   padding: 0.2em;
   width: fit-content;
-  border-bottom-right-radius: 0.7rem;
+  border-bottom-right-radius: 0.4rem;
+}
+section {
+  font-size: 1.3rem;
 }
 .project-icon {
   width: 30%;
@@ -49,6 +52,10 @@ h1 {
 }
 .card-header:hover {
   background-color: rgba(255, 255, 255, 0.4);
+  text-decoration: underline;
+}
+.data {
+  height: 15vh;
 }
 #__nuxt {
   height: 100%;
