@@ -1,20 +1,247 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 
-<channel>
-  <title>W3Schools Home Page</title>
-  <link>https://www.w3schools.com</link>
-  <description>Free web building tutorials</description>
-  <item>
-    <title>First News Article</title>
-    <link>https://www.localhost:3000/news#news-1</link>
-    <description>New RSS tutorial on W3Schools</description>
-  </item>
-  <item>
-    <title>XML Tutorial</title>
-    <link>https://www.w3schools.com/xml</link>
-    <description>New XML tutorial on W3Schools</description>
-  </item>
-</channel>
+<!--
+// Blog Post XML format
+title - Title of News Post
+author - Author of News Post
+date -  Date News Post was posted. Month (Full Name) Day, Year
+content - Content in Post
+p - Each paragraph of the content
+link - Link to further resources/articles
+images - All the images that appear in the blog post. All images are
+	found in the "News" folder in the "static" folder.
+image - Each individual image in <images>
+archive - "true" means not part of the archived post. 
+	  "false" means this post is part of the archive.
+<post>
+    <title></title> 
+    <author></author> 
+    <date></date>
+    <content>
+	<p></p>
+    </content>
+    <link></link>
+    <images>
+        <image></image>
+    </images>
+    <archive></archive>
+</post>
+-->
 
+    <post>
+        <title>Manastash Ridge Observatory Field Trip</title> 
+        <author>Alex Eidt</author> 
+        <date>June 28, 2019</date>
+        <content>
+            <p>UW Solar made its first expedition to the Manastash Ridge Observatory, located in the remote mountains of Manastash Ridge, about 45 minutes removed from Ellensburg. The trip was primarily undertaken to learn more about the existing conditions and quantities of the materials there so that we could improve and expand upon our design for our proposed solar array. We took the trip with Oliver Fraser of the UW Astronomy Department and his students. They hope to make use of the existing solar equipment to make the Observatory grid independent and resilient.</p>
+        </content>
+        <link></link>
+        <images>
+            <image>NewsMRO.png</image>
+        </images>
+        <archive>false</archive>
+    </post>
+    <post>
+        <title>Construction Starts on the Rooftop PV on Life Sciences Building</title> 
+        <author>Evan Mickelson</author> 
+        <date>October 7, 2019</date>
+        <content>
+            <p>UW Solar is excited to announce that construction on the rooftop photovoltaic (PV) system began on Monday October 7th, 2019! This project started all the way back in January 2016 when Perkins+Will agreed to let UW Solar advise them on the construction of PV fins on the side of the Life Sciences Building and the rooftop PV array. Perkins+Will made crucial design decisions based on our advice that allow the solar install to be seemless. The rooftop solar panels will be the final piece of the multi-year collaboration. Artisan Electric was contracted to do the design and construction for the rooftop PV system. Throughout the project, UW Solar students will be allowed to visit the rooftop on select days to see the construction and ask questions. The construction is slated to finish in the first half of November. UW Solar students ask questions to the site foreman the week after all of the materials were lifted onto the rooftop.</p>
+        </content>
+        <link></link>
+        <images>
+            <image>NewsLSBRoof.png</image>
+        </images>
+        <archive>false</archive>
+    </post>
+    <post>
+        <title>Life Sciences Building Construction complete</title> 
+        <author>Evan Mickelson</author> 
+        <date>November 14, 2019</date>
+        <content>
+            <p>Artisan Electric has completed construction and all final inspections on the rooftop solar array. Testing was conducted to ensure the system is properly functioning before connecting it into the building’s electrical panels.</p>
+        </content>
+        <link></link>
+        <images>
+            <image>NewsLSBInstall.png</image>
+        </images>
+        <archive>false</archive>
+    </post>
+    <post>
+        <title>Life Sciences Building PV Dedication Event</title> 
+        <author>Alex Eidt & Evan Mickelson</author> 
+        <date>November 22, 2019</date>
+        <content>
+            <p>This event was the culmination of 4 years of work by UW Solar on the Life Sciences Building project. Alex Ratcliff was at the center of this project for UW Solar, first working with the architects at Perkins+Will to make the roof of the building solar ready, and later changing the design of the south facade such that photovoltaic fins were installed rather than metal blades. The event featured Jan Whittington of UW Solar, Alex Ratcliff of UW Solar and PAE and Evan Leonard of Artisan Electric. The event started with a project summary outlining the cooperation with the contractors to integrate solar in the building. Then it moved on to recognizing all the sponsors of the project: Perkins+Will, VECA, Artisan, STF and CSF. We ended by looking forward at what UW Solar had coming up next.</p>
+        </content>
+        <link></link>
+        <images>
+            <image>NewsLSBEvent.png</image>
+        </images>
+        <archive>false</archive>
+    </post>
+    <post>
+        <title>Sustainability Action Plan</title> 
+        <author>Evan Mickelson</author> 
+        <date>April 22, 2020</date>
+        <content>
+            <p>The University of Washington has been working on their new Sustainability Action Plan for a while now. According to the website, the plan was “built on five Guiding Principles addressing student learning outcomes, research impact, diversity equity & inclusion, responsible use of our resources, and of course, decarbonization of our energy sources.” UW Solar advised the university on two parts of the plan: Electrifying UW Transportation and implementing the Campus Solar Plan. UW Solar has been working on these two plans for over a year, and we are very excited to see the university make these commitments to operate more sustainably.</p>
+        </content>
+        <link></link>
+        <images>
+            <image></image>
+        </images>
+        <archive>false</archive>
+    </post>
+    <post>
+        <title>UW aids city of Seattle on open data initiative</title> 
+        <author>Austin Miller</author> 
+        <date>March 2, 2016</date>
+        <content>
+            <p>A team of UW faculty members and doctoral students spent the past six months working with the city on a new open data policy unveiled last week by Mayor Ed Murray.</p>
+        </content>
+        <link>https://blogs.uw.edu/urbanlab/uw-aids-city-of-seattle-on-open-data-initiative-2/</link>
+        <images>
+            <image></image>
+        </images>
+        <archive>true</archive>
+    </post>
+    <post>
+        <title>Spring 2016 Project Updates</title> 
+        <author>Yuxuan Chen</author> 
+        <date>March 31, 2016</date>
+        <content>
+            <p>CEI Testbeds. We are excited to cooperate with Housing & Food Services (HFS) again! Two years ago, we successfully installed 34kw solar panels on the roof of Mercer A. This time we are doing three buildings, Alder Hall, Elm Hall and Maple Hall. Residents on west campus, hopefully, will be able to utilize 100kw electricity from solar by May 1st!</p>
+            <p>Life Sciences Building. A brand new building on Pacific way will start to rise up during this summer for the department of life sciences. What is more facinating is that UW Solar will try to put Building Integrated Photovoltaics (BIPV) as shading lanes. We were awarded $7,500 from Campus Sustainability Fund (CSF) for feasibility study. We hope the reasearch we are doing can help administrators to make a decision for getting more solar on campus!</p>
+            <p>Port of Seattle. The first part of the project focuses on Pier 69 which is the headquarter of Port of Seattle. The feasibility study will be finished before June 1st. As a pilot project, pier 69 will be helpful for both Port of Seattle and UW Solar to explore the possibility of having more solar on other properties owned by Port of Seattle around the Seattle community.</p>
+        </content>
+        <link>https://blogs.uw.edu/urbanlab/spring-2016-project-update/</link>
+        <images>
+            <image>News-Port-of-Seattle.jpg</image><!--Courtesy of http://vancouverisland.com/-->
+            <image>LSB.png</image><!--Courtesy of the Department of Biology at UW-->
+        <image>All-buildings-Rendering.jpg</image>
+        </images>
+        <archive>true</archive>
+    </post>
+    <post>
+        <title>UW Solar at Earth Day</title> 
+        <author>Yuxuan Chen</author> 
+        <date>April 26, 2016</date>
+        <content>
+            <p>This Earth Day, we were tabling at Red Square. We had solar panels boards which contained posters on them showing the projects we are doing and have done.Also, a real solar panel which produced electricity even on that cloudy day. People were attracted by our group. They stopped by, talked with us and were eager to learn more about our projects. Most importantly, we had fun!</p>
+        </content>
+        <link>https://blogs.uw.edu/urbanlab/uw-solar-earth-day/</link>
+        <images>
+            <image>UWSolarEarthDay1.jpg</image>
+        <image>UWSolarEarthDay2.jpg</image>
+        <image>UWSolarEarthDay3.jpg</image>
+        </images>
+        <archive>true</archive>
+    </post>
+    <post>
+        <title>Port of Seattle Project Update</title> 
+        <author>Yuxuan Chen</author> 
+        <date>May 17, 2016</date>
+        <content>
+            <p>On May 12th, Terrance Darby with Port of Seattle joined UW Solar in our meeting place. We went through the feasibility study for the solar project of Port Of Seattle (Pier 69) together. From Terrance, we got some positive feedback for what we have done as well as many useful suggestions for what we are doing. Last but not least, a group picture!</p>
+        </content>
+        <link>https://blogs.uw.edu/urbanlab/873-2/</link>
+        <images>
+            <image>UWSolarPortSeattle.jpg</image>
+        </images>
+        <archive>true</archive>
+    </post>
+    <post>
+        <title>New Year, More Solar!</title> 
+        <author>Yuxuan Chen</author> 
+        <date>October 1, 2016</date>
+        <content>
+            <p>Welcome, new huskies and welcome back, other huskies!</p>
+            <p>We were proud to hold a table at Red Square on September 29th, when several students showed strong interest in our group and hopefully,many of them will become our new members in the near future!</p>
+            <p>As the new academic year begins, our UW-Solar have several exciting projects going on.</p>
+            <p>Our CEI-testbed project will procceed to installation phase which will happen on the first week of October. Three HFS residential halls, Maple Hall, Elm Hall and Alder Hall will possess total solar capacity of over 100 kW soon.</p>
+            <p>In addition, UW Solar will keep working with the Port of Seattle to help the latter develop the feasibility study for another two buildings of the Port.</p>
+        </content>
+        <link>https://blogs.uw.edu/urbanlab/new-year-more-solar/</link>
+        <images>
+            <image>UWSolarTabling1.jpg</image>
+        <image>UWSolarTabling2.jpg</image>
+        </images>
+        <archive>true</archive>
+    </post>
+    <post>
+        <title>Our new solar project made the news!</title> 
+        <author>Yuxuan Chen</author> 
+        <date>October 19, 2016</date>
+        <content>
+            <p>On October 4th, our CEI Testbed project proceeded to the installation stage. The general contractor for this project, Artisan Electric started to hoisting all materials to the roof top from 7 AM. We were really honored to have several people from UW Photography and UW Sustainability taking pictures on the site to witness more solar the campus will have in the new future! In addition, our outreach coordinator, Yuxuan Chen, and Lab Manager, Stefanie Young, had an interview from Fox News, taking about this project, and the video was showed on the evening new of the same day.</p>
+            <p>The installation will be finished by the end of December, according to the construction schedule. A grand opening for this 100 kW solar system is planned to take place on January!</p>
+        </content>
+        <link>https://blogs.uw.edu/urbanlab/our-new-solar-project-made-the-news/</link>
+        <images>
+            <image>UWSolarNews1.jpg</image>
+        <image>UWSolarNews2.jpg</image>
+        </images>
+        <archive>true</archive>
+    </post>
+    <post>
+        <title>As an exhibitor of UW Sustainability Fair</title> 
+        <author>Yuxuan Chen</author> 
+        <date>October 20, 2016</date>
+        <content>
+            <p>For 3 years now UW Sustainability, a program from University of Washington has held a Sustainable UW Festival which promotes themselves to the public mainly UW students. The festival would last a week which would consist of events such as talks, exhibitions and promotions. UW Solar was honored to be able to set up a table during the Exhibitor Fair. In amidst the dozen clubs and companies that support sustainability especially in UW, our organization made an appearance and explained fellow attendees about the projects that we ran.</p>
+            <p>Students and staff alike seemed intrigued by the efforts of UW Solar to introduce solar energy into our mini grid. With the installation of Solar panels on Mercer, the on-going installation on Maple, Alder and Elm and more future projects, we truly believe that we are able to take UW further in becoming sustainable.</p>
+        </content>
+        <link>https://blogs.uw.edu/urbanlab/as-an-exhibitor-of-uw-sustainability-fair/</link>
+        <images>
+            <image>UWSolarOutreach.jpg</image>
+        </images>
+        <archive>true</archive>
+    </post>
+    <post>
+        <title>CEI/HFS Project Site Visit</title> 
+        <author>Yuxuan Chen</author> 
+        <date>November 14, 2016</date>
+        <content>
+            <p>On the sunny afternoon of November 14th, UW Solar visited the roofs of Maple Hall and Alder Hall with staff from HFS. Artisan Electric, our contractor of the CEI Testbed project, has already finished 99 percent of Maple and the 50 KW system of Alder is under construction. For some of us, it was the first time we could actually see what real solar panels look like and we were super excited to witness our project come to the final stage from blueprint. People from Artisan were really helpful in providing our members detailed information about the solar system and the construction process. Thanks, Artisan!</p>
+        </content>
+        <link>https://blogs.uw.edu/urbanlab/ceihfs-project-site-visit/</link>
+        <images>
+            <image>UWSolarCEIHFS.jpg</image>
+        </images>
+        <archive>true</archive>
+    </post>
+    <post>
+        <title>UW Solar at Earth Day 2017 and Green Husky Award Ceremony</title> 
+        <author>Yuxuan Chen</author> 
+        <date>April 26, 2017</date>
+        <content>
+            <p>UW Solar came to the Earth Day again this year! We were, as usual, passionately talking about the benefits of solar energy and how we helped UW Campus to enhance the sustainability by installing more solar panels on different buildings.</p>
+            <p>This year, we witnessed the completion of a 105 kW solar system distributed on Alder, Elm and Maple Hall on west campus, which quadrupled the capacity to provide renewable energy to west campus residents.</p> 
+            <p>One significant recognition our group got this year is the Green Husky Award, which indicates UW Solar’s leadership role in improving campus sustainability.</p>
+        </content>
+        <link>https://blogs.uw.edu/urbanlab/uw-solar-earth-day-2017-green-husky-award-ceremony/</link>
+        <images>
+            <image>UWSolarEarthDay2017-1.jpg</image>
+        <image>UWSolarEarthDay2017-2.jpg</image>
+        <image>UWSolarEarthDay2017-3.jpg</image>
+        </images>
+        <archive>true</archive>
+    </post>
+    <post>
+        <title>UW Solar 5.0 is online!</title> 
+        <author>Yuxuan Chen</author> 
+        <date>September 27, 2017</date>
+        <content>
+            <p>Solar arrays on Alder, Elm and Maple Hall were one of our main focus for the past two years, and we were happy to see the project was completed at last March. From now on, UW Solar will start to look at the system performance and the research opportunities from the data stream.</p>
+            <p>The new Life Sciences Building under construction contains one really fascinating feature related to UW Solar – Building Integrated Photovoltaics for shadowing fins. This year, our group will keep providing support for this cut-edge technology to be applied on UW campus as the pioneer for all educational institutions in the U.S.</p>
+            <p>Last but not least, we are forming a campus plan for all UW buildings where solar energy might be applicable. UW Solar ‘s ultimate goal has always been making UW more sustainable by integrating renewable energy sources as much as possible!</p>
+        </content>
+        <link>https://blogs.uw.edu/urbanlab/projects/uw-solar/</link>
+        <images>
+            <image>UWSolar5.jpg</image>
+        </images>
+        <archive>true</archive>
+    </post>
 </rss>
