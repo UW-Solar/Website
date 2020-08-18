@@ -135,6 +135,7 @@
         </section>
       </div>
       <br />
+      <br />
       <h2>Partners</h2>
       <br />
       <section>
@@ -174,12 +175,15 @@ export default {
 </script>
 
 <style scoped>
-div.column {
+/* When page width is less than 768px, there is only one column for all names
+    in the list for nicer formatting */
+.column {
   column-count: 1;
 }
-
+/* When the page width is above 768px, names are arranged in 3 columns to more
+    compactly show them */
 @media (min-width: 768px) {
-  div.column {
+  .column {
     column-count: 3;
   }
 }

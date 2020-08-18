@@ -17,8 +17,35 @@
       advise public organizations off-campus (e.g., other colleges, schools, and large public organizations) 
       in this subject matter. Students from various disciplines and class standings (Freshman to PhD) work 
       together on a diverse set of projects spanning (but not limited to) engineering, architecture, 
-      construction management, public policy and administration, business and urban planning.
+      construction management, public policy and administration, business and urban planning. Below is a list
+      of services we provide in Project Development and Advising.
       <br />
+      <br />
+      <div class="row">
+        <div class="column">
+          <h3>Project Development</h3>
+          <ul>
+            <li>Site Evaluations and Shading Analysis</li>
+            <li>Photovoltaic (PV) System Preliminary Design</li>
+            <li>Cost Estimation and Financial Modeling of Solar Arrays</li>
+            <li>Creating and reviewing policy documents with sections for Industry Trends, Federal Regulations, State Law, City Code and UW Policy</li>
+            <li>Procurement of Funding</li>
+            <li>Request for Proposal (RFP) Drafting</li>
+            <li>Contractor Selection</li>
+            <li>Reviewing of Installation and Comissioning</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Research & Advising</h3>
+          <ul>
+            <li>Research and Evaluation of Photovoltaic (PV) and Electrical Vehicle (EV) Technologies</li>
+            <li>Compile Databases of Available Technologies</li>
+            <li>Financial Modeling for implementation of PV/EV Technologies</li>
+            <li>Decision Making Models</li>
+            <li>Strategic and Spatial Planning</li>
+          </ul>
+        </div>
+      </div>
       <br />
       UW Solar is also offered as a 1-2 credit course in the College of Engineering
       (<a href="https://myplan.uw.edu/course/#/courses/ENGR%20297?id=5511afbb-18e5-4b6c-940f-95b14f046817&states=N4Ig7gDgziBcLADrgJYDsAmB7MAJApigOYAWALsrAIxUCsAbADTJjrZgAKWUKZKWaSgCYAHAAYAviAlA" target="_blank">ENGR 297/497</a>)
@@ -39,20 +66,6 @@
       <b>Where: </b>We currently meet on <a href="https://washington.zoom.us/j/99108117155" target="_blank">Zoom Meetings</a>.
       Once UW reopens we will resume our normal meeting space at <a href="http://be.uw.edu/spaces/facilities/gould-hall/" target="_blank">Gould Hall</a> room <b>012C</b>.<br />        
       <b>When: </b>We currently meet every two weeks on Mondays from 6:00 - 8:00 pm. Once UW reopens we will resume our normal meeting times of Mondays and Wednesdays from 6:00 - 8:00 pm.<br />
-      <br />
-      UW Solar always has several current projects which develop skills in Urban Planning, Architecture, Engineering, Public Policy and Administration and many more.
-      Below are a few examples of the work we do:
-      <br />
-      <br />
-      <ul>
-        <li>Surface Level/Detailed Site Evaluations for various infrastructure</li>
-        <li>Structural and Shading Analysis using HelioScope, Sketchup and BlueBeam software</li>
-        <li>Use of Architectural, Mechnanical and Electrical schematics to design rooftop solar arrays</li>
-        <li>Analysis of electrical one-line diagrams and the campus grid to determine how solar projects will tie in</li>
-        <li>Determining which electrical equipment is needed for a project based on panel capacity, safety and grid tie-in location</li>
-        <li>Creating policy documents with sections for Industry Trends, Federal Regulations, State Law, City Code and UW Policy</li>
-        <li>Developing a project plan from conceptual design to construction</li>
-      </ul>
     </section>
     <br />
     <h2>Contact</h2>
@@ -67,7 +80,7 @@
 <script>
 export default {
   name: "Home",
-  layout: 'default',
+  layout: "default",
   mounted () {
     this.winHeight = window.innerHeight;
     window.addEventListener('scroll', this.handleScroll);
@@ -87,7 +100,9 @@ export default {
       } else {
         blurPX = (Math.floor(5 * Math.min(1, scrollWindow))).toString();
       }
+      // Background fading to white on scroll
       document.getElementById("background-white").style["background-color"] = "rgba(255, 255, 255, " + opacity.toString() + ")";
+      // Background blurring on scroll
       document.getElementById("background-blur").style["filter"] = "blur(" + blurPX + "px)";
     }
   }
@@ -95,25 +110,47 @@ export default {
 </script>
 
 <style scoped>
+/* div containing the UW Solar Logo Header Image */
 .occupy-solo {
   height: 85vh;
   display: flex;
   align-items: center;
 }
+/* The actual UW Solar Logo Header Image */
+#header-img {
+  padding-top: 2rem;
+  width: 80%;
+  display: block;
+}
+/* Headers on the Home Page. Includes "About", "Meeting Details" and "Contact" */
 h2 {
   font-size: 2.5rem;
 }
+/* Header for "Project Development" and "Research & Advising" */
+h3 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+/* Container for all the content on this page */
 .data-container {
   width: 75%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-#header-img {
-  padding-top: 2rem;
-  width: 80%;
-  display: block;
+/* Once the width of the page exceeds 768px (i.e full screen mode), the 
+    "Project Development" and "Research & Advising" section will be organized
+    in two side by side columns. */
+@media (min-width: 768px) {
+  .column {
+    flex: 50%;
+  }
+  .row {
+    display: flex;
+  }
 }
+/* The following styles are responsible for the UW Solar Logo/Header
+    Image fade-in on screen load. */
 .animated {
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
@@ -132,4 +169,5 @@ h2 {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
+/* UW Solar Logo/Header Image fade in styles end here */
 </style>

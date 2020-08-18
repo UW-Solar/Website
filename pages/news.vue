@@ -34,7 +34,7 @@ export default {
     }
   },
   async asyncData ({ $content }) {
-    const list = await $content('news').sortBy("order", "desc").fetch();
+    const list = await $content("news").sortBy("order", "desc").fetch();
     return {
       articleList: list
     }

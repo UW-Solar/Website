@@ -6,28 +6,31 @@
     <br />
     <br />
     <br />
+    <!--Current Projects-->
     <div class="headers">
       <h2 id="header-left">Current</h2>
     </div>
     <div class="header-right">
       <h2>System Type</h2>
     </div>
-    <br />
-    
+    <br /> 
+    <!--Manastash Ridge Observatory-->
     <div class="project-wrapper">
       <manastash-proj />
     </div>
-
+    <!--UW Campus Plan-->
     <div class="project-wrapper">
       <campus-plan-proj />
     </div>
-
+    <!--UW Transporation-->
     <div class="project-wrapper">
       <u-w-transportation-proj />
     </div>
     
     <br />
     <br />
+
+    <!--Completed Projects-->
     <div class="headers">
       <h2>Completed</h2>
     </div>
@@ -35,19 +38,19 @@
       <h2>System Type</h2>
     </div>
     <br />
-
+    <!--Mercer A-->
     <div class="project-wrapper">
       <mercer-proj />
     </div>
-
+    <!--PNW/CEI Campus Grid Testbed-->
     <div class="project-wrapper">
       <grid-testbed-proj />
     </div>
-
+    <!--Life Sciences Building Rooftop/BIPV-->
     <div class="project-wrapper">
       <l-s-b-rooftop-proj />
     </div>
-
+    <!--Port of Seattle-->
     <div class="project-wrapper">
       <port-seattle-proj />
     </div>
@@ -84,18 +87,22 @@ export default {
 </script>
 
 <style scoped>
-div.headers {
+/* Styles for "Current" and "Completed" Headers */
+.headers {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
+/* Semi-transparent clickable boxes */
 .project-wrapper {
   border-bottom: 2px solid black;
 }
+/* Font size within accordion menu */
 .project-wrapper >>> section {
   font-size: 1.3rem;
 }
+/* Images width within accordion menu carousels */
 .project-wrapper >>> .carousel {
   width: 50%;
 }
@@ -104,9 +111,14 @@ div.headers {
   flex-direction: column;
   align-items: center;
 }
+/* Header with text "System Type" to inidcate what type of solar racking system
+    was installed. When screen width is less than 650px, this header will disappear (as
+    shown by display: none in the style below), because the icons next to each project
+    are moved underneath the header text, making the "System Type" text out of place and confusing. */
 .header-right {
   display: none;
 }
+/* Style for the distinct underline of the "System Type" text */
 .header-right h2 {
   font-size: 1.5rem;
   border-bottom: 0.25em solid black;
@@ -114,6 +126,8 @@ div.headers {
   width: fit-content;
   border-bottom-right-radius: 0.3rem;
 }
+/* When screen width is larger than 650px, the "System Type" header is right-aligned
+    above the first icon in "Current" and "Completed" projects */
 @media (min-width: 650px) {
   .header-right {
     display: flex;
