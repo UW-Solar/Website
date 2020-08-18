@@ -24,26 +24,18 @@
           Elizabeth Perkins<br />
           Alex Eidt<br />
           Saharsh Parakh<br />
-          Kasey French<br />
           Markus Schiffer<br />
           Shayne Simpson<br />
           Gabby Easthouse<br />
           Kyler VandenBosch<br />
           Evan Mickelson<br />
-          Chanaka Keerthisinghe<br />
-          John Gannon<br />
           Boyang Sa<br />
-          Ken Yu<br />
           Ryan Finney<br />
           Colton Brailsford<br />
-          Matt Larsen<br />
-          Chiva Chun<br />
           James Clough<br />
           Collin Cunneely<br />
-          Ishmeet Singh<br />
           Abdulaziz Alqadhib<br />
           Mary Gregorich<br />
-          Tyr Bernard<br />
           Brendan Hutchins<br />
           Aliah Marzolf<br />
           Alisa Huang<br />
@@ -57,8 +49,14 @@
       <br />
       <div class="column">
         <section>
+          Tyr Bernard<br />
+          Ishmeet Singh<br />
+          Matt Larsen<br />
+          Chiva Chun<br />
+          Ken Yu<br />
+          John Gannon<br />
+          Kasey French<br />
           Lucas Reber<br />
-          Austin Miller<br />
           Prerna Agarwal<br />
           Feiyang Sun<br />
           Alexander Ratcliff<br />
@@ -94,8 +92,6 @@
           Ezekiel Jones<br />
           Zexia Ding<br />
           Sunni Wiss­mer<br />
-          Mar­i­lyn Ostergren<br />
-          Duncan Clauson<br />
           Bruce Reed<br />
           Otis Alexander<br />
           Kristen Gelino<br />
@@ -109,6 +105,47 @@
           Allison McGrath
         </section>
       </div>
+      <br />
+      <br />
+      <h2>Friends</h2>
+      <br />
+      <div class="column">
+        <section>
+          Chanaka Keerthisinghe<br />
+          Austin Miller<br />
+          Mar­i­lyn Ostergren<br />
+          Duncan Clauson<br />
+          Oliver Fraser<br />
+          Evan Leonard<br />
+          Steve Babinec<br />
+          George Donegan<br />
+          Anne Eskridge<br />
+          Alex Hansen<br />
+          Jeremy Park<br />
+          Devin Kleiner<br />
+          Daniel Kirschen<br />
+          J. Devin MacKenzie<br />
+          Daniel T. Schwartz<br />
+          Hyun Woo "Chris" Lee<br />
+          Michael B. Pomfret<br />
+          Norm Menter<br />
+          Claudia Frere-Anderson<br />
+          Claudia Christensen<br />
+          JR Fulton
+        </section>
+      </div>
+      <br />
+      <h2>Partners</h2>
+      <br />
+      <section>
+        <a href="https://csf.uw.edu/" target="_blank">UW Campus Sustainability Fund</a><br />
+        <a href="https://www.cei.washington.edu/" target="_blank">UW Clean Energy Institute</a><br />
+        <a href="https://hfs.uw.edu/About/Sustainability" target="_blank">UW Housing and Food Services Sustainability Office</a><br />
+        <a href="https://green.uw.edu/" target="_blank">UW Office of Sustainability</a><br />
+        <a href="https://www.commerce.wa.gov/" target="_blank">Washington State Department of Commerce</a><br />
+        <a href="https://uwstf.org/" target="_blank">UW Student Technology Fee</a><br />
+        <a href="http://www.b-e-f.org/" target="_blank">Bonneville Environmental Foundation</a><br />
+      </section>
       <br />
       <br />
       <br />

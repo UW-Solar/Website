@@ -28,10 +28,8 @@
       consecutive quarters. Add codes are available at meetings.
       <br />
       <br />
-      Our partners include the <a href="https://csf.uw.edu/" target="_blank">Campus Sustainability Fund</a>
-      and the <a href="https://www.cei.washington.edu/" target="_blank">Clean Energy Institute</a>. UW Solar is an 
-      active participant in the <a href="https://green.uw.edu/sustainability-plan" target="_blank">UW Sustainability Action Plan</a>,
-      and a proud recipient of the <a href="https://green.uw.edu/hga/husky-green-award-nomination" target="_blank">Husky Green Award</a>.
+      UW Solar is an active participant in the <a href="https://green.uw.edu/sustainability-plan" target="_blank">UW Sustainability Action Plan</a>,
+      and a proud recipient of the <a href="https://green.uw.edu/hga17" target="_blank">Husky Green Award</a>.
     </section>
     <br />
     <h2>Meeting Details</h2>
