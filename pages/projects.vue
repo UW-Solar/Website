@@ -106,10 +106,15 @@ export default {
 .project-wrapper >>> .carousel {
   width: 50%;
 }
+/* Images within accordian menu not collapsed. */
 .project-wrapper >>> .collapse.show {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+/* Applies borders to carousel images. */
+.project-wrapper >>> .carousel-item img {
+  border: 2px solid black;
 }
 /* Header with text "System Type" to inidcate what type of solar racking system
     was installed. When screen width is less than 650px, this header will disappear (as

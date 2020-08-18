@@ -6,13 +6,14 @@
       <br />
       <br />
       <br />
-      <div>
+      <div id="root"></div>
+      <div class="mt-5">
+        <img id="rss-icon" class="mr-2" src="../static/RSS.png" alt="RSS Feed logo">
         Subscribe to our 
         <a href="../feed.xml">
-            RSS feed.
+            RSS feed
         </a>
       </div>
-      <div id="root" class="container"></div>
   </div>
 </template>
 
@@ -34,7 +35,7 @@ export default {
     }
   },
   async asyncData ({ $content }) {
-    const list = await $content("news").sortBy("order", "desc").fetch();
+    const list = await $content("news").where({ archive: false }).sortBy("order", "desc").fetch();
     return {
       articleList: list
     }
@@ -49,13 +50,19 @@ export default {
         article: this.articleList[index],
         unique: "news-" + index
       }});
-      
       instance.$mount("#temp");
+
+      const hr = document.createElement("hr");
+      hr.setAttribute("style", "border: 2px solid black;");
+      document.getElementById("root").appendChild(hr);
     }
   }
 }
 </script>
 
 <style scoped>
-
+#rss-icon {
+  width: 25px;
+  height: auto;
+}
 </style>
