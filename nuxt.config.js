@@ -50,8 +50,49 @@ export default {
     'bootstrap-vue/nuxt',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxt/content',
+    '@nuxtjs/feed',
   ],
+
+  feed: [
+    {
+      path: '/feed.xml',
+      async create(feed) {
+        feed.options = {
+          title: 'UW Solar News Feed',
+          link: 'http://localhost:3000/feed.xml',
+          description: 'All news and events...!,'
+        };
+
+        const { $content } = require('@nuxt/content');
+
+        const posts = await $content('news').where({ archive: false }).sortBy("order", "desc").fetch();
+
+        let index = 0;
+        posts.forEach(post => {
+          feed.addItem({
+            title: post.title,
+            date: new Date(post.date),
+            author: [{
+              name: post.author,
+              email: 'Solar_at_uw@uw.edu',
+              link: "http://localhost:3000"
+            }],
+            link: 'http://localhost:3000/news/#news-' + index,
+            content: post.content,
+            image: 'http:localhost:3000/static/' + post.image,
+          })
+          index++;
+        });
+        feed.addCategory('Solar power.');
+        feed.addCategory('University of Washington');
+      },
+      cacheTime: 1000 * 60 * 15,
+      type: 'rss2',
+    },
+  ],
+
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
