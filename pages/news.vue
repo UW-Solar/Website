@@ -10,7 +10,7 @@
       <div class="mt-5">
         <img id="rss-icon" class="mr-2" src="../static/RSS.png" alt="RSS Feed logo">
         Subscribe to our 
-        <a href="../feed.xml">
+        <a href="../feed.xml" targtet="_blank">
             RSS feed
         </a>
       </div>
