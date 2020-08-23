@@ -8,5 +8,5 @@ content: UW Solar made its first expedition to the Manastash Ridge Observatory, 
 image: NewsMRO.png
 archive: false
 # Most recent post get highest number (days since 2012) for non archived, archived get the same number just negative
-order: 3465
+order: 2735
 ---

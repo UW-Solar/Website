@@ -71,7 +71,7 @@
     <h2>Contact</h2>
     <br />
     <section>
-      If you have any questions, feel free to contact us at <a href="mailto:Solar_at_uw@uw.edu">Solar_at_uw@uw.edu</a>
+      If you have any questions, feel free to contact us at <a href="mailto:solaruw@uw.edu">solaruw@uw.edu</a>
     </section>
   </div>
   </div>
