@@ -9,7 +9,8 @@ This directory contains the files that serve as templates for each page on this 
 For reference, the backgrounds of the Home Page and every other page (example given here is from the **People** page). As the user scrolls down the Home Page, the background fades white and becomes blurry.
 
 Home Page Background | Other Page Background
-<img src="../static/Documentation/background1.png" alt="Home Page Background"> | <img src="../static/Documentation/background2.png" alt="Other Page Background">
+--- | ---
+<img src="../static/Documentation/background1.PNG" alt="Home Page Background"> | <img src="../static/Documentation/background2.PNG" alt="Other Page Background">
 
 ## Other Details
 

@@ -17,22 +17,23 @@ The first group of files are the files that contain the content that appears in 
 The images below show an example of how the content in the files listed above are embedded in the accordion menus on the **Projects** page.
 
 Accordion Menus on **Projects** page | Content provided from each file
-<img src="../static/Documentation/Projects1.png"> | <img src="../static/Documentation/Projects2.png">
+--- | ---
+<img src="../static/Documentation/Projects1.PNG"> | <img src="../static/Documentation/Projects2.PNG">
 
 ## Header/Footer
 
 The `Header.vue` file contains the code for the Navigation Bar found at the top of each page. Images of the light and dark versions of the navigation bar are shown below. The light version of the navbar is the default version. If the user hovers over the navigation bar, the background turns black and the text/icon turn white. When the user scrolls down the page, the navigation bar slowly fades to the black background with white text/icon.
 
-<img src="../static/Documentation/navbar1.png" alt="Light Navigation Bar">
+<img src="../static/Documentation/navbar1.PNG" alt="Light Navigation Bar">
 
 ---
 
-<img src="../static/Documentation/navbar2.png" alt="Dark Navigation Bar">
+<img src="../static/Documentation/navbar2.PNG" alt="Dark Navigation Bar">
 
 
 The `Footer.vue` file contains the code for the footer found at the bottom of each page. An image of the footer is shown below:
 
-<img src="../static/Documentation/footer.png" alt="Footer of UW Solar website">
+<img src="../static/Documentation/footer.PNG" alt="Footer of UW Solar website">
 
 ## News
 
