@@ -1,3 +1,7 @@
+---
+title: JS-Skip
+---
+
 ## news
 
 This directory contains all news articles found on the **News** page of the UW Solar website.

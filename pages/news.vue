@@ -62,7 +62,7 @@ export default {
   },
   async asyncData ({ $content }) {
     return {
-      list: await $content("news").sortBy("order", "desc").fetch()
+      list: await $content("news").where({ title: { $ne: 'JS-Skip' } }).sortBy("order", "desc").fetch()
     }
   },
   mounted () {
