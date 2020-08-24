@@ -93,13 +93,7 @@ export default {
         });
         // Sort Posts based on their publish date
         posts = posts.sort((a, b) => {
-          if (a.order > b.order) {
-            return 1;
-          } else if (a.order < b.order) {
-            return -1;
-          } else {
-            return 0;
-          }
+          return a.order - b.order;
         });
 
         // If we want to get rid of the archive parameter, this function is now easily re-writeable.

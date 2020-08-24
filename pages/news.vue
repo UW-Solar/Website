@@ -15,7 +15,7 @@
     <br />
     <div id="archive-root">
       <div v-for="year in Object.keys(archive)" :key="'wrapper-' + year">
-        <div v-b-toggle="'date-' + year" class="card-header">
+        <div v-b-toggle="'date-' + year" class="card-header year">
           <h3>{{ year }}</h3>
         </div>
         <b-collapse :id="'date-' + year">
@@ -76,13 +76,7 @@ export default {
       article.order = today.getTime() - date.getTime();
     });
     this.list = this.list.sort((a, b) => {
-      if (a.order > b.order) {
-        return 1;
-      } else if (a.order < b.order) {
-        return -1;
-      } else {
-        return 0;
-      }
+      return a.order - b.order;
     });
     this.list.forEach(article => {
       const splitDate = article.date.split(" ");
@@ -97,11 +91,10 @@ export default {
         } else {
           academicYear = `${year - 1}/${year}`;
         }
-        if (archiveDict.hasOwnProperty(academicYear)) {
-          archiveDict[academicYear].push(article);
-        } else {
-          archiveDict[academicYear] = [article];
+        if (!archiveDict.hasOwnProperty(academicYear)) {
+          archiveDict[academicYear] = [];
         }
+        archiveDict[academicYear].push(article);
       }
     });
     this.currArticleList = currList;
@@ -121,5 +114,8 @@ export default {
   align-items: center;
   justify-content: flex-start;
   height: auto;
+}
+.year {
+  border-bottom: 2px solid black;
 }
 </style>
