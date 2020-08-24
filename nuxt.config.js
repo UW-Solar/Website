@@ -21,7 +21,6 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '~/static/icon.png' },
-      { rel: 'alternate', type: 'application/rss+xml', title: 'RSS', href: 'news.xml'}
     ]
   },
   /*

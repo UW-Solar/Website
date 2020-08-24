@@ -20,7 +20,7 @@
         </div>
         <b-collapse :id="'date-' + year">
           <div v-for="(article, index) in archive[year]" :key="'news-wrapper-' + year + index">
-            <div v-b-toggle="'news-' + year + index" class="card-header">
+            <div v-b-toggle="'news-' + year + index" class="card-header flex-row-reverse">
               <h4>{{ article.title }}</h4>
             </div>
             <b-collapse :id="'news-' + year + index">
@@ -91,7 +91,7 @@ export default {
       if (this.$academicYear(year, month)) {
         currList.push(article);
       } else {
-        var academicYear;
+        let academicYear;
         if (month >= 9) {
           academicYear = `${year}/${year + 1}`;
         } else {
@@ -113,6 +113,13 @@ export default {
 <style scoped>
 #rss-icon {
   width: 25px;
+  height: auto;
+}
+.card-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
   height: auto;
 }
 </style>

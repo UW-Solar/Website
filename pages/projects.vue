@@ -144,6 +144,7 @@ export default {
 @media (min-width: 768px) {
   .project-wrapper >>> .carousel {
     width: 50%;
+    margin-bottom: 1rem;
   }
 }
 </style>
