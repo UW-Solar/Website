@@ -34,6 +34,7 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
+    { src: '~/plugins/functions.js' }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -68,6 +69,8 @@ export default {
         const { $content } = require('@nuxt/content');
 
         const posts = await $content('news').where({ archive: false }).sortBy("order", "desc").fetch();
+
+        // If we want to get rid of the archive parameter, this function is now easily re-writeable.
 
         let index = 0;
         posts.forEach(post => {

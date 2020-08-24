@@ -40,6 +40,12 @@ h1 {
   width: fit-content;
   border-bottom-right-radius: 0.4rem;
 }
+h3 {
+  margin: 0;
+}
+.card-header h3 {
+  text-align: center;
+}
 /* The section tag styles blocks of text. Only used for font size */
 section {
   font-size: 1.3rem;
@@ -92,6 +98,7 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: auto;
 }
 /* When the user hovers over the boxes with the project names, the background becomes a
     faint white and the text becomes underlined */
@@ -102,12 +109,26 @@ section {
 /* When the screen width is greater than 650px, the boxes with project names re-arrange
     the content such that the Project name text is left aligned, and the icon is right aligned */
 @media (min-width: 650px) {
+  .card-header h3 {
+    text-align: initial;
+  }
   .card-header {
     flex-direction: row;
     justify-content: space-between;
+    height: 25vh;
   }
   .project-icon {
     width: 10%;
+  }
+}
+@media (min-width: 750px) {
+  .card-header {
+    height: 15vh;
+  }
+}
+@media (min-width: 1200px) {
+  .card-header {
+    height: 25vh;
   }
 }
 </style>

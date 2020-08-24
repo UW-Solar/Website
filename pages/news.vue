@@ -1,32 +1,58 @@
 <template>
   <div class="data-container">
     <div class="data"></div>
-      <h1>News</h1>
-      <br />
-      <br />
-      <br />
-      <br />
-      <div id="root"></div>
-      <div class="mt-5">
-        <img id="rss-icon" class="mr-2" src="../static/RSS.png" alt="RSS Feed logo">
-        Subscribe to our 
-        <a href="../feed.xml" targtet="_blank">
-            RSS feed
-        </a>
+    <h1>News</h1>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div id="root">
+      <div v-for="(article, index) in currArticleList" :key="'news-' + index">
+        <news-article :article="article" />
+      </div>
+    </div>
+    <h1>Archive</h1>
+    <div id="archive-root">
+      <div v-for="year in Object.keys(archive)" :key="'wrapper-' + year">
+        <div v-b-toggle="'date-' + year" class="card-header">
+          <h3>{{ year }}</h3>
+        </div>
+        <b-collapse :id="'date-' + year">
+          <div v-for="(article, index) in archive[year]" :key="'news-wrapper-' + year + index">
+            <div v-b-toggle="'news-' + year + index" class="card-header">
+              <h3>{{ article.title }}</h3>
+            </div>
+            <b-collapse :id="'news-' + year + index">
+              <news-article :article="article" />
+            </b-collapse>
+          </div>
+        </b-collapse>
+      </div>
+    </div>
+    <div class="mt-5">
+      <img id="rss-icon" class="mr-2" src="../static/RSS.png" alt="RSS Feed logo">
+      Subscribe to our 
+      <a href="../feed.xml" targtet="_blank">
+          RSS feed
+      </a>
       </div>
   </div>
 </template>
 
 <script>
-import Vue from 'vue';
-import NewsArticle from '~/components/NewsArticle';
+import NewsArticle from '~/components/NewsArticle.vue';
 
 export default {
   name: "News",
   layout: "secondary",
+  components : {
+    NewsArticle,
+  },
   data () {
     return {
-      articleList: null
+      list: [],
+      currArticleList: [],
+      archive: {},
     }
   },
   head () {
@@ -35,27 +61,31 @@ export default {
     }
   },
   async asyncData ({ $content }) {
-    const list = await $content("news").where({ archive: false }).sortBy("order", "desc").fetch();
     return {
-      articleList: list
+      list: await $content("news").sortBy("order", "desc").fetch()
     }
   },
   mounted () {
-    for (let index = 0; index < this.articleList.length; index++) {
-      const div = document.createElement("div");
-      div.setAttribute("id", "temp");
-      document.getElementById("root").appendChild(div);
-      const ComponentClass = Vue.extend(NewsArticle);
-      const instance = new ComponentClass({ propsData: {
-        article: this.articleList[index],
-        unique: "news-" + index
-      }});
-      instance.$mount("#temp");
-
-      const hr = document.createElement("hr");
-      hr.setAttribute("style", "border: 2px solid black;");
-      document.getElementById("root").appendChild(hr);
-    }
+    const currList = [];
+    const archiveDict = {};
+    this.list.forEach(article => {
+      const splitDate = article.date.split(" ");
+      const year = parseInt(splitDate[2]);
+      const month = this.$mapMonth[splitDate[0]];
+      if (this.$academicYear(year, month)) {
+        currList.push(article);
+      } else {
+        const academicYear = 2012 + Math.floor((article.order - 263) / 365);
+        const key = academicYear + "/" + (academicYear + 1)
+        if (archiveDict.hasOwnProperty(key)) {
+          archiveDict[key].push(article);
+        } else {
+          archiveDict[key] = [article];
+        }
+      }
+    });
+    this.currArticleList = currList;
+    this.archive = archiveDict;
   }
 }
 </script>

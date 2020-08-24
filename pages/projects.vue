@@ -104,7 +104,7 @@ export default {
 }
 /* Images width within accordion menu carousels */
 .project-wrapper >>> .carousel {
-  width: 50%;
+  width: 100%;
 }
 /* Images within accordian menu not collapsed. */
 .project-wrapper >>> .collapse.show {
@@ -139,6 +139,11 @@ export default {
     flex-direction: row;
     align-items: flex-end;
     justify-content: flex-end;
+  }
+}
+@media (min-width: 768px) {
+  .project-wrapper >>> .carousel {
+    width: 50%;
   }
 }
 </style>

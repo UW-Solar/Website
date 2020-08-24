@@ -8,5 +8,5 @@ content: UW Solar is excited to announce that construction on the rooftop photov
 image: NewsLSBRoof.png
 archive: false
 # Most recent post get highest number (days since 2012) for non archived, archived get the same number just negative
-order: 3566
+order: 2836
 ---
