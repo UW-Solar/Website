@@ -112,7 +112,7 @@ section {
   .card-header h3 {
     text-align: initial;
   }
-  .card-header {
+  #project.card-header {
     flex-direction: row;
     justify-content: space-between;
     height: 25vh;
@@ -122,12 +122,12 @@ section {
   }
 }
 @media (min-width: 750px) {
-  .card-header {
+  #project.card-header {
     height: 15vh;
   }
 }
 @media (min-width: 1200px) {
-  .card-header {
+  #project.card-header {
     height: 25vh;
   }
 }

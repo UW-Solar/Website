@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-b-toggle="'two'" class="card-header">
+    <div v-b-toggle="'two'" id="project" class="card-header">
       <h3>UW Campus Plan</h3>
       <img class="project-icon" alt="Roof Mounted Solar Array" src="~/static/roofPV.svg">
     </div>

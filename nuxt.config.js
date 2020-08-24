@@ -68,7 +68,40 @@ export default {
 
         const { $content } = require('@nuxt/content');
 
-        const posts = await $content('news').where({ archive: false }).sortBy("order", "desc").fetch();
+        var posts = await $content('news').fetch();
+
+        const mapMonth = {
+          "January": 1,
+          "February": 2,
+          "March": 3,
+          "April": 4,
+          "May": 5,
+          "June": 6,
+          "July": 7,
+          "August": 8,
+          "September": 9,
+          "October": 10,
+          "November": 11,
+          "December": 12
+        };
+
+        const today = new Date();
+        // Create "order" attribute based on when article was written to sort articles from most to least recent
+        posts.forEach(article => {
+          const splitDate = article.date.split(" ");
+          const date = new Date(`${mapMonth[splitDate[0]]}/${splitDate[1]}/${splitDate[2]}`);
+          article.order = today.getTime() - date.getTime();
+        });
+        // Sort Posts based on their publish date
+        posts = posts.sort((a, b) => {
+          if (a.order > b.order) {
+            return 1;
+          } else if (a.order < b.order) {
+            return -1;
+          } else {
+            return 0;
+          }
+        });
 
         // If we want to get rid of the archive parameter, this function is now easily re-writeable.
 
@@ -79,7 +112,7 @@ export default {
             date: new Date(post.date),
             author: [{
               name: post.author,
-              email: 'Solar_at_uw@uw.edu',
+              email: 'solaruw@uw.edu',
               link: "http://localhost:3000"
             }],
             link: 'http://localhost:3000/news/#news-' + index,

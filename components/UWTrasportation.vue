@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-b-toggle="'three'" class="card-header">
+    <div v-b-toggle="'three'" id="project" class="card-header">
       <h3>UW Transportation</h3>
       <img class="project-icon" alt="Car Port Solar Array" src="~/static/carportPV.svg">
     </div>

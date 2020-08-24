@@ -11,7 +11,7 @@ This website was made using Vue and Nuxt.js.
 
 To read about the directory structure from the official `nuxt` documentation, click [here](https://nuxtjs.org/guide/directory-structure/). 
 
-**Note:** The `Assets`, `Middleware`, `Store`, and `Plugins` directories have been removed from this project because they are not being used.
+**Note:** The `Assets`, `Middleware`, and `Store` directories have been removed from this project because they are not being used.
 
 Directory | Description
 --- | ---

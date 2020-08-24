@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-b-toggle="'six'" class="card-header">
+    <div v-b-toggle="'six'" id="project" class="card-header">
       <h3>UW Life Sciences Building Rooftop/BIPV</h3>
       <img class="project-icon" alt="Ground Mounted Solar Array" src="~/static/groundPV.svg">
     </div>

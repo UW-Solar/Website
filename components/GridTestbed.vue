@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-b-toggle="'five'" class="card-header">
+    <div v-b-toggle="'five'" id="project" class="card-header">
       <h3>UW CEI/PNW Smart Grid Testbed</h3>
       <img class="project-icon" alt="Roof Mounted Solar Array" src="~/static/roofPV.svg">
     </div>

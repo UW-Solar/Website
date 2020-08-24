@@ -12,6 +12,7 @@
       </div>
     </div>
     <h1>Archive</h1>
+    <br />
     <div id="archive-root">
       <div v-for="year in Object.keys(archive)" :key="'wrapper-' + year">
         <div v-b-toggle="'date-' + year" class="card-header">
@@ -20,7 +21,7 @@
         <b-collapse :id="'date-' + year">
           <div v-for="(article, index) in archive[year]" :key="'news-wrapper-' + year + index">
             <div v-b-toggle="'news-' + year + index" class="card-header">
-              <h3>{{ article.title }}</h3>
+              <h4>{{ article.title }}</h4>
             </div>
             <b-collapse :id="'news-' + year + index">
               <news-article :article="article" />
@@ -32,7 +33,7 @@
     <div class="mt-5">
       <img id="rss-icon" class="mr-2" src="../static/RSS.png" alt="RSS Feed logo">
       Subscribe to our 
-      <a href="../feed.xml" targtet="_blank">
+      <a href="../feed.xml" target="_blank">
           RSS feed
       </a>
       </div>
@@ -62,12 +63,27 @@ export default {
   },
   async asyncData ({ $content }) {
     return {
-      list: await $content("news").where({ title: { $ne: 'JS-Skip' } }).sortBy("order", "desc").fetch()
+      list: await $content("news").where({ title: { $ne: 'JS-Skip' } }).fetch()
     }
   },
   mounted () {
     const currList = [];
     const archiveDict = {};
+    const today = new Date();
+    this.list.forEach(article => {
+      const splitDate = article.date.split(" ");
+      const date = new Date(`${this.$mapMonth[splitDate[0]]}/${splitDate[1]}/${splitDate[2]}`);
+      article.order = today.getTime() - date.getTime();
+    });
+    this.list = this.list.sort((a, b) => {
+      if (a.order > b.order) {
+        return 1;
+      } else if (a.order < b.order) {
+        return -1;
+      } else {
+        return 0;
+      }
+    });
     this.list.forEach(article => {
       const splitDate = article.date.split(" ");
       const year = parseInt(splitDate[2]);
@@ -75,12 +91,16 @@ export default {
       if (this.$academicYear(year, month)) {
         currList.push(article);
       } else {
-        const academicYear = 2012 + Math.floor((article.order - 263) / 365);
-        const key = academicYear + "/" + (academicYear + 1)
-        if (archiveDict.hasOwnProperty(key)) {
-          archiveDict[key].push(article);
+        var academicYear;
+        if (month >= 9) {
+          academicYear = `${year}/${year + 1}`;
         } else {
-          archiveDict[key] = [article];
+          academicYear = `${year - 1}/${year}`;
+        }
+        if (archiveDict.hasOwnProperty(academicYear)) {
+          archiveDict[academicYear].push(article);
+        } else {
+          archiveDict[academicYear] = [article];
         }
       }
     });
