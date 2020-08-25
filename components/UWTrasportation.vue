@@ -34,19 +34,6 @@
         </ul>
       </section>
       <br />
-      <b-carousel
-        id="carousel-3"
-        v-model="slide"
-        :interval="4000"
-        controls
-        indicators
-        @sliding-start="onSlideStart"
-        @sliding-end="onSlideEnd"
-      >
-        <!-- Slides with image only -->
-        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=58"></b-carousel-slide>
-      </b-carousel>
-      <br />
     </b-collapse>
   </div>
 </template>

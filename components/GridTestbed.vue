@@ -23,19 +23,6 @@
         started in October of 2016 and the project was completed in its entirety in March of 2017.
       </section>
       <br />
-      <b-carousel
-        id="carousel-5"
-        v-model="slide"
-        :interval="4000"
-        controls
-        indicators
-        @sliding-start="onSlideStart"
-        @sliding-end="onSlideEnd"
-      >
-        <!-- Slides with image only -->
-        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=58"></b-carousel-slide>
-      </b-carousel>
-      <br />
     </b-collapse>
   </div>
 </template>

@@ -8,7 +8,13 @@
     <b-collapse id="seven">
       <br />
       <section>
-            
+        In the Autumn of 2016, the Port of Seattle Maritime’s Environment and Planning group
+        commissioned the UW-Solar group at the University of Washington to examine the potential 
+        of several Port sites for solar energy development. Foremost of these was the Charles E. 
+        Mitson (CEM) site, a former municipal landfill, capped with a geomembrane, a methane collection 
+        system, and asphalt, adjacent to a rail yard and Terminal 5. The historical and adjacent uses 
+        of this brownfield site reduce its chances for many land uses, but at approximately 16 acres 
+        in size, unobstructed by shade, the site is ideal for solar development.
       </section>
       <br />
       <b-carousel

@@ -99,6 +99,7 @@ export default {
         // If we want to get rid of the archive parameter, this function is now easily re-writeable.
 
         let index = 0;
+        const root = "http://localhost:3000";
         posts.forEach(post => {
           feed.addItem({
             title: post.title,
@@ -106,11 +107,11 @@ export default {
             author: [{
               name: post.author,
               email: 'solaruw@uw.edu',
-              link: "http://localhost:3000"
+              link: root
             }],
-            link: 'http://localhost:3000/news/#news-' + index,
+            link: `${root}/news/#news-${index}`,
             content: post.content,
-            image: 'http:localhost:3000/static/' + post.image,
+            image: `${root}/static/${post.image}`,
           })
           index++;
         });

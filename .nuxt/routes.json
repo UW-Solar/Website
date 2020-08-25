@@ -3,42 +3,36 @@
     "name": "data",
     "path": "/data",
     "component": "C:\\\\Users\\\\alex\\\\Documents\\\\Solar2.0\\\\pages\\\\data.vue",
-    "chunkName": "pages/data",
-    "_name": "_530b8798"
+    "chunkName": "pages/data"
   },
   {
     "name": "map",
     "path": "/map",
     "component": "C:\\\\Users\\\\alex\\\\Documents\\\\Solar2.0\\\\pages\\\\map.vue",
-    "chunkName": "pages/map",
-    "_name": "_144124c2"
+    "chunkName": "pages/map"
   },
   {
     "name": "news",
     "path": "/news",
     "component": "C:\\\\Users\\\\alex\\\\Documents\\\\Solar2.0\\\\pages\\\\news.vue",
-    "chunkName": "pages/news",
-    "_name": "_8209ca46"
+    "chunkName": "pages/news"
   },
   {
     "name": "people",
     "path": "/people",
     "component": "C:\\\\Users\\\\alex\\\\Documents\\\\Solar2.0\\\\pages\\\\people.vue",
-    "chunkName": "pages/people",
-    "_name": "_60339019"
+    "chunkName": "pages/people"
   },
   {
     "name": "projects",
     "path": "/projects",
     "component": "C:\\\\Users\\\\alex\\\\Documents\\\\Solar2.0\\\\pages\\\\projects.vue",
-    "chunkName": "pages/projects",
-    "_name": "_6dc6b404"
+    "chunkName": "pages/projects"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\alex\\\\Documents\\\\Solar2.0\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_3e16fc90"
+    "chunkName": "pages/index"
   }
 ]
