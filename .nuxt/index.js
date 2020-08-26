@@ -1,4 +1,5 @@
 import Vue from 'vue'
+
 import Meta from 'vue-meta'
 import ClientOnly from 'vue-client-only'
 import NoSsr from 'vue-no-ssr'
@@ -11,13 +12,13 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_workbox_45584d12 from 'nuxt_plugin_workbox_45584d12' // Source: .\\workbox.js (mode: 'client')
-import nuxt_plugin_nuxticons_d60074dc from 'nuxt_plugin_nuxticons_d60074dc' // Source: .\\nuxt-icons.js (mode: 'all')
-import nuxt_plugin_bootstrapvue_1ae065a5 from 'nuxt_plugin_bootstrapvue_1ae065a5' // Source: .\\bootstrap-vue.js (mode: 'all')
-import nuxt_plugin_pluginclient_189777ee from 'nuxt_plugin_pluginclient_189777ee' // Source: .\\content\\plugin.client.js (mode: 'client')
-import nuxt_plugin_pluginserver_596db591 from 'nuxt_plugin_pluginserver_596db591' // Source: .\\content\\plugin.server.js (mode: 'server')
-import nuxt_plugin_axios_38695d76 from 'nuxt_plugin_axios_38695d76' // Source: .\\axios.js (mode: 'all')
-import nuxt_plugin_functions_55e262f2 from 'nuxt_plugin_functions_55e262f2' // Source: ..\\plugins\\functions.js (mode: 'all')
+import nuxt_plugin_workbox_49210798 from 'nuxt_plugin_workbox_49210798' // Source: ./workbox.js (mode: 'client')
+import nuxt_plugin_nuxticons_1dfc9568 from 'nuxt_plugin_nuxticons_1dfc9568' // Source: ./nuxt-icons.js (mode: 'all')
+import nuxt_plugin_bootstrapvue_2038a3ab from 'nuxt_plugin_bootstrapvue_2038a3ab' // Source: ./bootstrap-vue.js (mode: 'all')
+import nuxt_plugin_pluginclient_00a5d43c from 'nuxt_plugin_pluginclient_00a5d43c' // Source: ./content/plugin.client.js (mode: 'client')
+import nuxt_plugin_pluginserver_6566876a from 'nuxt_plugin_pluginserver_6566876a' // Source: ./content/plugin.server.js (mode: 'server')
+import nuxt_plugin_axios_1e0b017c from 'nuxt_plugin_axios_1e0b017c' // Source: ./axios.js (mode: 'all')
+import nuxt_plugin_functions_55e262f2 from 'nuxt_plugin_functions_55e262f2' // Source: ../plugins/functions.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -58,7 +59,7 @@ async function createApp(ssrContext, config = {}) {
   const app = {
     head: {"titleTemplate":function (titleChunk) {
       return titleChunk ? titleChunk : 'UW Solar | Urban Infrastructure Lab';
-    },"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Website for **UW Solar** Registered Student Organization at the University of Washington."},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"UWSolar2.0"},{"hid":"theme-color","name":"theme-color","content":"black"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"},{"hid":"og:title","name":"og:title","property":"og:title","content":"UWSolar2.0"},{"hid":"og:site_name","name":"og:site_name","property":"og:site_name","content":"UWSolar2.0"},{"hid":"og:description","name":"og:description","property":"og:description","content":"Website for **UW Solar** Registered Student Organization at the University of Washington."}],"link":[{"rel":"icon","type":"image\u002Fpng","href":"~\u002Fstatic\u002Ficon.png"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.aaad96bf.json"},{"rel":"shortcut icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_64.581907.png"},{"rel":"apple-touch-icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_512.581907.png","sizes":"512x512"}],"style":[],"script":[],"htmlAttrs":{"lang":"en"}},
+    },"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Website for **UW Solar** Registered Student Organization at the University of Washington."},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"UWSolar2.0"},{"hid":"theme-color","name":"theme-color","content":"black"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"},{"hid":"og:title","name":"og:title","property":"og:title","content":"UWSolar2.0"},{"hid":"og:site_name","name":"og:site_name","property":"og:site_name","content":"UWSolar2.0"},{"hid":"og:description","name":"og:description","property":"og:description","content":"Website for **UW Solar** Registered Student Organization at the University of Washington."}],"link":[{"rel":"icon","type":"image\u002Fpng","href":"~\u002Fstatic\u002Ficon.png"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.8d2f4093.json"},{"rel":"shortcut icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_64x64.581907.png"},{"rel":"apple-touch-icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_512x512.581907.png","sizes":"512x512"}],"style":[],"script":[],"htmlAttrs":{"lang":"en"}},
 
     router,
     nuxt: {
@@ -150,7 +151,7 @@ async function createApp(ssrContext, config = {}) {
     Vue[installKey] = true
     // Call Vue.use() to install the plugin into vm
     Vue.use(() => {
-      if (!Object.prototype.hasOwnProperty.call(Vue, key)) {
+      if (!Object.prototype.hasOwnProperty.call(Vue.prototype, key)) {
         Object.defineProperty(Vue.prototype, key, {
           get () {
             return this.$root.$options[key]
@@ -172,28 +173,28 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (process.client && typeof nuxt_plugin_workbox_45584d12 === 'function') {
-    await nuxt_plugin_workbox_45584d12(app.context, inject)
+  if (process.client && typeof nuxt_plugin_workbox_49210798 === 'function') {
+    await nuxt_plugin_workbox_49210798(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_nuxticons_d60074dc === 'function') {
-    await nuxt_plugin_nuxticons_d60074dc(app.context, inject)
+  if (typeof nuxt_plugin_nuxticons_1dfc9568 === 'function') {
+    await nuxt_plugin_nuxticons_1dfc9568(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_bootstrapvue_1ae065a5 === 'function') {
-    await nuxt_plugin_bootstrapvue_1ae065a5(app.context, inject)
+  if (typeof nuxt_plugin_bootstrapvue_2038a3ab === 'function') {
+    await nuxt_plugin_bootstrapvue_2038a3ab(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_pluginclient_189777ee === 'function') {
-    await nuxt_plugin_pluginclient_189777ee(app.context, inject)
+  if (process.client && typeof nuxt_plugin_pluginclient_00a5d43c === 'function') {
+    await nuxt_plugin_pluginclient_00a5d43c(app.context, inject)
   }
 
-  if (process.server && typeof nuxt_plugin_pluginserver_596db591 === 'function') {
-    await nuxt_plugin_pluginserver_596db591(app.context, inject)
+  if (process.server && typeof nuxt_plugin_pluginserver_6566876a === 'function') {
+    await nuxt_plugin_pluginserver_6566876a(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_38695d76 === 'function') {
-    await nuxt_plugin_axios_38695d76(app.context, inject)
+  if (typeof nuxt_plugin_axios_1e0b017c === 'function') {
+    await nuxt_plugin_axios_1e0b017c(app.context, inject)
   }
 
   if (typeof nuxt_plugin_functions_55e262f2 === 'function') {
@@ -210,9 +211,13 @@ async function createApp(ssrContext, config = {}) {
   // If server-side, wait for async component to be resolved first
   if (process.server && ssrContext && ssrContext.url) {
     await new Promise((resolve, reject) => {
-      router.push(ssrContext.url, resolve, () => {
+      router.push(ssrContext.url, resolve, (err) => {
+        // https://github.com/vuejs/vue-router/blob/v3.4.3/src/util/errors.js
+        if (!err._isRouter) return reject(err)
+        if (err.type !== 2 /* NavigationFailureType.redirected */) return resolve()
+
         // navigated to a different route in router guard
-        const unregister = router.afterEach(async (to, from, next) => {
+        const unregister = router.afterEach(async (to, from) => {
           ssrContext.url = to.fullPath
           app.context.route = await getRouteData(to)
           app.context.params = to.params || {}
