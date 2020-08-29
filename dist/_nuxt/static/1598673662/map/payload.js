@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/map", {data:[{}],fetch:[],mutations:void 0});
