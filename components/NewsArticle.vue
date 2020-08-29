@@ -3,7 +3,7 @@
     <h2>{{ article.title }}</h2>
     <h3 class="mb-3">{{ article.author + "  |  " + article.date }}</h3>
     <p>{{ article.content }}</p>
-    <img v-if="article.image !== ''" class="news-img align-self-center mt-5" :src="'~/news/' + article.image" />
+    <img v-if="article.image !== ''" class="news-img align-self-center mt-5" :src="'/News/' + article.image" />
   </article>
 </template>
 
