@@ -65,7 +65,7 @@ export default {
       async create(feed) {
         feed.options = {
           title: 'UW Solar News Feed',
-          link: 'http://localhost:3000/feed.xml',
+          link: 'https://markusschiffer.github.io/Solar2.0/feed.xml',
           description: 'All news and events...!,'
         };
 
