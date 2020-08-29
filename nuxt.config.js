@@ -61,7 +61,7 @@ export default {
 
   feed: [
     {
-      path: '/feed.xml',
+      path: 'feed.xml',
       async create(feed) {
         feed.options = {
           title: 'UW Solar News Feed',

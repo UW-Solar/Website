@@ -64,7 +64,7 @@ export default {
   },
   computed: {
     fileUrl () {
-      return `/_content${this.document.path}${this.document.extension}`
+      return `/Solar2.0/_content${this.document.path}${this.document.extension}`
     }
   },
   methods: {
