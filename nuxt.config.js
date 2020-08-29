@@ -8,6 +8,9 @@ export default {
   router: {
     base: '/Solar2.0/'
   },
+  generate: {
+    fallback: true
+  },
   mode: 'universal',
   /*
   ** Headers of the page
