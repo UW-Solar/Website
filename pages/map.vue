@@ -8,7 +8,7 @@
     <br />
     <!--UW Solar Embedded Campus Map-->
     <div class='tableauPlaceholder' id='viz1597281256657' style='position: relative'>
-      <noscript>
+      <noscript inline-template>
         <a href='#'>
           <img alt=' ' src='https://public.tableau.com/static/images/68/68G68CFX6/1_rss.png' style='border: none' />
         </a>
@@ -28,13 +28,7 @@
       </object>
     </div>
     <script type='text/javascript'>
-      var divElement = document.getElementById('viz1597281256657');
-      var vizElement = divElement.getElementsByTagName('object')[0];
-      vizElement.style.width='100%';
-      vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-      var scriptElement = document.createElement('script');      
-      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';             
-      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      
     </script>
   </div>
 </template>
@@ -48,6 +42,15 @@ export default {
       title: 'Map | UW Solar'
     }
   },
+  mounted () {
+    const divElement = document.getElementById('viz1597281256657');
+    const vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width='100%';
+    vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+    const scriptElement = document.createElement('script');      
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';             
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  }
 }
 </script>
 
