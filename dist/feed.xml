@@ -4,7 +4,7 @@
         <title>UW Solar News Feed</title>
         <link>http://localhost:3000/feed.xml</link>
         <description>All news and events...!,</description>
-        <lastBuildDate>Sat, 29 Aug 2020 01:52:39 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 29 Aug 2020 03:09:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <category>Solar power.</category>

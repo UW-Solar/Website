@@ -5,6 +5,9 @@ export default {
   ** Nuxt rendering mode
   ** See https://nuxtjs.org/api/configuration-mode
   */
+  router: {
+    base: '/Solar2.0/'
+  },
   mode: 'universal',
   /*
   ** Headers of the page
