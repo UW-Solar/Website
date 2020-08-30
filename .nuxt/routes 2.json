@@ -1,0 +1,44 @@
+[
+  {
+    "name": "data",
+    "path": "/data",
+    "component": "/Users/markusschiffer/Documents/UWSolar2.0/pages/data.vue",
+    "chunkName": "pages/data",
+    "_name": "_586dd2ca"
+  },
+  {
+    "name": "map",
+    "path": "/map",
+    "component": "/Users/markusschiffer/Documents/UWSolar2.0/pages/map.vue",
+    "chunkName": "pages/map",
+    "_name": "_b6553928"
+  },
+  {
+    "name": "news",
+    "path": "/news",
+    "component": "/Users/markusschiffer/Documents/UWSolar2.0/pages/news.vue",
+    "chunkName": "pages/news",
+    "_name": "_40eeb173"
+  },
+  {
+    "name": "people",
+    "path": "/people",
+    "component": "/Users/markusschiffer/Documents/UWSolar2.0/pages/people.vue",
+    "chunkName": "pages/people",
+    "_name": "_339bd92f"
+  },
+  {
+    "name": "projects",
+    "path": "/projects",
+    "component": "/Users/markusschiffer/Documents/UWSolar2.0/pages/projects.vue",
+    "chunkName": "pages/projects",
+    "_name": "_08410f9a"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/markusschiffer/Documents/UWSolar2.0/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_c518843c"
+  }
+]
