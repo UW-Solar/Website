@@ -1,13 +1,18 @@
+<!-- Markus Schiffer and Alex Eidt -->
+<!-- This file contains the footer on the bottom of each page. -->
+
 <template>
   <footer>
     <hr id="hrFooter" />
     <br />
     <br />
+    <!-- Big UW logo. -->
     <a href="http://www.washington.edu/" target="_blank">
       <img id="UWFooter" src="../static/UWFooterBlack.png">
     </a>
     <br />
     <br />
+    <!-- Social media and email information. -->
     <div id="footerDiv">
       <a href="https://www.facebook.com/UW-Solar-251198231673083/" class="footerImg" target="_blank"><img class="w-100 m-auto" src="~/static/facebook.png"></a>
       <a href="https://www.instagram.com/uwsolar/" class="footerImg" target="_blank"><img class="w-100 m-auto" src="~/static/instagram.png"></a>
@@ -22,14 +27,16 @@
 
 <script>
 export default {
-    name: 'Footer'
+  name: 'Footer'
 }
 </script>
 
 <style scoped>
+/* Top margin for the entire footer. */
 footer {
   margin-top: 10rem;
 }
+/* Social media icons */
 .footerImg {
   width: 15%;
   display: flex;
@@ -39,13 +46,16 @@ footer {
   margin-right: 0.5rem;
   filter: invert(100%);
 }
+/* Make social media images white on hover. */
 .footerImg:hover {
   filter: invert(0%);
 }
+/* Style for the horizontal bar. */
 #hrFooter {
   width: 90%;
   border: 1px solid black;
 }
+/* Style for the big UW Logo in the footer. */
 #UWFooter {
   width: 70%;
   filter: grayscale(100%);
@@ -53,9 +63,11 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
+/* Make the big UW Logo white on hover. */
 #UWFooter:hover {
   filter: invert(100%);
 }
+/* Style for the div that holds the social media images. */
 #footerDiv {
   text-align: center;
   width: 70%;
@@ -64,6 +76,7 @@ footer {
   display: flex;
   justify-content: center;
 }
+/* Changes styles when the screen gets bigger. */
 @media (min-width: 550px) {
   #footerDiv {
     width: 30%;

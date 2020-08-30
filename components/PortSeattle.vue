@@ -1,10 +1,16 @@
+<!-- Markus Schiffer and Alex Eidt -->
+<!-- This file is the Port of Seattle project on the Projects page. -->
+<!-- For many of the details, refer to the Vue Bootstrap documentation. -->
+
 <template>
   <div>
+    <!-- The toggler for the dropdown. -->
     <div v-b-toggle="'seven'" id="project" class="card-header">
       <h3>Port of Seattle</h3>
+      <!-- This image is the black icon for the project. -->
       <img class="project-icon" alt="Pole Mounted Solar Array" src="~/static/polePV.svg">
     </div>
-    <!-- The content inside of the b-collapse appear on click on a project. -->
+    <!-- This content appears when the accordian menu drops down. -->
     <b-collapse id="seven">
       <br />
       <section>
@@ -17,6 +23,8 @@
         in size, unobstructed by shade, the site is ideal for solar development.
       </section>
       <br />
+      <!-- THIS ID MUST BE UNIQUE!!! DO NOT FORGET TO CHANGE IF YOU COPY AND PASTE. -->
+      <!-- The rest of the elements should be copy and pasted. -->
       <b-carousel
         id="carousel-7"
         v-model="slide"
@@ -26,7 +34,7 @@
         @sliding-start="onSlideStart"
         @sliding-end="onSlideEnd"
       >
-        <!-- Slides with image only -->
+        <!-- Image Carousel. -->
         <b-carousel-slide img-src="~/static/Port of Seattle/PS1.png"></b-carousel-slide>
         <b-carousel-slide img-src="~/static/Port of Seattle/PS2.png"></b-carousel-slide>
       </b-carousel>
@@ -37,7 +45,8 @@
 
 <script>
 export default {
-  name: 'PortSeattleProj',
+  name: 'PortSeattleProj',  // This should be different for each project.
+  // The rest of this code should be the same for each project. DO NOT MODIFY.
   data () {
     return {
       slide: 0,

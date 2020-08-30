@@ -1,10 +1,16 @@
+<!-- Markus Schiffer and Alex Eidt -->
+<!-- This file is the CampusPlan project on the Projects page. -->
+<!-- For many of the details, refer to the Vue Bootstrap documentation. -->
+
 <template>
   <div>
+    <!-- The toggler for the dropdown. -->
     <div v-b-toggle="'two'" id="project" class="card-header">
       <h3>UW Campus Plan</h3>
+      <!-- This image is the black icon for the project. -->
       <img class="project-icon" alt="Roof Mounted Solar Array" src="~/static/roofPV.svg">
     </div>
-    <!-- The content inside of the b-collapse appear on click on a project. -->
+    <!-- This content appears when the accordian menu drops down. -->
     <b-collapse id="two">
       <br />
       <section>
@@ -21,6 +27,8 @@
         generating clean renewable energy and reducing our carbon footprint.
       </section>
       <br />
+      <!-- THIS ID MUST BE UNIQUE!!! DO NOT FORGET TO CHANGE IF YOU COPY AND PASTE. -->
+      <!-- The rest of the elements should be copy and pasted. -->
       <b-carousel
         id="carousel-2"
         v-model="slide"
@@ -30,7 +38,7 @@
         @sliding-start="onSlideStart"
         @sliding-end="onSlideEnd"
       >
-        <!-- Slides with image only -->
+        <!-- Image Carousel. -->
         <b-carousel-slide img-src="~/static/Campus Plan/CP1.png"></b-carousel-slide>
         <b-carousel-slide img-src="~/static/Campus Plan/CP2.png"></b-carousel-slide>
         <b-carousel-slide img-src="~/static/Campus Plan/CP3.png"></b-carousel-slide>
@@ -43,7 +51,8 @@
 
 <script>
 export default {
-  name: 'CampusPlanProj',
+  name: 'CampusPlanProj',  // This should be different for each project.
+  // The rest of this code should be the same for each project. DO NOT MODIFY.
   data () {
     return {
       slide: 0,

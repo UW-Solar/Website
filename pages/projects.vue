@@ -1,5 +1,10 @@
+<!-- Markus Schiffer and Alex Eidt -->
+<!-- This file contains the page which displays a description and image carousel
+     for each of the UW Solar projects. -->
+
 <template>
   <div class="data-container">
+    <!-- The following div adds spacing between page title and navbar. -->
     <div class="data"></div>
     <h1>Projects</h1>
     <br />
@@ -67,8 +72,10 @@ import LSBRooftopProj from '~/components/LSBRooftop.vue';
 import PortSeattleProj from '~/components/PortSeattle.vue';
 
 export default {
-  name: "Projects",
-  layout: "secondary",
+  name: "Projects",  // Name of the page.
+  layout: "secondary",  // The layout used (from layouts folder).
+  // This, combined with the import statements, lets us use each individual
+  // project component.
   components: {
     ManastashProj,
     CampusPlanProj,
@@ -78,7 +85,7 @@ export default {
     LSBRooftopProj,
     PortSeattleProj
   },
-  head () {
+  head () {  // The name of the page displayed on the browser tab.
     return {
       title: 'Projects | UW Solar'
     }

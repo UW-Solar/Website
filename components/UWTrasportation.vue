@@ -1,10 +1,16 @@
+<!-- Markus Schiffer and Alex Eidt -->
+<!-- This file is the UW Transportation project on the Projects page. -->
+<!-- For many of the details, refer to the Vue Bootstrap documentation. -->
+
 <template>
   <div>
+    <!-- The toggler for the dropdown. -->
     <div v-b-toggle="'three'" id="project" class="card-header">
       <h3>UW Transportation</h3>
+      <!-- This image is the black icon for the project. -->
       <img class="project-icon" alt="Car Port Solar Array" src="~/static/carportPV.svg">
     </div>
-    <!-- The content inside of the b-collapse appear on click on a project. -->
+    <!-- This content appears when the accordian menu drops down. -->
     <b-collapse id="three">
       <br />
       <section>
@@ -40,7 +46,8 @@
 
 <script>
 export default {
-  name: 'UWTransportationProj',
+  name: 'UWTransportationProj',  // This should be different for each project.
+  // The rest of this code should be the same for each project. DO NOT MODIFY.
   data () {
     return {
       slide: 0,

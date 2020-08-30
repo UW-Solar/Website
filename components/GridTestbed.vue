@@ -1,10 +1,16 @@
+<!-- Markus Schiffer and Alex Eidt -->
+<!-- This file is the Grid Testbed project on the Projects page. -->
+<!-- For many of the details, refer to the Vue Bootstrap documentation. -->
+
 <template>
   <div>
+    <!-- The toggler for the dropdown. -->
     <div v-b-toggle="'five'" id="project" class="card-header">
       <h3>UW CEI/PNW Smart Grid Testbed</h3>
+      <!-- This image is the black icon for the project. -->
       <img class="project-icon" alt="Roof Mounted Solar Array" src="~/static/roofPV.svg">
     </div>
-    <!-- The content inside of the b-collapse appear on click on a project. -->
+    <!-- This content appears when the accordian menu drops down. -->
     <b-collapse id="five">
       <br />
       <section>
@@ -29,7 +35,8 @@
 
 <script>
 export default {
-  name: 'GridTestbedProj',
+  name: 'GridTestbedProj',  // This should be different for each project.
+  // The rest of this code should be the same for each project. DO NOT MODIFY.
   data () {
     return {
       slide: 0,

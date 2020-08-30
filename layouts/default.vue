@@ -1,7 +1,17 @@
+<!-- Markus Schiffer and Alex Eidt -->
+<!-- This file contains the layout used by the home page, as well as style rules
+     used by all pages. -->
+
 <template>
   <div id="__main">
+    <!-- Background must become blurred before becoming white!! -->
+    <div id="background-blur"></div>
+    <div id="background-white"></div>
+    <!-- Header component. -->
     <u-w-s-header />
+    <!-- The page we use. -->
     <nuxt />
+    <!-- Footer component. -->
     <u-w-s-footer />
   </div>
 </template>
@@ -12,9 +22,42 @@ import UWSFooter from '~/components/Footer.vue'
 
 export default {
   name: 'DefaultLayout',
+  // This, combined with the import statements, lets us use the header and
+  // footer components.
   components: {
     UWSHeader,
     UWSFooter
+  },
+  // Mounted runs when the HTML is set. Initializes using the other functions.
+  mounted () {
+    this.winHeight = window.innerHeight;
+    window.addEventListener('scroll', this.handleScroll);
+    this.handleScroll();
+  },
+  // Destroyed runs when the page is closed/left.
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    // This method ensures that the navbar's appearance is updated based on how
+    // far the user has scrolled.
+    handleScroll () {
+      const scrollTop = window.pageYOffset;  // How much has the user scrolled.
+      // Fraction of entire page user has scrolled.
+      const scrollWindow = scrollTop / this.winHeight;
+      // Calculation for the opacity of the navbar, based on distance scrolled.
+      const opacity = Math.min(scrollWindow * 2.5, 0.65);
+      let blurPX;  // How much to blur the background by.
+      if (opacity == 0.65) {
+        blurPX = "5";
+      } else {
+        blurPX = (Math.floor(5 * Math.min(1, scrollWindow))).toString();
+      }
+      // Background fading to white on scroll.
+      document.getElementById("background-white").style["background-color"] = "rgba(255, 255, 255, " + opacity.toString() + ")";
+      // Background blurring on scroll.
+      document.getElementById("background-blur").style["filter"] = "blur(" + blurPX + "px)";
+    }
   }
 }
 </script>
@@ -121,6 +164,7 @@ section {
     width: 10%;
   }
 }
+/* Fine tuning the Project box sizes to look good on other screen sizes. */
 @media (min-width: 750px) {
   #project.card-header {
     height: 15vh;

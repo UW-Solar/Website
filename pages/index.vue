@@ -1,13 +1,15 @@
+<!-- Markus Schiffer and Alex Eidt -->
+<!-- This file contains the landing/about page for UW Solar. -->
+
 <template>
-  <div>
-    <div id="background-blur"></div>
-    <div id="background-white"></div>
-    <div class="data-container">
+  <div class="data-container">
+    <!-- Each page template must contain a data-containter div to hold all other elements. -->
     <div class="occupy-solo">
       <img id="header-img" class="mx-auto animated fadeIn" src="../static/uwsolar.png" alt="UW Solar Logo" title="UW Solar Logo">
     </div>
     <h2>About</h2>
     <br />
+    <!-- Main content. Notice how you can put links in it with a tags. target="_blank" opens in new tab. -->
     <section>
       UW Solar is a <a href="https://vip.uw.edu/about" target="_blank">Vertically Integrated Project</a>
       and Registered Student Organization that is part of the
@@ -21,6 +23,7 @@
       of services we provide in Project Development and Advising.
       <br />
       <br />
+      <!-- Uses bootstrap row and column classes to make two even columns. -->
       <div class="row">
         <div class="column">
           <h3>Project Development</h3>
@@ -70,42 +73,17 @@
     <br />
     <h2>Contact</h2>
     <br />
+    <!-- Mailto opens the user's mail client. -->
     <section>
       If you have any questions, feel free to contact us at <a href="mailto:solaruw@uw.edu">solaruw@uw.edu</a>
     </section>
-  </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Home",
-  layout: "default",
-  mounted () {
-    this.winHeight = window.innerHeight;
-    window.addEventListener('scroll', this.handleScroll);
-    this.handleScroll();
-  },
-  destroyed () {
-    window.removeEventListener('scroll', this.handleScroll);
-  },
-  methods: {
-    handleScroll () {
-      const scrollTop = window.pageYOffset;
-      const scrollWindow = scrollTop / this.winHeight;
-      const opacity = Math.min(scrollWindow * 2.5, 0.65);
-      var blurPX;
-      if (opacity == 0.65) {
-        blurPX = "5";
-      } else {
-        blurPX = (Math.floor(5 * Math.min(1, scrollWindow))).toString();
-      }
-      // Background fading to white on scroll
-      document.getElementById("background-white").style["background-color"] = "rgba(255, 255, 255, " + opacity.toString() + ")";
-      // Background blurring on scroll
-      document.getElementById("background-blur").style["filter"] = "blur(" + blurPX + "px)";
-    }
-  }
+  name: "Home",  // Name of the page.
+  layout: "default",  // The layout used (from layouts folder).
 }
 </script>
 

@@ -1,12 +1,18 @@
+<!-- Markus Schiffer and Alex Eidt -->
+<!-- This file contains the page which displays tableau map of each of the
+     UW Solar projects. -->
+
 <template>
+  <!-- Each page template must contain a data-containter div to hold all other elements. -->
   <div class="data-container">
+    <!-- The following div adds spacing between page title and navbar. -->
     <div class="data"></div>
     <h1>Map</h1>
     <br />
     <br />
     <br />
     <br />
-    <!--UW Solar Embedded Campus Map-->
+    <!--UW Solar Embedded Campus Map. This code is taken from embed direction on Tableau website. -->
     <div class='tableauPlaceholder' id='viz1597281256657' style='position: relative'>
       <noscript inline-template>
         <a href='#'>
@@ -27,21 +33,20 @@
         <param name='language' value='en' />
       </object>
     </div>
-    <script type='text/javascript'>
-      
-    </script>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Map",
-  layout: "secondary",
-  head () {
+  name: "Map",  // Name of the page.
+  layout: "secondary",  // The layout used (from layouts folder).
+  head () {  // The name of the page displayed on the browser tab.
     return {
       title: 'Map | UW Solar'
     }
   },
+  // Mounted runs when the HTML is set. Initializes JavaScript for Tableau map.
+  // This code is copied from the Tabeau website.
   mounted () {
     const divElement = document.getElementById('viz1597281256657');
     const vizElement = divElement.getElementsByTagName('object')[0];

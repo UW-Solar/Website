@@ -1,6 +1,9 @@
-// Plugins, basically global JavaScript.
+// Page by Markus Schiffer and Alex Eidt.
+// These are plugins, basically global JavaScript functions.
 
 export default (context, inject) => {
+  // This function returns true if given a month and year, they are in the
+  // current academic year. Otherwise returns false.
   const academicYear = (year, month) => {
     const today = new Date();
     const curr_year = today.getFullYear();
@@ -14,6 +17,7 @@ export default (context, inject) => {
     }
   }
 
+  // Maps the text representation of months to the numeric counterpart.
   const mapMonth = {
     "January": 1,
     "February": 2,
@@ -29,6 +33,7 @@ export default (context, inject) => {
     "December": 12
   };
 
+  // Required for plugins to work.
   inject('academicYear', academicYear);
   inject('mapMonth', mapMonth);
 }

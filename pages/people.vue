@@ -1,5 +1,9 @@
+<!-- Markus Schiffer and Alex Eidt -->
+<!-- This file contains the page which displays people involced iwth UW Solar. -->
+
 <template>
   <div class="data-container">
+    <!-- The following div adds spacing between page title and navbar. -->
     <div class="data"></div>
     <div>
       <h1>People</h1>
@@ -9,6 +13,7 @@
       <br />
       <h2>Faculty</h2>
       <br />
+      <!-- This is the list of faculty. -->
       <section>
         Jan Whittington | Faculty Advisor<br />
         Stefanie Young | Lab Founder
@@ -18,6 +23,7 @@
       <h2>Students</h2>
       <br />
       <div class="column">
+        <!-- This is the list of current students. -->
         <section>
           Christoph Strouse<br />
           Whitney Thomas<br />
@@ -48,6 +54,7 @@
       <h2>Alumni</h2>
       <br />
       <div class="column">
+        <!-- This is the list of past students. -->
         <section>
           Tyr Bernard<br />
           Ishmeet Singh<br />
@@ -110,6 +117,7 @@
       <h2>Friends</h2>
       <br />
       <div class="column">
+        <!-- This is the list of other people involved with UW Solar. -->
         <section>
           Chanaka Keerthisinghe<br />
           Austin Miller<br />
@@ -138,6 +146,7 @@
       <br />
       <h2>Partners</h2>
       <br />
+      <!-- This section links to all of UW Solar's partners. -->
       <section>
         <a href="https://csf.uw.edu/" target="_blank">UW Campus Sustainability Fund</a><br />
         <a href="https://www.cei.washington.edu/" target="_blank">UW Clean Energy Institute</a><br />
@@ -164,9 +173,9 @@
 <script>
 
 export default {
-  name: "People",
-  layout: "secondary",
-  head () {
+  name: "People",  // Name of the page.
+  layout: "secondary",  // The layout used (from layouts folder).
+  head () {  // The name of the page displayed on the browser tab.
     return {
       title: 'People | UW Solar'
     }
