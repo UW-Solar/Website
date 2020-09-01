@@ -9,7 +9,7 @@ export default {
   ** See https://nuxtjs.org/api/configuration-mode
   */
   router: {
-    base: '/Solar2.0/'  // For hosting on GitHub, specify the root directory.
+    base: '/Website/'  // For hosting on GitHub, specify the root directory.
   },
   generate: {
     fallback: true  // Allowing the page to refresh.
@@ -78,7 +78,7 @@ export default {
       async create(feed) {  // Initial feed creator method.
         feed.options = {
           title: 'UW Solar News Feed',
-          link: 'https://markusschiffer.github.io/Solar2.0',
+          link: 'https://uw-solar.github.io/Website/News',
           description: 'All UW Solar news and events!'
         };
 
@@ -119,7 +119,7 @@ export default {
         });
 
         let index = 0;
-        const root = "https://markusschiffer.github.io/Solar2.0";
+        const root = "https://uw-solar.github.io/Website/";
         // Create an entry for each post in the RSS feed.
         posts.forEach(post => {
           feed.addItem({
