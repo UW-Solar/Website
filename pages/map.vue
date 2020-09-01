@@ -14,6 +14,7 @@
     <br />
     <!--UW Solar Embedded Campus Map. This code is taken from embed direction on Tableau website. -->
     <div class='tableauPlaceholder' id='viz1597281256657' style='position: relative'>
+      <!-- Only change to Tableau code is adding "inline-template" to the noscript element. -->
       <noscript inline-template>
         <a href='#'>
           <img alt=' ' src='https://public.tableau.com/static/images/68/68G68CFX6/1_rss.png' style='border: none' />
