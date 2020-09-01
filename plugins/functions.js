@@ -8,12 +8,18 @@ export default (context, inject) => {
     const today = new Date();
     const curr_year = today.getFullYear();
     const curr_month = today.getMonth() + 1;
-    if (month >= 9 && curr_month >= 9) { // Article in fall, we are in fall, so anything from last fall is old.
+    // Article in fall, we are in fall, so anything from last fall is old.
+    if (month >= 9 && curr_month >= 9) {
       return curr_year === year;
-    } else if (month >= 9) {  // artilce in fall, we are in the next year, so articles from fall previous year are ok.
+    // Article in fall, we are in the next year, so articles from fall previous year are ok.
+    } else if (month >= 9) {
       return curr_year - 1 === year;
-    } else {  // article in non-fall, 
+    // Article in non-fall, Current month is in the winter, summer, or spring.
+    } else if (curr_month < 9) {
       return year === curr_year;
+    // Article is in the non-fall, current month is the fall.
+    } else {
+      return false;
     }
   }
 
