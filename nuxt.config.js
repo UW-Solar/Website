@@ -9,7 +9,7 @@ export default {
   ** See https://nuxtjs.org/api/configuration-mode
   */
   router: {
-    base: '/Website/'  // For hosting on GitHub, specify the root directory.
+    base: '/'  // For hosting on GitHub, specify the root directory.
   },
   generate: {
     fallback: true  // Allowing the page to refresh.
