@@ -130,9 +130,9 @@ export default {
               email: 'solaruw@uw.edu',
               link: root
             }],
-            link: `${root}/news/#news-${index}`,
+            link: `${root}news/#news-${index}`,
             content: post.content,
-            image: `${root}/static/${post.image}`,
+            image: `${root}static/${post.image}`,
           })
           index++;
         });
