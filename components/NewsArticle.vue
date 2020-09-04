@@ -12,7 +12,7 @@
     <!-- Following is article content. -->
     <p>{{ article.content }}</p>
     <!-- Article image, is optional. -->
-    <img v-if="article.image !== ''" class="news-img align-self-center mt-5" :src="'/Website/News/' + article.image" />
+    <img v-if="article.image !== ''" class="news-img align-self-center mt-5" :src="'/News/' + article.image" />
   </article>
 </template>
 
