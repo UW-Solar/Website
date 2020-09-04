@@ -78,7 +78,7 @@ export default {
       async create(feed) {  // Initial feed creator method.
         feed.options = {
           title: 'UW Solar News Feed',
-          link: 'https://uw-solar.github.io/Website/News',
+          link: 'https://uw-solar.github.io/News',
           description: 'All UW Solar news and events!'
         };
 
@@ -119,7 +119,7 @@ export default {
         });
 
         let index = 0;
-        const root = "https://uw-solar.github.io/Website/";
+        const root = "https://uw-solar.github.io/";
         // Create an entry for each post in the RSS feed.
         posts.forEach(post => {
           feed.addItem({
