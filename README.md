@@ -20,25 +20,9 @@ Directory | Description
 `content` | This directory contains another directory called `news`. The `news` directory contains all news entries for the news page. This is also where new news entries will be added.
 `layouts` | The layouts directory contains two files that serve as the templates for the pages found in this website. `default.vue` is the template for the Home page. `secondary.vue` is the template for all other pages.
 `pages` | The pages directory contains every page in the website. `index.vue` is the Home page, otherwise, the name of each file is the name of the page it represents.
+`plugins` | This directory contains a JavaScript file with some global data structures and functions used throughout the website.
 `static` | This directory contains all the files that don't change (hence the name static). For this website, the static directory only contains the icons and images used in the website. There are several directories within the static directory that contain the images for projects in the **Projects** page and the images for the news articles in the **News** page.
 
 ---
-
-## Build Setup
-
-```bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
