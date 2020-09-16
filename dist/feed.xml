@@ -4,7 +4,7 @@
         <title>UW Solar News Feed</title>
         <link>https://uw-solar.github.io/News</link>
         <description>All UW Solar news and events!</description>
-        <lastBuildDate>Wed, 16 Sep 2020 23:12:12 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 16 Sep 2020 23:48:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <category>Solar power.</category>
@@ -14,7 +14,7 @@
             <link>https://uw-solar.github.io/news/#news-0</link>
             <guid>https://uw-solar.github.io/news/#news-0</guid>
             <pubDate>Wed, 16 Sep 2020 07:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[As these last couple of weeks of summer go by, UW Solar wanted to put out a general update for what is to come in Autumn 2020. First, we will be at the 31st Annual RSO Activities Fair to answer questions, promote our club, and look for new members. Don't forget that UW Solar is open to people in all majors and class standings. UW Solar will be working on some very exciting projects this Fall, some of which are almost a decade in the making. The UW Campus Solar Plan and Fleet Electrification Plan are both set to release in December 2020. That means UW Solar is going to be finishing these plans during Fall 2020. If you would like to be a part of creating these plans, reach out to us on any social media platform or email us at soalruw@uw.edu. We are so excited that UW has pledged to follow these plans that push us all towards a more sustainable future. So, tune in to our blog and social media platforms to hear about our progress on these plans. Have a great fall, huskies!]]></content:encoded>
+            <content:encoded><![CDATA[As these last couple of weeks of summer go by, UW Solar wanted to put out a general update for what is to come in Autumn 2020. First, we will be at the 31st Annual RSO Activities Fair to answer questions, promote our club, and look for new members. Don't forget that UW Solar is open to people in all majors and class standings. UW Solar will be working on some very exciting projects this Fall, some of which are almost a decade in the making. The UW Campus Solar Plan and Fleet Electrification Plan are both set to release in December 2020. That means UW Solar is going to be finishing these plans during Fall 2020. If you would like to be a part of creating these plans, reach out to us on any social media platform or email us at solaruw@uw.edu. We are so excited that UW has pledged to follow these plans that push us all towards a more sustainable future. So, tune in to our blog and social media platforms to hear about our progress on these plans. Have a great fall, huskies!]]></content:encoded>
             <author>solaruw@uw.edu (Evan Mickelson)</author>
             <enclosure url="https://uw-solar.github.io/static/" length="0" type="image//static/"/>
         </item>
