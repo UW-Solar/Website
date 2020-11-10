@@ -10,7 +10,7 @@
     <!-- Following is article author followed by article date. -->
     <h3 class="mb-3">{{ article.author + "  |  " + article.date }}</h3>
     <!-- Following is article content. -->
-    <p>{{ article.content }}</p>
+    <div :id="article.title + '-content'"></div>
     <!-- Article image, is optional. -->
     <img v-if="article.image !== ''" class="news-img align-self-center mt-5" :src="'/News/' + article.image" />
   </article>
@@ -24,6 +24,17 @@ export default {
       type: Object,
       required: true
     }
+  },
+  mounted () {
+    // Parses the article, looking for <br> in the text, and breaks up the text
+    // accordingly.
+    const contentDiv = document.getElementById(this.article.title + "-content");
+    const splitArr = this.article.content.split('<br>');
+    splitArr.forEach((para) => {
+      const pTag = document.createElement("p");
+      pTag.textContent = para;
+      contentDiv.appendChild(pTag);
+    });
   }
 }
 </script>
@@ -40,6 +51,10 @@ h3 {
 /* Font size for article text. */
 article {
   font-size: 1.3rem;
+}
+/* Reduces size of newline breaks within the article content. */
+.small-break {
+  line-height: 0.1;
 }
 /* Style for the image of each news article. */
 .news-img {

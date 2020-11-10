@@ -3,12 +3,12 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _7eb5469a = () => interopDefault(import('../pages/data.vue' /* webpackChunkName: "pages/data" */))
-const _00e8359c = () => interopDefault(import('../pages/map.vue' /* webpackChunkName: "pages/map" */))
-const _67362543 = () => interopDefault(import('../pages/news.vue' /* webpackChunkName: "pages/news" */))
-const _3454ce02 = () => interopDefault(import('../pages/people.vue' /* webpackChunkName: "pages/people" */))
-const _130a1b6a = () => interopDefault(import('../pages/projects.vue' /* webpackChunkName: "pages/projects" */))
-const _401ac412 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _4f6c9a7a = () => interopDefault(import('../pages/data.vue' /* webpackChunkName: "pages/data" */))
+const _d7f23488 = () => interopDefault(import('../pages/map.vue' /* webpackChunkName: "pages/map" */))
+const _37ed7923 = () => interopDefault(import('../pages/news.vue' /* webpackChunkName: "pages/news" */))
+const _660774df = () => interopDefault(import('../pages/people.vue' /* webpackChunkName: "pages/people" */))
+const _4e347f4a = () => interopDefault(import('../pages/projects.vue' /* webpackChunkName: "pages/projects" */))
+const _f364279c = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
 const emptyFn = () => {}
@@ -21,34 +21,34 @@ Vue.use(Router)
 
 export const routerOptions = {
   mode: 'history',
-  base: decodeURI('/Website/'),
+  base: decodeURI('/'),
   linkActiveClass: 'nuxt-link-active',
   linkExactActiveClass: 'nuxt-link-exact-active',
   scrollBehavior,
 
   routes: [{
     path: "/data",
-    component: _7eb5469a,
+    component: _4f6c9a7a,
     name: "data"
   }, {
     path: "/map",
-    component: _00e8359c,
+    component: _d7f23488,
     name: "map"
   }, {
     path: "/news",
-    component: _67362543,
+    component: _37ed7923,
     name: "news"
   }, {
     path: "/people",
-    component: _3454ce02,
+    component: _660774df,
     name: "people"
   }, {
     path: "/projects",
-    component: _130a1b6a,
+    component: _4e347f4a,
     name: "projects"
   }, {
     path: "/",
-    component: _401ac412,
+    component: _f364279c,
     name: "index"
   }],
 

@@ -41,7 +41,7 @@ export default {
   },
   computed: {
     fileUrl () {
-      return `/Website/_content${this.document.path}${this.document.extension}`
+      return `/_content${this.document.path}${this.document.extension}`
     }
   },
   mounted () {
