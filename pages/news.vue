@@ -83,10 +83,11 @@ export default {
     const currList = [];
     const archiveDict = {};
     const today = new Date();
-    // Create the order varialb efor each article.
+    // Create the order variable for each article.
     this.list.forEach(article => {
       const splitDate = article.date.split(" ");
-      const date = new Date(`${this.$mapMonth[splitDate[0]]}/${splitDate[1]}/${splitDate[2]}`);
+      const date = new Date(`${this.$mapMonth[splitDate[0]]}/${splitDate[1]
+        .substring(0, splitDate[1].length - 2)}/${splitDate[2]}`);
       article.order = today.getTime() - date.getTime();
     });
     // Sort the articles by their order.

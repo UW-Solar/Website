@@ -3,42 +3,36 @@
     "name": "data",
     "path": "/data",
     "component": "/Users/markusschiffer/Desktop/website/pages/data.vue",
-    "chunkName": "pages/data",
-    "_name": "_4f6c9a7a"
+    "chunkName": "pages/data"
   },
   {
     "name": "map",
     "path": "/map",
     "component": "/Users/markusschiffer/Desktop/website/pages/map.vue",
-    "chunkName": "pages/map",
-    "_name": "_d7f23488"
+    "chunkName": "pages/map"
   },
   {
     "name": "news",
     "path": "/news",
     "component": "/Users/markusschiffer/Desktop/website/pages/news.vue",
-    "chunkName": "pages/news",
-    "_name": "_37ed7923"
+    "chunkName": "pages/news"
   },
   {
     "name": "people",
     "path": "/people",
     "component": "/Users/markusschiffer/Desktop/website/pages/people.vue",
-    "chunkName": "pages/people",
-    "_name": "_660774df"
+    "chunkName": "pages/people"
   },
   {
     "name": "projects",
     "path": "/projects",
     "component": "/Users/markusschiffer/Desktop/website/pages/projects.vue",
-    "chunkName": "pages/projects",
-    "_name": "_4e347f4a"
+    "chunkName": "pages/projects"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/markusschiffer/Desktop/website/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_f364279c"
+    "chunkName": "pages/index"
   }
 ]
