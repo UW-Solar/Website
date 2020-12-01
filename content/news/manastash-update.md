@@ -17,5 +17,5 @@ observatory in late October and measured the power usage of the telescope room w
 astronomy students did their work in the night. James’ data showed that the inverter could easily
 power the telescope room during regular usage! Now, UW Solar will be moving forward with our
 design and we hope to have the project completed next year."
-image: "MRO Blog 11-23 Picture 1.png;MRO Blog 11-23 Picture 2.png;MRO Blog 11-23 Picture 3.png"
+image: "MRO Blog 11-23 Picture 1.png;MRO Blog 11-23 Picture 2.jpg;MRO Blog 11-23 Picture 3.jpg"
 ---

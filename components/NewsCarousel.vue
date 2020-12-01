@@ -3,7 +3,7 @@
 <!-- For many of the details, refer to the Vue Bootstrap documentation. -->
 
 <template>
-  <div>
+  <div class="d-flex justify-content-center">
     <b-carousel
         :id="'carousel-' + title"
         v-model="slide"
@@ -55,3 +55,17 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+/* Adds a border around the carousel images. */
+.d-flex >>> .carousel-item img {
+  border: 2px solid black;
+}
+/* Adjusts the carousel to look nicer (smaller) on larger screens. */
+@media (min-width: 768px) {
+  .carousel {
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+}
+</style>

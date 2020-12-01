@@ -4,7 +4,7 @@
         <title>UW Solar News Feed</title>
         <link>https://uw-solar.github.io/News</link>
         <description>All UW Solar news and events!</description>
-        <lastBuildDate>Tue, 01 Dec 2020 05:28:13 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 01 Dec 2020 08:41:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <category>Solar power.</category>
@@ -16,7 +16,7 @@
             <pubDate>Mon, 23 Nov 2020 08:00:00 GMT</pubDate>
             <content:encoded><![CDATA[The Manastash Ridge Observatory is in Ellensburg, WA-about 100 miles from UW’s Seattle campus. Years ago, there were plans for a solar project with battery backup. The project was even funded by the Campus Sustainability Fund. However, due to the lead engineer stepping away from the project, it was never completed. The partially completed system is shown in picture 1 below. In Spring 2019, UW Solar was approached by Oliver Fraser from the Department of Astronomy. Oliver hoped that UW Solar could take over the project and get it finished up so that the observatory would be more sustainable and be able to close the dome hatches to the telescope (shown in picture 2) in case of a power outage. There was one main problem UW Solar discovered while completing the design of the system: the inverter that was already purchased for the system had limited output and we didn’t know if it would be able to power the electric panel for the telescope room. James Clough (shown in picture 3) visited the observatory in late October and measured the power usage of the telescope room while the astronomy students did their work in the night. James’ data showed that the inverter could easily power the telescope room during regular usage! Now, UW Solar will be moving forward with our design and we hope to have the project completed next year.]]></content:encoded>
             <author>solaruw@uw.edu (Evan Mickelson)</author>
-            <enclosure url="https://uw-solar.github.io/static/MRO Blog 11-23 Picture 1.png;MRO Blog 11-23 Picture 2.png;MRO Blog 11-23 Picture 3.png" length="0" type="image/png"/>
+            <enclosure url="https://uw-solar.github.io/static/MRO Blog 11-23 Picture 1.png;MRO Blog 11-23 Picture 2.jpg;MRO Blog 11-23 Picture 3.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[UW Solar at the Washington Solar Summit]]></title>

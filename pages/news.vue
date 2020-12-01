@@ -13,7 +13,7 @@
     <br />
     <div id="root">
       <!-- For each current news article, add it to "root". -->
-      <div v-for="(article, index) in currArticleList.sort((a, b) => { return a.order - b.order; })" :key="'news-' + index">
+      <div v-for="(article, index) in currArticleList" :key="'news-' + index">
         <news-article :article="article" />
       </div>
     </div>
@@ -21,13 +21,13 @@
     <br />
     <div id="archive-root">
       <!-- For each year of the archived new articles, create the year dropdown. -->
-      <div v-for="year in Object.keys(archive).sort()" :key="'wrapper-' + year">
+      <div v-for="year in Object.keys(archive)" :key="'wrapper-' + year">
         <div v-b-toggle="'date-' + year" class="card-header year">
           <h3>{{ year }}</h3>
         </div>
         <!-- For each year, create a list of other news article dropdowns. -->
         <b-collapse :id="'date-' + year">
-          <div v-for="(article, index) in archive[year].sort((a, b) => { return a.order - b.order; })" :key="'news-wrapper-' + year + index">
+          <div v-for="(article, index) in archive[year]" :key="'news-wrapper-' + year + index">
             <!-- These are the individual news article dropdowns. They open each article. -->
             <div v-b-toggle="'news-' + year + index" class="card-header flex-row-reverse">
               <h4>{{ article.title }}</h4>
@@ -91,6 +91,9 @@ export default {
       article.order = today.getTime() - date.getTime();
     });
     // Sort the articles by their order.
+    this.list = this.list.sort((a, b) => {
+      return a.order - b.order;
+    });
     this.list.forEach(article => {
       const splitDate = article.date.split(" ");
       const year = parseInt(splitDate[2]);
