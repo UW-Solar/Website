@@ -12,11 +12,12 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_workbox_7b8ca348 from 'nuxt_plugin_workbox_7b8ca348' // Source: ./workbox.js (mode: 'client')
-import nuxt_plugin_nuxticons_697c3b9c from 'nuxt_plugin_nuxticons_697c3b9c' // Source: ./nuxt-icons.js (mode: 'all')
 import nuxt_plugin_bootstrapvue_5a8cbb5b from 'nuxt_plugin_bootstrapvue_5a8cbb5b' // Source: ./bootstrap-vue.js (mode: 'all')
 import nuxt_plugin_pluginclient_89f304dc from 'nuxt_plugin_pluginclient_89f304dc' // Source: ./content/plugin.client.js (mode: 'client')
 import nuxt_plugin_pluginserver_20bfef1a from 'nuxt_plugin_pluginserver_20bfef1a' // Source: ./content/plugin.server.js (mode: 'server')
+import nuxt_plugin_workbox_7b8ca348 from 'nuxt_plugin_workbox_7b8ca348' // Source: ./workbox.js (mode: 'client')
+import nuxt_plugin_meta_ed1ae69c from 'nuxt_plugin_meta_ed1ae69c' // Source: ./pwa/meta.js (mode: 'all')
+import nuxt_plugin_icons_d8495c86 from 'nuxt_plugin_icons_d8495c86' // Source: ./pwa/icons.js (mode: 'all')
 import nuxt_plugin_axios_1509c92c from 'nuxt_plugin_axios_1509c92c' // Source: ./axios.js (mode: 'all')
 import nuxt_plugin_functions_55e262f2 from 'nuxt_plugin_functions_55e262f2' // Source: ../plugins/functions.js (mode: 'all')
 
@@ -45,6 +46,13 @@ Vue.component('NChild', NuxtChild)
 // Component: <Nuxt>
 Vue.component(Nuxt.name, Nuxt)
 
+Object.defineProperty(Vue.prototype, '$nuxt', {
+  get() {
+    return this.$root.$options.$nuxt
+  },
+  configurable: true
+})
+
 Vue.use(Meta, {"keyName":"head","attribute":"data-n-head","ssrAttribute":"data-n-head-ssr","tagIDKeyName":"hid"})
 
 const defaultTransition = {"name":"page","mode":"out-in","appear":false,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
@@ -59,7 +67,7 @@ async function createApp(ssrContext, config = {}) {
   const app = {
     head: {"titleTemplate":function (titleChunk) {
       return titleChunk ? titleChunk : 'UW Solar | Urban Infrastructure Lab';
-    },"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Website for **UW Solar** Registered Student Organization at the University of Washington."},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"Website"},{"hid":"theme-color","name":"theme-color","content":"black"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"},{"hid":"og:title","name":"og:title","property":"og:title","content":"Website"},{"hid":"og:site_name","name":"og:site_name","property":"og:site_name","content":"Website"},{"hid":"og:description","name":"og:description","property":"og:description","content":"Website for **UW Solar** Registered Student Organization at the University of Washington."}],"link":[{"rel":"icon","type":"image\u002Fpng","href":"~\u002Fstatic\u002Ficon.png"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.879d75a8.json"},{"rel":"shortcut icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_64x64.581907.png"},{"rel":"apple-touch-icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_512x512.581907.png","sizes":"512x512"}],"style":[],"script":[],"htmlAttrs":{"lang":"en"}},
+    },"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Website for **UW Solar** Registered Student Organization at the University of Washington."}],"link":[{"rel":"icon","type":"image\u002Fpng","href":"~\u002Fstatic\u002Ficon.png"}],"style":[],"script":[]},
 
     router,
     nuxt: {
@@ -173,14 +181,6 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (process.client && typeof nuxt_plugin_workbox_7b8ca348 === 'function') {
-    await nuxt_plugin_workbox_7b8ca348(app.context, inject)
-  }
-
-  if (typeof nuxt_plugin_nuxticons_697c3b9c === 'function') {
-    await nuxt_plugin_nuxticons_697c3b9c(app.context, inject)
-  }
-
   if (typeof nuxt_plugin_bootstrapvue_5a8cbb5b === 'function') {
     await nuxt_plugin_bootstrapvue_5a8cbb5b(app.context, inject)
   }
@@ -191,6 +191,18 @@ async function createApp(ssrContext, config = {}) {
 
   if (process.server && typeof nuxt_plugin_pluginserver_20bfef1a === 'function') {
     await nuxt_plugin_pluginserver_20bfef1a(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_workbox_7b8ca348 === 'function') {
+    await nuxt_plugin_workbox_7b8ca348(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_meta_ed1ae69c === 'function') {
+    await nuxt_plugin_meta_ed1ae69c(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_icons_d8495c86 === 'function') {
+    await nuxt_plugin_icons_d8495c86(app.context, inject)
   }
 
   if (typeof nuxt_plugin_axios_1509c92c === 'function') {

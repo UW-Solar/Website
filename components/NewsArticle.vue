@@ -12,17 +12,25 @@
     <!-- Following is article content. -->
     <div :id="article.title + '-content'"></div>
     <!-- Article image, is optional. -->
-    <img v-if="article.image !== ''" class="news-img align-self-center mt-5" :src="'/News/' + article.image" />
+    <img v-if="article.image !== '' && imageArray.length === 1" class="news-img align-self-center mt-5" :src="'/News/' + article.image" />
+    <news-carousel v-else-if="imageArray.length > 1" :imageArray="imageArray" :title="article.title" />
   </article>
 </template>
 
 <script>
+import NewsCarousel from './NewsCarousel.vue';
 export default {
+  components: { NewsCarousel },
   name: 'NewsArticle',
   props: {
     article: {  // Passed in from news page, contains article information.
       type: Object,
       required: true
+    }
+  },
+  computed: {
+    imageArray() {
+      return this.article.image.split(";");
     }
   },
   mounted () {
