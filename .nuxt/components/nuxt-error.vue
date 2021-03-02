@@ -14,7 +14,7 @@
       <p class="description" v-else>An error occurred while rendering the page. Check developer tools console for details.</p>
 
       <div class="logo">
-        <a href="https://nuxtjs.org" target="_blank" rel="noopener">Nuxt.js</a>
+        <a href="https://nuxtjs.org" target="_blank" rel="noopener">Nuxt</a>
       </div>
     </div>
   </div>

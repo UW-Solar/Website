@@ -196,7 +196,7 @@ export default {
 </script>
 
 <!-- This style accounts for bolding/white the current nav link -->
-<style lang="scss" scoped>
+<style scoped>
 /* Styles the navbar to stay on top of the screen and above other content. */
 nav {
   position: fixed;

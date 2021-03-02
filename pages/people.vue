@@ -25,28 +25,22 @@
       <div class="column">
         <!-- This is the list of current students. -->
         <section>
-          Christoph Strouse<br />
-          Whitney Thomas<br />
-          Elizabeth Perkins<br />
-          Alex Eidt<br />
-          Saharsh Parakh<br />
+          Radha Iyer<br />
+          Megan Wong<br />
+          Jack Kramer<br />
+          Emma Maggioncalda<br />
+          Callie Van Horn<br />
+          Tran Quach<br />
+          Reese Michael O’Craven<br />
+          Kelsey Foster<br />
+          Jordan Sliz<br />
+          Akanksha Mishra<br />
+          Mapenzi Kinege<br />
+          Blake Sternecke<br />
           Markus Schiffer<br />
           Shayne Simpson<br />
-          Gabby Easthouse<br />
-          Kyler VandenBosch<br />
-          Evan Mickelson<br />
-          Boyang Sa<br />
-          Ryan Finney<br />
-          Colton Brailsford<br />
           James Clough<br />
-          Collin Cunneely<br />
-          Abdulaziz Alqadhib<br />
-          Mary Gregorich<br />
-          Brendan Hutchins<br />
-          Aliah Marzolf<br />
-          Alisa Huang<br />
-          Charlie Chung<br />
-          Lam Pham
+          Abdulaziz Alqadhib
         </section>
       </div>
       <br />
@@ -56,6 +50,24 @@
       <div class="column">
         <!-- This is the list of past students. -->
         <section>
+          Christoph Strouse<br />
+          Whitney Thomas<br />
+          Elizabeth Perkins<br />
+          Alex Eidt<br />
+          Saharsh Parakh<br />
+          Gabby Easthouse<br />
+          Kyler VandenBosch<br />
+          Evan Mickelson<br />
+          Boyang Sa<br />
+          Ryan Finney<br />
+          Colton Brailsford<br />
+          Collin Cunneely<br />
+          Mary Gregorich<br />
+          Brendan Hutchins<br />
+          Aliah Marzolf<br />
+          Alisa Huang<br />
+          Charlie Chung<br />
+          Lam Pham<br />
           Tyr Bernard<br />
           Ishmeet Singh<br />
           Matt Larsen<br />
