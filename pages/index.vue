@@ -68,7 +68,7 @@
       <b>Who: </b>Students of all majors and every class standing. No experience or application is necessary.<br />
       <b>Where: </b>We currently meet on <a href="https://washington.zoom.us/j/99108117155" target="_blank">Zoom Meetings</a>.
       Once UW reopens we will resume our normal meeting space at <a href="http://be.uw.edu/spaces/facilities/gould-hall/" target="_blank">Gould Hall</a> room <b>012C</b>.<br />        
-      <b>When: </b>We currently meet every two weeks on Mondays from 6:00 - 8:00 pm. Once UW reopens we will resume our normal meeting times of Mondays and Wednesdays from 6:00 - 8:00 pm.<br />
+      <b>When: </b>We currently meet every week on Mondays and Wednesdays from 6:00 - 8:00 pm.<br />
     </section>
     <br />
     <h2>Contact</h2>
