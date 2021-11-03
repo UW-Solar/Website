@@ -19,6 +19,14 @@
       <h2>System Type</h2>
     </div>
     <br /> 
+    <!--Electric Bike Charging Station-->
+    <div class="project-wrapper">
+      <electric-bike />
+    </div>
+    <!--Resiliency Tunnel-->
+    <div class="project-wrapper">
+      <resiliency-tunnel />
+    </div>
     <!--Manastash Ridge Observatory-->
     <div class="project-wrapper">
       <manastash-proj />
@@ -70,6 +78,8 @@ import MercerProj from '~/components/Mercer.vue';
 import GridTestbedProj from '~/components/GridTestbed.vue';
 import LSBRooftopProj from '~/components/LSBRooftop.vue';
 import PortSeattleProj from '~/components/PortSeattle.vue';
+import ElectricBike from '~/components/ElectricBike.vue';
+import ResiliencyTunnel from '~/components/ResiliencyTunnel.vue'
 
 export default {
   name: "Projects",  // Name of the page.
@@ -83,7 +93,9 @@ export default {
     MercerProj,
     GridTestbedProj,
     LSBRooftopProj,
-    PortSeattleProj
+    PortSeattleProj,
+    ElectricBike,
+    ResiliencyTunnel
   },
   head () {  // The name of the page displayed on the browser tab.
     return {

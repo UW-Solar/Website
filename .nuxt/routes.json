@@ -2,43 +2,43 @@
   {
     "name": "data",
     "path": "/data",
-    "component": "/Users/markusschiffer/website/pages/data.vue",
+    "component": "C:\\\\Users\\\\sberc\\\\Documents\\\\My Files\\\\UW\\\\UW Solar\\\\Website\\\\pages\\\\data.vue",
     "chunkName": "pages/data",
-    "_name": "_7943bdf2"
+    "_name": "_c7f93f82"
   },
   {
     "name": "map",
     "path": "/map",
-    "component": "/Users/markusschiffer/website/pages/map.vue",
+    "component": "C:\\\\Users\\\\sberc\\\\Documents\\\\My Files\\\\UW\\\\UW Solar\\\\Website\\\\pages\\\\map.vue",
     "chunkName": "pages/map",
-    "_name": "_55b3d98f"
+    "_name": "_5f645952"
   },
   {
     "name": "news",
     "path": "/news",
-    "component": "/Users/markusschiffer/website/pages/news.vue",
+    "component": "C:\\\\Users\\\\sberc\\\\Documents\\\\My Files\\\\UW\\\\UW Solar\\\\Website\\\\pages\\\\news.vue",
     "chunkName": "pages/news",
-    "_name": "_a84200a0"
+    "_name": "_f6f78230"
   },
   {
     "name": "people",
     "path": "/people",
-    "component": "/Users/markusschiffer/website/pages/people.vue",
+    "component": "C:\\\\Users\\\\sberc\\\\Documents\\\\My Files\\\\UW\\\\UW Solar\\\\Website\\\\pages\\\\people.vue",
     "chunkName": "pages/people",
-    "_name": "_b89ce7a8"
+    "_name": "_2ff84538"
   },
   {
     "name": "projects",
     "path": "/projects",
-    "component": "/Users/markusschiffer/website/pages/projects.vue",
+    "component": "C:\\\\Users\\\\sberc\\\\Documents\\\\My Files\\\\UW\\\\UW Solar\\\\Website\\\\pages\\\\projects.vue",
     "chunkName": "pages/projects",
-    "_name": "_6c941152"
+    "_name": "_42b8da8f"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/markusschiffer/website/pages/index.vue",
+    "component": "C:\\\\Users\\\\sberc\\\\Documents\\\\My Files\\\\UW\\\\UW Solar\\\\Website\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_dee59176"
+    "_name": "_66e041e6"
   }
 ]

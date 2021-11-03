@@ -2,9 +2,9 @@
   <div>
     <!-- The toggler for the dropdown. -->
     <div v-b-toggle="'eight'" id="project" class="card-header">
-      <h3>UW Campus Plan</h3>
+      <h3>Electric Bike Charging Station</h3>
       <!-- This image is the black icon for the project. -->
-      <img class="project-icon" alt="Roof Mounted Solar Array" src="~/static/roofPV.svg">
+      <img class="project-icon" alt="Car Port Solar Array" src="~/static/carportPV.svg">
     </div>
     <!-- This content appears when the accordian menu drops down. -->
     <b-collapse id="eight">

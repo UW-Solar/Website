@@ -1,6 +1,7 @@
 {
   "name": "Website",
   "short_name": "Website",
+  "description": "Website for **UW Solar** Registered Student Organization at the University of Washington.",
   "icons": [
     {
       "src": "/_nuxt/icons/icon_64x64.581907.png",
