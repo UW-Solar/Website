@@ -12,7 +12,7 @@
     "lint": "npm run lint:js"
   },
   "dependencies": {
-    "@nuxt/content": "^1.15.0",
+    "@nuxt/content": "^1.15.1",
     "@nuxtjs/axios": "^5.12.3",
     "@nuxtjs/feed": "^2.0.0",
     "@nuxtjs/pwa": "^3.3.2",
@@ -20,7 +20,7 @@
     "bootstrap-vue": "^2.20.0",
     "content": "^4.0.6",
     "nuxt": "^2.13.3",
-    "webpack": "^5.61.0"
+    "webpack": "^5.64.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",

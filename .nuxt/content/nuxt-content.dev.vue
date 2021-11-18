@@ -1,5 +1,5 @@
 <template>
-  <div :class="['nuxt-content-container', { 'is-editing': isEditing }]">
+  <div :class="['nuxt-content-container', { 'is-editing': isEditing }]" :is="tag">
     <client-only>
       <editor
         v-show="isEditing"
@@ -98,7 +98,11 @@ export default {
 }
 
 .nuxt-content-editor {
+  box-sizing: border-box;
+  display: block;
   width: 100%;
   padding: 8px;
+  overflow: hidden;
+  resize: none;
 }
 </style>
