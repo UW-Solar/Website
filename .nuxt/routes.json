@@ -3,42 +3,36 @@
     "name": "data",
     "path": "/data",
     "component": "C:\\\\Users\\\\sberc\\\\Documents\\\\My Files\\\\UW\\\\UW Solar\\\\Website\\\\pages\\\\data.vue",
-    "chunkName": "pages/data",
-    "_name": "_c7f93f82"
+    "chunkName": "pages/data"
   },
   {
     "name": "map",
     "path": "/map",
     "component": "C:\\\\Users\\\\sberc\\\\Documents\\\\My Files\\\\UW\\\\UW Solar\\\\Website\\\\pages\\\\map.vue",
-    "chunkName": "pages/map",
-    "_name": "_5f645952"
+    "chunkName": "pages/map"
   },
   {
     "name": "news",
     "path": "/news",
     "component": "C:\\\\Users\\\\sberc\\\\Documents\\\\My Files\\\\UW\\\\UW Solar\\\\Website\\\\pages\\\\news.vue",
-    "chunkName": "pages/news",
-    "_name": "_f6f78230"
+    "chunkName": "pages/news"
   },
   {
     "name": "people",
     "path": "/people",
     "component": "C:\\\\Users\\\\sberc\\\\Documents\\\\My Files\\\\UW\\\\UW Solar\\\\Website\\\\pages\\\\people.vue",
-    "chunkName": "pages/people",
-    "_name": "_2ff84538"
+    "chunkName": "pages/people"
   },
   {
     "name": "projects",
     "path": "/projects",
     "component": "C:\\\\Users\\\\sberc\\\\Documents\\\\My Files\\\\UW\\\\UW Solar\\\\Website\\\\pages\\\\projects.vue",
-    "chunkName": "pages/projects",
-    "_name": "_42b8da8f"
+    "chunkName": "pages/projects"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\sberc\\\\Documents\\\\My Files\\\\UW\\\\UW Solar\\\\Website\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_66e041e6"
+    "chunkName": "pages/index"
   }
 ]
