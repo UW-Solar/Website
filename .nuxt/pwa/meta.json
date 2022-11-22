@@ -21,11 +21,6 @@
       "content": "Website"
     },
     {
-      "hid": "description",
-      "name": "description",
-      "content": "Website for **UW Solar** Registered Student Organization at the University of Washington."
-    },
-    {
       "hid": "og:type",
       "name": "og:type",
       "property": "og:type",
@@ -42,12 +37,6 @@
       "name": "og:site_name",
       "property": "og:site_name",
       "content": "Website"
-    },
-    {
-      "hid": "og:description",
-      "name": "og:description",
-      "property": "og:description",
-      "content": "Website for **UW Solar** Registered Student Organization at the University of Washington."
     }
   ],
   "link": [
@@ -64,7 +53,7 @@
     },
     {
       "rel": "manifest",
-      "href": "/_nuxt/manifest.b3683955.json",
+      "href": "/_nuxt/manifest.369cec25.json",
       "hid": "manifest"
     }
   ],

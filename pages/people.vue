@@ -40,6 +40,7 @@
           Markus Schiffer<br />
           Shayne Simpson<br />
           James Clough<br />
+          Amanda Yuan<br />
           Abdulaziz Alqadhib
         </section>
       </div>

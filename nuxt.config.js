@@ -14,7 +14,7 @@ export default {
   generate: {
     fallback: true  // Allowing the page to refresh.
   },
-  mode: 'universal',  // Not SPA, full static.
+  //  mode: 'universal',  // Not SPA, full static.
   /*
   ** Headers of the page
   ** See https://nuxtjs.org/api/configuration-head

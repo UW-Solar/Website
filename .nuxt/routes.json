@@ -2,37 +2,43 @@
   {
     "name": "data",
     "path": "/data",
-    "component": "C:\\\\Users\\\\sberc\\\\Documents\\\\My Files\\\\UW\\\\UW Solar\\\\Website\\\\pages\\\\data.vue",
-    "chunkName": "pages/data"
+    "component": "C:\\\\Users\\\\uusse\\\\UW-Solar-Website\\\\pages\\\\data.vue",
+    "chunkName": "pages/data",
+    "_name": "_2f5b6050"
   },
   {
     "name": "map",
     "path": "/map",
-    "component": "C:\\\\Users\\\\sberc\\\\Documents\\\\My Files\\\\UW\\\\UW Solar\\\\Website\\\\pages\\\\map.vue",
-    "chunkName": "pages/map"
+    "component": "C:\\\\Users\\\\uusse\\\\UW-Solar-Website\\\\pages\\\\map.vue",
+    "chunkName": "pages/map",
+    "_name": "_49f3e6c4"
   },
   {
     "name": "news",
     "path": "/news",
-    "component": "C:\\\\Users\\\\sberc\\\\Documents\\\\My Files\\\\UW\\\\UW Solar\\\\Website\\\\pages\\\\news.vue",
-    "chunkName": "pages/news"
+    "component": "C:\\\\Users\\\\uusse\\\\UW-Solar-Website\\\\pages\\\\news.vue",
+    "chunkName": "pages/news",
+    "_name": "_5e59a2fe"
   },
   {
     "name": "people",
     "path": "/people",
-    "component": "C:\\\\Users\\\\sberc\\\\Documents\\\\My Files\\\\UW\\\\UW Solar\\\\Website\\\\pages\\\\people.vue",
-    "chunkName": "pages/people"
+    "component": "C:\\\\Users\\\\uusse\\\\UW-Solar-Website\\\\pages\\\\people.vue",
+    "chunkName": "pages/people",
+    "_name": "_5c554abd"
   },
   {
     "name": "projects",
     "path": "/projects",
-    "component": "C:\\\\Users\\\\sberc\\\\Documents\\\\My Files\\\\UW\\\\UW Solar\\\\Website\\\\pages\\\\projects.vue",
-    "chunkName": "pages/projects"
+    "component": "C:\\\\Users\\\\uusse\\\\UW-Solar-Website\\\\pages\\\\projects.vue",
+    "chunkName": "pages/projects",
+    "_name": "_2f3754b0"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\sberc\\\\Documents\\\\My Files\\\\UW\\\\UW Solar\\\\Website\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "component": "C:\\\\Users\\\\uusse\\\\UW-Solar-Website\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_0a1ee294"
   }
 ]
