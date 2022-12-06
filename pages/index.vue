@@ -74,7 +74,7 @@
     <br />
     <!-- Mailto opens the user's mail client. -->
     <section>
-      If you have any questions, feel free to contact us at <a href="mailto:janwhit@uw.edu">janwhit@uw.edu></a>
+      If you have any questions, feel free to contact us at <a href="mailto:janwhit@uw.edu">janwhit@uw.edu</a>
     </section>
   </div>
 </template>
