@@ -3,36 +3,42 @@
     "name": "data",
     "path": "/data",
     "component": "C:\\\\Users\\\\uusse\\\\Website-1\\\\pages\\\\data.vue",
-    "chunkName": "pages/data"
+    "chunkName": "pages/data",
+    "_name": "_84ca88de"
   },
   {
     "name": "map",
     "path": "/map",
     "component": "C:\\\\Users\\\\uusse\\\\Website-1\\\\pages\\\\map.vue",
-    "chunkName": "pages/map"
+    "chunkName": "pages/map",
+    "_name": "_d0d67476"
   },
   {
     "name": "news",
     "path": "/news",
     "component": "C:\\\\Users\\\\uusse\\\\Website-1\\\\pages\\\\news.vue",
-    "chunkName": "pages/news"
+    "chunkName": "pages/news",
+    "_name": "_b3c8cb8c"
   },
   {
     "name": "people",
     "path": "/people",
     "component": "C:\\\\Users\\\\uusse\\\\Website-1\\\\pages\\\\people.vue",
-    "chunkName": "pages/people"
+    "chunkName": "pages/people",
+    "_name": "_0131ac36"
   },
   {
     "name": "projects",
     "path": "/projects",
     "component": "C:\\\\Users\\\\uusse\\\\Website-1\\\\pages\\\\projects.vue",
-    "chunkName": "pages/projects"
+    "chunkName": "pages/projects",
+    "_name": "_70a3863e"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\uusse\\\\Website-1\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_4438240a"
   }
 ]

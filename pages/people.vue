@@ -27,25 +27,13 @@
         <section>
           Radha Iyer<br />
           Megan Wong<br />
-          Jack Kramer<br />
-          Emma Maggioncalda<br />
-          Callie Van Horn<br />
-          Tran Quach<br />
-          Reese Michael O’Craven<br />
-          Kelsey Foster<br />
-          Jordan Sliz<br />
-          Akanksha Mishra<br />
-          Mapenzi Kinege<br />
-          Blake Sternecke<br />
-          Markus Schiffer<br />
-          Shayne Simpson<br />
-          James Clough<br />
+          
           Amanda Yuan<br />
           Chris Miner<br />
           Weilin Wang<br />
           Kae Ransom<br />
           Peyton Robbins<br />
-          Soogil (Shaun) Sun<br />
+          Soogil (Shawn) Sun<br />
           Carson Lindholm<br />
           Gabe Hammond<br />
           Nicholas Yu<br />
@@ -68,8 +56,7 @@
           Curtis Chung<br />
           Bardia Nasrulai<br />
           William Pham<br />
-          William Feeny<br />
-          Abdulaziz Alqadhib
+          William Feeny
         </section>
       </div>
       <br />
@@ -79,6 +66,20 @@
       <div class="column">
         <!-- This is the list of past students. -->
         <section>
+          Jack Kramer<br />
+          Abdulaziz Alqadhib<br />
+          Emma Maggioncalda<br />
+          Callie Van Horn<br />
+          Tran Quach<br />
+          Reese Michael O’Craven<br />
+          Kelsey Foster<br />
+          Jordan Sliz<br />
+          Akanksha Mishra<br />
+          Mapenzi Kinege<br />
+          Blake Sternecke<br />
+          Markus Schiffer<br />
+          Shayne Simpson<br />
+          James Clough<br />
           Christoph Strouse<br />
           Whitney Thomas<br />
           Elizabeth Perkins<br />
