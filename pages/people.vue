@@ -41,6 +41,34 @@
           Shayne Simpson<br />
           James Clough<br />
           Amanda Yuan<br />
+          Chris Miner<br />
+          Weilin Wang<br />
+          Kae Ransom<br />
+          Peyton Robbins<br />
+          Soogil (Shaun) Sun<br />
+          Carson Lindholm<br />
+          Gabe Hammond<br />
+          Nicholas Yu<br />
+          Daniel Rashevsky<br />
+          Lance Peng<br />
+          Dylan Scott<br />
+          Tuyet-Hoa Le<br />
+          Wesley Huang<br />
+          Owen Johnson<br />
+          Ben Nguyen<br />
+          Lauren Yan<br />
+          Zhitong Peng<br />
+          Riya Venkatesh<br />
+          Bei Jiang<br />
+          Kayce Hsueh<br />
+          Jerry Chen<br />
+          Tiffany Shin<br />
+          Kat Lykins<br />
+          David Miguel Schulman<br />
+          Curtis Chung<br />
+          Bardia Nasrulai<br />
+          William Pham<br />
+          William Feeny<br />
           Abdulaziz Alqadhib
         </section>
       </div>
