@@ -31,6 +31,7 @@
           Chris Miner<br />
           Weilin Wang<br />
           Kae Ransom<br />
+          Johnny He<br />
           Peyton Robbins<br />
           Soogil (Shawn) Sun<br />
           Carson Lindholm<br />
