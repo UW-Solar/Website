@@ -15,8 +15,7 @@
       <br />
       <!-- This is the list of faculty. -->
       <section>
-        Jan Whittington | Faculty Advisor<br />
-        Stefanie Young | Lab Founder
+        Jan Whittington | Faculty Advisor
       </section>
       <br />
       <br />
@@ -66,6 +65,7 @@
       <div class="column">
         <!-- This is the list of past students. -->
         <section>
+          Stefanie Young | Lab Founder <br />
           Jack Kramer<br />
           Abdulaziz Alqadhib<br />
           Emma Maggioncalda<br />
