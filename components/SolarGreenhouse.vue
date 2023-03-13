@@ -2,7 +2,7 @@
   <div>
     <!-- The toggler for the dropdown. -->
     <div v-b-toggle="'nine'" id="project" class="card-header">
-      <h3>Resiliency Tunnel</h3>
+      <h3>Solar Greenhouse</h3>
       <!-- This image is the black icon for the project. -->
       <img class="project-icon" alt="Pole Mounted Solar Array" src="~/static/polePV.svg">
     </div>
@@ -18,8 +18,7 @@
         subsequent agriculture has greater nutritional value as well as overall yields, which would more effectively 
         feed members of the greater UW community, including those who utilize the UW Food Pantry. We will be generating 
         a conceptual design and applying to grants for funding to bring the design to final as well as construction. 
-        Learn more on our <a href="https://resiliency-tunnel.webflow.io">website</a> or reach out over email 
-        (resiliencytunnel@gmail.com)! 
+        Learn more on our <a href="https://resiliency-tunnel.webflow.io">website</a> or reach out over <a href="mailto:resiliencytunnel@gmail.com">email</a>!
       </section>
     </b-collapse>
   </div>
@@ -27,7 +26,7 @@
 
 <script>
 export default {
-  name: 'ResiliencyTunnel',  // This should be different for each project.
+  name: 'SolarGreenhouse',  // This should be different for each project.
   // The rest of this code should be the same for each project. DO NOT MODIFY.
   data () {
     return {

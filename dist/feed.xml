@@ -4,7 +4,7 @@
         <title>UW Solar News Feed</title>
         <link>https://uw-solar.github.io/News</link>
         <description>All UW Solar news and events!</description>
-        <lastBuildDate>Thu, 09 Feb 2023 02:52:59 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 13 Mar 2023 00:29:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <category>Solar power.</category>
