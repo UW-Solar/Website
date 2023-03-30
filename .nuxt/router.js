@@ -4,12 +4,12 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _84ca88de = () => interopDefault(import('..\\pages\\data.vue' /* webpackChunkName: "pages/data" */))
-const _d0d67476 = () => interopDefault(import('..\\pages\\map.vue' /* webpackChunkName: "pages/map" */))
-const _b3c8cb8c = () => interopDefault(import('..\\pages\\news.vue' /* webpackChunkName: "pages/news" */))
-const _0131ac36 = () => interopDefault(import('..\\pages\\people.vue' /* webpackChunkName: "pages/people" */))
-const _70a3863e = () => interopDefault(import('..\\pages\\projects.vue' /* webpackChunkName: "pages/projects" */))
-const _4438240a = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _239e6752 = () => interopDefault(import('..\\pages\\data.vue' /* webpackChunkName: "pages/data" */))
+const _0e7c1de4 = () => interopDefault(import('..\\pages\\map.vue' /* webpackChunkName: "pages/map" */))
+const _0c1f45fb = () => interopDefault(import('..\\pages\\news.vue' /* webpackChunkName: "pages/news" */))
+const _160d2892 = () => interopDefault(import('..\\pages\\people.vue' /* webpackChunkName: "pages/people" */))
+const _2ef7bfbc = () => interopDefault(import('..\\pages\\projects.vue' /* webpackChunkName: "pages/projects" */))
+const _3855ba5a = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -24,27 +24,27 @@ export const routerOptions = {
 
   routes: [{
     path: "/data",
-    component: _84ca88de,
+    component: _239e6752,
     name: "data"
   }, {
     path: "/map",
-    component: _d0d67476,
+    component: _0e7c1de4,
     name: "map"
   }, {
     path: "/news",
-    component: _b3c8cb8c,
+    component: _0c1f45fb,
     name: "news"
   }, {
     path: "/people",
-    component: _0131ac36,
+    component: _160d2892,
     name: "people"
   }, {
     path: "/projects",
-    component: _70a3863e,
+    component: _2ef7bfbc,
     name: "projects"
   }, {
     path: "/",
-    component: _4438240a,
+    component: _3855ba5a,
     name: "index"
   }],
 

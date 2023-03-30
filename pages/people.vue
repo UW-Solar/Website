@@ -27,7 +27,7 @@
           Radha Iyer<br />
           Megan Wong<br />
           Amanda Yuan<br />
-          Chris Miner<br />
+          Chris Miller<br />
           Weilin Wang<br />
           Kae Ransom<br />
           Johnny He<br />
