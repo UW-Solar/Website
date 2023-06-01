@@ -54,8 +54,7 @@
           David Miguel Schulman<br />
           Curtis Chung<br />
           Bardia Nasrulai<br />
-          William Pham<br />
-          William Feeny
+          William Pham
         </section>
       </div>
       <br />

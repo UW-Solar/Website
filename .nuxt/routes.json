@@ -2,43 +2,43 @@
   {
     "name": "data",
     "path": "/data",
-    "component": "C:\\\\Users\\\\amand\\\\UW-Solar-Website\\\\pages\\\\data.vue",
+    "component": "C:\\\\Users\\\\amand\\\\UWSolarWebsite\\\\pages\\\\data.vue",
     "chunkName": "pages/data",
-    "_name": "_239e6752"
+    "_name": "_4e0c575a"
   },
   {
     "name": "map",
     "path": "/map",
-    "component": "C:\\\\Users\\\\amand\\\\UW-Solar-Website\\\\pages\\\\map.vue",
+    "component": "C:\\\\Users\\\\amand\\\\UWSolarWebsite\\\\pages\\\\map.vue",
     "chunkName": "pages/map",
-    "_name": "_0e7c1de4"
+    "_name": "_53e7e648"
   },
   {
     "name": "news",
     "path": "/news",
-    "component": "C:\\\\Users\\\\amand\\\\UW-Solar-Website\\\\pages\\\\news.vue",
+    "component": "C:\\\\Users\\\\amand\\\\UWSolarWebsite\\\\pages\\\\news.vue",
     "chunkName": "pages/news",
-    "_name": "_0c1f45fb"
+    "_name": "_368d3603"
   },
   {
     "name": "people",
     "path": "/people",
-    "component": "C:\\\\Users\\\\amand\\\\UW-Solar-Website\\\\pages\\\\people.vue",
+    "component": "C:\\\\Users\\\\amand\\\\UWSolarWebsite\\\\pages\\\\people.vue",
     "chunkName": "pages/people",
-    "_name": "_160d2892"
+    "_name": "_3bab79bf"
   },
   {
     "name": "projects",
     "path": "/projects",
-    "component": "C:\\\\Users\\\\amand\\\\UW-Solar-Website\\\\pages\\\\projects.vue",
+    "component": "C:\\\\Users\\\\amand\\\\UWSolarWebsite\\\\pages\\\\projects.vue",
     "chunkName": "pages/projects",
-    "_name": "_2ef7bfbc"
+    "_name": "_4aeacc2a"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\amand\\\\UW-Solar-Website\\\\pages\\\\index.vue",
+    "component": "C:\\\\Users\\\\amand\\\\UWSolarWebsite\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_3855ba5a"
+    "_name": "_5ba5cb52"
   }
 ]
