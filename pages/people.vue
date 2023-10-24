@@ -24,37 +24,28 @@
       <div class="column">
         <!-- This is the list of current students. -->
         <section>
-          Radha Iyer<br />
-          Megan Wong<br />
-          Amanda Yuan<br />
-          Chris Miller<br />
-          Weilin Wang<br />
-          Kae Ransom<br />
-          Johnny He<br />
-          Peyton Robbins<br />
-          Soogil (Shawn) Sun<br />
-          Carson Lindholm<br />
-          Gabe Hammond<br />
-          Nicholas Yu<br />
-          Daniel Rashevsky<br />
-          Lance Peng<br />
-          Dylan Scott<br />
-          Tuyet-Hoa Le<br />
-          Wesley Huang<br />
-          Owen Johnson<br />
-          Ben Nguyen<br />
-          Lauren Yan<br />
-          Zhitong Peng<br />
-          Riya Venkatesh<br />
-          Bei Jiang<br />
-          Kayce Hsueh<br />
-          Jerry Chen<br />
-          Tiffany Shin<br />
-          Kat Lykins<br />
-          David Miguel Schulman<br />
-          Curtis Chung<br />
-          Bardia Nasrulai<br />
-          William Pham
+          Amanda Yuan <br />
+          Haoyu Yue <br />
+          Hoseok Sa <br />
+          Sunny Song <br />
+          Brigitte Young <br />
+          Nirnkaar Khalsa <br />
+          Shannon Hayamoto <br />
+          David Gunderson <br />
+          John McQuaid <br />
+          Kylie Hill <br />
+          Bardia Nasrulai <br />
+          Carson Blaisdell <br />
+          Ekaterina Bogdaanova <br />
+          Carson Lindholm <br />
+          Soogil (Shawn) Sun <br />
+          Konner Franklin <br />
+          Gurucharan Lingamallu <br />
+          Ethan Hong <br />
+          Graham Christenson <br />
+          Huss Muya <br />
+          Tuyet-Hoa Le <br />
+          Dylan Scott
         </section>
       </div>
       <br />
@@ -65,6 +56,31 @@
         <!-- This is the list of past students. -->
         <section>
           Stefanie Young | Lab Founder <br />
+          Radha Iyer <br />
+          Megan Wong <br />
+          Chris Miller <br />
+          Weilin Wang <br />
+          Kae Ransom <br />
+          Johnny He <br />
+          Peyton Robbins <br />
+          Gabe Hammond <br />
+          Nicholas Yu <br />
+          Daniel Rashevsky <br />
+          Lance Peng <br />
+          Wesley Huang <br />
+          Owen Johnson <br />
+          Ben Nguyen <br />
+          Lauren Yan <br />
+          Zhitong Peng <br />
+          Riya Venkatesh <br />
+          Bei Jiang <br />
+          Kayce Hsueh <br />
+          Jerry Chen <br />
+          Tiffany Shin <br />
+          Kat Lykins <br />
+          David Miguel Schulman <br />
+          Curtis Chung <br />
+          William Pham <br />
           Jack Kramer<br />
           Abdulaziz Alqadhib<br />
           Emma Maggioncalda<br />
