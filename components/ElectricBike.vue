@@ -16,9 +16,11 @@
         bicycle charging stations that use second life electric vehicle batteries for energy storage. This project
         began after receiving the Clean Energy Prize at the Alaska Airlines Environmental Innovation Challenge in
         spring 2021 under the company name PotentiaLi Energy. Since then, the project has received funding from the
-        Campus Sustainability Fund and has been taken on by UW Solar. With the help of UW Solar’s partnership with
-        UW Transportation, the project team aims to complete a pilot installation of a bike charging station by
-        spring 2022, followed by 2 more installations to create a bike charging network at UW.
+        Campus Sustainability Fund and has been taken on by UW Solar. Last year, the project moved to a new site, 
+        a fully secure bike house located between the Allen Library and Mary Gates Hall. The project has received 
+        full approval from the University, and we are currently working to prepare necessary materials for 
+        prospective contractors. After the project is complete, UW Transportation intends to add solar charging 
+        to the other bike houses on campus.
       </section>
     </b-collapse>
   </div>
