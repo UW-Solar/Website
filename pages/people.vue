@@ -45,7 +45,15 @@
           Graham Christenson <br />
           Huss Muya <br />
           Tuyet-Hoa Le <br />
-          Dylan Scott
+          Dylan Scott <br />
+          Tiffany Shin <br />
+          Justin Chao <br />
+          Kayce Hsueh <br />
+          Chi Sen (Peter) Yung <br />
+          Hriesha Popat <br />
+          Owen Magnusen <br />
+          Vinamra Agarwal <br />
+          Dhruv Bhatia
         </section>
       </div>
       <br />
@@ -74,9 +82,7 @@
           Zhitong Peng <br />
           Riya Venkatesh <br />
           Bei Jiang <br />
-          Kayce Hsueh <br />
           Jerry Chen <br />
-          Tiffany Shin <br />
           Kat Lykins <br />
           David Miguel Schulman <br />
           Curtis Chung <br />
