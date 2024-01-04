@@ -23,10 +23,6 @@
     <div class="project-wrapper">
       <electric-bike />
     </div>
-    <!--Solar Greenhouse-->
-    <div class="project-wrapper">
-      <solar-greenhouse />
-    </div>
     <!--Manastash Ridge Observatory-->
     <div class="project-wrapper">
       <manastash-proj />
@@ -51,6 +47,11 @@
       <h2>System Type</h2>
     </div>
     <br />
+    <!--Resiliency Tunnel-->
+    <div class="project-wrapper">
+      <resiliency-tunnel />
+    </div>
+  
     <!--Mercer A-->
     <div class="project-wrapper">
       <mercer-proj />
@@ -79,7 +80,7 @@ import GridTestbedProj from '~/components/GridTestbed.vue';
 import LSBRooftopProj from '~/components/LSBRooftop.vue';
 import PortSeattleProj from '~/components/PortSeattle.vue';
 import ElectricBike from '~/components/ElectricBike.vue';
-import SolarGreenhouse from '~/components/SolarGreenhouse.vue'
+import ResiliencyTunnel from '~/components/ResiliencyTunnel.vue'
 
 export default {
   name: "Projects",  // Name of the page.
@@ -95,7 +96,7 @@ export default {
     LSBRooftopProj,
     PortSeattleProj,
     ElectricBike,
-    SolarGreenhouse
+    ResiliencyTunnel
   },
   head () {  // The name of the page displayed on the browser tab.
     return {
