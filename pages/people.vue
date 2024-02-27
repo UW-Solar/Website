@@ -36,7 +36,7 @@
           Kylie Hill <br />
           Bardia Nasrulai <br />
           Carson Blaisdell <br />
-          Ekaterina Bogdaanova <br />
+          Ekaterina Bogdanova <br />
           Carson Lindholm <br />
           Soogil (Shawn) Sun <br />
           Konner Franklin <br />
