@@ -31,6 +31,8 @@
           Brigitte Young <br />
           Nirnkaar Khalsa <br />
           Yue Zhang <br />
+          Kenneth Tran <br />
+          Ben Vigil <br />
           Shannon Hayamoto <br />
           David Gunderson <br />
           John McQuaid <br />
