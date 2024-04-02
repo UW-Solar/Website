@@ -4,7 +4,7 @@
         <title>UW Solar News Feed</title>
         <link>https://uw-solar.github.io/News</link>
         <description>All UW Solar news and events!</description>
-        <lastBuildDate>Tue, 27 Feb 2024 20:42:50 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 02 Apr 2024 20:29:29 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <category>Solar power.</category>
@@ -28,22 +28,22 @@
             <enclosure url="https://uw-solar.github.io/static/manastash-ridge-march-2023.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
-            <title><![CDATA[Solar Canopy Future Plans!]]></title>
+            <title><![CDATA[Resiliency Tunnel to Solar Greenhouse!]]></title>
             <link>https://uw-solar.github.io/news/#news-2</link>
             <guid>https://uw-solar.github.io/news/#news-2</guid>
-            <pubDate>Sun, 12 Mar 2023 08:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[ The Solar Canopy Project is currently working with UW Transportation and has a lot to look forward to. Currently they are looking into solar panel manufacturers, contacting companies, and battery cell providers. Also they've assigned a project manager had expect that their first design update will be within the month. Additionally, they're currently discussing possible grant options. Best of luck to them moving forward! <br> Below is a picture of the E18 lot (next to IMA), where the Solar Canopy will be installed:]]></content:encoded>
-            <author>solaruw@uw.edu (Amanda Yuan)</author>
-            <enclosure url="https://uw-solar.github.io/static/solar-canopy-march-2023.png" length="0" type="image/png"/>
-        </item>
-        <item>
-            <title><![CDATA[Resiliency Tunnel to Solar Greenhouse!]]></title>
-            <link>https://uw-solar.github.io/news/#news-3</link>
-            <guid>https://uw-solar.github.io/news/#news-3</guid>
             <pubDate>Sun, 12 Mar 2023 08:00:00 GMT</pubDate>
             <content:encoded><![CDATA[ UW Farm volunteers, the Resiliency Tunnel project team would love your input! We’re working on a greenhouse and indoor-outdoor educational space that will enable the UW Farm to grow produce with higher nutritional value in greater quantities and offer dynamic learning opportunities in agriculture and sustainability. <br> Why we're reaching out: As a student team, we've successfully procured funding from CSF, completed a feasibility study, and are looking to move forward into more detailed design and perhaps even construction this upcoming summer. As UW Farm volunteers, you all are well acquainted with the space we’re working with and we'd love your participation or feedback.]]></content:encoded>
             <author>solaruw@uw.edu (Amanda Yuan)</author>
             <enclosure url="https://uw-solar.github.io/static/Resiliency-Tunnel-March-2023.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[Solar Canopy Future Plans!]]></title>
+            <link>https://uw-solar.github.io/news/#news-3</link>
+            <guid>https://uw-solar.github.io/news/#news-3</guid>
+            <pubDate>Sun, 12 Mar 2023 08:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[ The Solar Canopy Project is currently working with UW Transportation and has a lot to look forward to. Currently they are looking into solar panel manufacturers, contacting companies, and battery cell providers. Also they've assigned a project manager had expect that their first design update will be within the month. Additionally, they're currently discussing possible grant options. Best of luck to them moving forward! <br> Below is a picture of the E18 lot (next to IMA), where the Solar Canopy will be installed:]]></content:encoded>
+            <author>solaruw@uw.edu (Amanda Yuan)</author>
+            <enclosure url="https://uw-solar.github.io/static/solar-canopy-march-2023.png" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[Resiliency Tunnel Update!]]></title>

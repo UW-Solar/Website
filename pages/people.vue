@@ -33,6 +33,7 @@
           Yue Zhang <br />
           Kenneth Tran <br />
           Ben Vigil <br />
+          Gabriel Kennedy-Gibbens <br />
           Shannon Hayamoto <br />
           David Gunderson <br />
           John McQuaid <br />
