@@ -24,6 +24,11 @@
       <div class="column">
         <!-- This is the list of current students. -->
         <section>
+          Lillian Nguyen <br />
+          Laynie Brittain <br />
+          Dominic Roser <br />
+          Grace Buckman <br />
+          Priyanka Talur <br />
           Amanda Yuan <br />
           Haoyu Yue <br />
           Hoseok Sa <br />
