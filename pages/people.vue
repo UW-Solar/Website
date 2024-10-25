@@ -24,6 +24,10 @@
       <div class="column">
         <!-- This is the list of current students. -->
         <section>
+          TJ Morrow <br />
+          Yojit Mandavilli <br />
+          Perla Antunez <br />
+          Lucy Allen <br />
           Lillian Nguyen <br />
           Laynie Brittain <br />
           Dominic Roser <br />
@@ -31,7 +35,6 @@
           Priyanka Talur <br />
           Amanda Yuan <br />
           Haoyu Yue <br />
-          Hoseok Sa <br />
           Sunny Song <br />
           Brigitte Young <br />
           Nirnkaar Khalsa <br />
@@ -55,7 +58,6 @@
           Huss Muya <br />
           Tuyet-Hoa Le <br />
           Dylan Scott <br />
-          Tiffany Shin <br />
           Justin Chao <br />
           Kayce Hsueh <br />
           Chi Sen (Peter) Yung <br />
@@ -73,6 +75,9 @@
         <!-- This is the list of past students. -->
         <section>
           Stefanie Young | Lab Founder <br />
+          Hoseok Sa <br />
+          Tiffany Shin <br />
+          Phoebe Brache <br />
           Radha Iyer <br />
           Megan Wong <br />
           Chris Miller <br />
