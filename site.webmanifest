@@ -1,6 +1,6 @@
 {
-	"short_name": "SHORT NAME",
-	"name": "NAME",
+	"short_name": "UW Solar",
+	"name": "Solar at the University of Washington",
 	"icons": [{
 	  "src": "icon.png",
 	  "type": "image/png",

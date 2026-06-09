@@ -54,7 +54,7 @@
 							<ul id="menu-static-menu" class="navbar-nav classic-menu-nav">
 								<li class="menu-item menu-item-type-custom menu-item-object-custom nav-item top-level-nav"><a class="nav-link" href="/index.html">Home</a></li>
 								<li class="menu-item menu-item-type-custom menu-item-object-custom nav-item top-level-nav"><a class="nav-link" href="/projects.html">Projects</a></li>
-								<li class="menu-item menu-item-type-custom menu-item-object-custom nav-item top-level-nav"><a class="nav-link" href="/news.html">News</a></li>
+								<!-- <li class="menu-item menu-item-type-custom menu-item-object-custom nav-item top-level-nav"><a class="nav-link" href="/news.html">News</a></li> -->
 								<li class="menu-item menu-item-type-custom menu-item-object-custom nav-item top-level-nav"><a class="nav-link" href="/people.html">People</a></li>
 							</ul>
 						</div><!-- #white-bar .collapse .navbar-collapse -->
@@ -90,43 +90,13 @@
 									<p>Students from various disciplines and class standings (Freshman to PhD) work together on a diverse set of projects spanning (but not limited to) engineering, architecture, construction management, public policy and administration, business and urban planning. </p>
 										
 									<h2>Campus projects</h2>
-									<div class='container'>
-										<div class="row">
-											<div class="col-xl-6">
-												<h3>Solar canopy over parking lot E-18</h3>
-												<p class="proj-label proj-label-3">Open now</p>
-												<video style="width: 100%;" autoplay muted loop  class="fixed-height">
-													<source src="./assets/images-uws/zoomout.MP4" type="video/mp4"/>
-													Your browser does not support video.
-												</video>
-												<p>A decade in the making, this 86.4 kW solar canopy is outfitted with 20 Level 2 EV chargers and generates approximately 116,000 kWh per year -- enough to power over 100 UW fleet vehicles. Beyond being responsible for the initial idea, UW Solar managed research, feasibility studies, and grant writing, and was involved throughout the project management process and construction.
-												</p>
-												<p>The first of its kind, the E18 canopy serves as both an example and the beginning of parking lot-centered solar generation on campus. UW Solar is currently analyzing both the successes and lessons learned from the pilot to examine what expansion would look like across the rest of the E18 lot, across the remainder of the E lots, and ultimately across the entirety of UW's parking lot system. It finished construction in February 2026.</p>
-												<p>
-													<a href="https://facilities.uw.edu/blog/posts/2026/02/09/solar-canopy-uws-biggest-parking-lot-paves-way-brighter-future">Read more</a> at UW Facilities
-												</p>
-											</div>
-											
-											<div class="col-xl-6">
-												<h3>UW Farm resiliency tunnel</h3>
-												<p class="proj-label proj-label-2">Waiting for building permits</p>
-												<img src="assets/images-uws/resiliency_tunnel_wapato.png" class="fixed-height"/>
-												<div class="vs"></div>
-												<p>Need text</p>
-												
-											</div>
-											<div class="col-xl-6">
-												<h3>Nursery lighting at the UW Society for Ecological Restoration </h3>
-												<p class="proj-label proj-label-3">Open now</p>
-												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et felis eleifend, lobortis magna vitae, tincidunt sem. Nulla elementum vestibulum velit vitae finibus. Donec posuere lobortis tristique. Nunc eu neque id leo lobortis imperdiet ut nec ante. Duis facilisis nulla sit amet justo porttitor blandit laoreet varius arcu. Phasellus libero eros, convallis vel justo at, vulputate consequat ex. Aenean erat ex, tincidunt eget nibh id.</p>
-											</div>
-											<div class="col-xl-6">
-												<h3>Campus Solar Plan</h3>
-												<p class="proj-label proj-label-2">Under development</p>
-												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et felis eleifend, lobortis magna vitae, tincidunt sem. Nulla elementum vestibulum velit vitae finibus. Donec posuere lobortis tristique. Nunc eu neque id leo lobortis imperdiet ut nec ante. Duis facilisis nulla sit amet justo porttitor blandit laoreet varius arcu. Phasellus libero eros, convallis vel justo at, vulputate consequat ex. Aenean erat ex, tincidunt eget nibh id.</p>
-											</div>
-										</div>
-									</div>	
+									<div class="container">
+										<div class='row' id="projects-list"></div>
+										<a class="btn btn-lg arrow purple bottom-padding" href="projects.html">
+											<span>More projects</span>
+											<span class="arrow-box"><span class="arrow"></span></span></a>
+									</div>
+									<div class="container">
 										<h2>Services we provide</h2>
 										<ul>
 											<li>										Site Evaluations and Shading Analysis
@@ -147,10 +117,9 @@
 											<li>Decision Making Models</li>
 											<li>Strategic and Spatial Planning</li>
 										</ul>
+									</div>
 										
 										
-										
-									</p>
 									
 									<h2>Meeting details</h2>
 									<p>
@@ -178,7 +147,7 @@
 											<!-- <div class="row">
 												<div class="col-lg-7 pt-4 pt-lg-0"> -->
 											<img src="./assets/images-uws/profile/janwhit.jpg" class="float-end imgshadow me-3 mb-3 center" style="max-width: 200px"/>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et felis eleifend, lobortis magna vitae, tincidunt sem. Nulla elementum vestibulum velit vitae finibus. Donec posuere lobortis tristique. Nunc eu neque id leo lobortis imperdiet ut nec ante. Duis facilisis nulla sit amet justo porttitor blandit laoreet varius arcu. Phasellus libero eros, convallis vel justo at, vulputate consequat ex. Aenean erat ex, tincidunt eget nibh id.</p>
+											<p>Associate Professor Jan Whittington is the faculty mentor of Solar at the University of Washington.</p>
 												<!-- </div> -->
 											<!-- </div> -->
 										</div>
@@ -216,5 +185,7 @@
 		<script type="text/javascript" src="./assets/js/libs/jquery.tinyscrollbar.js" id="uw_wp_theme-tinyscrollbar-js"></script>
 		<script type="text/javascript" src="./assets/js/uw.bootstrap.shortcode-init.js" id="uw.bootstrap.shortcode-init-js"></script>
 		<script type="text/javascript" src="./assets/js/sidebar-widgets.js" id="uw_wp_theme-sidebar-widgets-script-js"></script>
+		<script>var num_shown = 2;</script>
+		<script type="text/javascript" src="./assets/js/projects-loader.js" id="uw_solar-projects-loader-js"></script>
 	</body>
 </html>
