@@ -1,4 +1,4 @@
-var wrapper_pre = `<div class="col-xl-6">`;
+var wrapper_pre = `<div class="col-xl-6 project-wrapper">`;
 var wrapper_post = `</div>`
 
 async function get_contents(url) {
