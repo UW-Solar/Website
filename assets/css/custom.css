@@ -1,0 +1,127 @@
+/* Title text and logo */
+.uws-tile {
+	background-color: rgb(245, 245, 245);
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	margin-top: 5px;
+	border-radius: 5px;
+}
+
+.bottom-padding {
+	padding-bottom: 10px;
+}
+
+.horiz-space {
+	width: 10px;
+}
+
+#hero-logo {
+	height: 150px;
+	-webkit-filter: drop-shadow(2px 2px 2px rgba(34, 34, 34, 0.5));
+	filter: drop-shadow(2px 2px 2px rgba(34, 34, 34, 0.5));
+}
+
+.hero-logo-container {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	padding-top: 30px;
+	gap: 20px;
+	padding-bottom: 20px;
+}
+
+/* Mobile-only */
+@media only screen and (max-width: 769px) {
+	.hero-logo-container {
+		flex-direction: column;
+		align-items: start;
+	}
+}
+
+/* Fix text clipping on ipad size screen */
+@media only screen and (min-width: 770px) and (max-width: 1075px) {
+	.uw-site-title {
+		font-size: 60px !important;
+	}
+}
+
+/* Fix to align name and logo */
+.uw-site-title {
+	padding-top: 0 !important;
+}
+
+/* Students names on people page */
+.line-break {
+	white-space: pre-line;
+}
+
+.student-names {
+	/*
+	Source - https://stackoverflow.com/a/6509239
+	Posted by thirtydot, modified by community. See post 'Timeline' for change history
+	Retrieved 2026-05-06, License - CC BY-SA 3.0
+	*/
+	
+	-moz-column-count: 4;
+	-moz-column-gap: 20px;
+	-webkit-column-count: 4;
+	-webkit-column-gap: 20px;
+	column-count: 4;
+	column-gap: 20px;
+	
+	padding-bottom: 20px;
+
+}
+
+/* Project cards in project lists */
+.project-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: start;
+}
+
+.project-wrapper h3 {
+	margin-bottom: 0;
+}
+
+.proj-label {
+	border-style: solid;
+	border-width: 2px;
+	padding: 3px 15px 3px 15px;
+	margin-left: 0px;
+	margin-bottom: 10px;
+	border-radius: 7px;
+	width: fit-content;
+}
+
+.proj-label-1 {
+	color: rgb(0, 94, 202)
+}
+
+.proj-label-2 {
+	color: rgb(197, 158, 0);
+	/* color: white; */
+}
+
+.proj-label-3 {
+	color: rgb(24, 138, 2);
+	/* color: white; */
+}
+
+.fixed-height {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+}
+
+.vs {
+	height: 5px;
+}
+
+#map-embed {
+	height: 600px;
+}
