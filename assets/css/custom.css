@@ -33,11 +33,18 @@
 	padding-bottom: 20px;
 }
 
-// Mobile-only
-@media only screen and (max-width: 767px) {
+/* Mobile-only */
+@media only screen and (max-width: 769px) {
 	.hero-logo-container {
 		flex-direction: column;
 		align-items: start;
+	}
+}
+
+/* Fix text clipping on ipad size screen */
+@media only screen and (min-width: 770px) and (max-width: 1075px) {
+	.uw-site-title {
+		font-size: 60px !important;
 	}
 }
 
